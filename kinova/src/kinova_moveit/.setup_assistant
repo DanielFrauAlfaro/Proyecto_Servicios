@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kinova_description
+    relative_path: urdf/j2s6s300_standalone.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/j2s6s300.srdf
+  CONFIG:
+    author_name: robot_mania
+    author_email: robo@yahoo.com
+    generated_timestamp: 1643805663
