@@ -108,6 +108,7 @@
         </actuator>
      </transmission>
      <!--For torque sensing in simulation-->
+     <!--
      <gazebo reference="${joint_name}">
         <provideFeedback>true</provideFeedback>
       </gazebo>
@@ -118,6 +119,7 @@
           <jointName>${joint_name}</jointName>
         </plugin>
       </gazebo>
+      -->
      </xacro:unless>
   </xacro:macro>
 
@@ -148,7 +150,7 @@
             <child link="${prefix}link_finger_${finger_number}"/>
             <axis xyz="0 0 1"/>
             <origin xyz="${finger_origin_xyz}" rpy="${finger_origin_rpy}"/>
-            <limit lower="0" upper="1.51" effort="2" velocity="1"/>
+            <limit lower="0" upper="1.51" effort="10" velocity="1"/>
         </joint>
 		    <transmission name="${prefix}joint_finger_${finger_number}_trans">
 					<type>transmission_interface/SimpleTransmission</type>
@@ -170,7 +172,7 @@
             <child link="${prefix}link_finger_tip_${finger_number}"/>
             <axis xyz="0 0 1"/>
             <origin xyz="0.044 -0.003 0" rpy="0 0 0"/>
-            <limit lower="0" upper="2" effort="2" velocity="1"/>
+            <limit lower="0" upper="2" effort="10" velocity="1"/>
         </joint>
         <transmission name="${prefix}joint_finger_tip_${finger_number}_trans">
 					<type>transmission_interface/SimpleTransmission</type>

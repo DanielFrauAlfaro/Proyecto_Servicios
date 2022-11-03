@@ -1,0 +1,2 @@
+aruco_recognition:kinova-ros/kinova_bringup:kinova-ros/kinova_control:kinova-ros/kinova_demo:kinova-ros/kinova_description:kinova-ros/kinova_driver:kinova-ros/kinova_gazebo:kinova-ros/kinova_moveit:kinova-ros/kinova_msgs
+-DCATKIN_DEVEL_PREFIX=/home/daniel/Desktop/kinova/devel -DCMAKE_INSTALL_PREFIX=/home/daniel/Desktop/kinova/install -G Unix Makefiles

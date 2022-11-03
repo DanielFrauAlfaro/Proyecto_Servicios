@@ -12,18 +12,25 @@ import rospy
 from geometry_msgs.msg import Pose
 import moveit_commander
 
-block_pose = Pose()
+# block_pose = Pose()
 
-class GUI(QDialog):
+class Scullion():
 
     def __init__(self,parent=None):
-        super(GUI, self).__init__(parent)
-        self.ui = Ui_Form()
-        self.ui.setupUi(self)
+        # super(GUI, self).__init__(parent)
+        # self.ui = Ui_Form()
+        # self.ui.setupUi(self)
 
         self.arm = moveit_commander.MoveGroupCommander("arm")
         self.gripper = moveit_commander.MoveGroupCommander("gripper")
-
+        self.Move_to_initial_position()
+        
+    def show(self):
+        while(True):
+            self.Place_on_red()
+            self.Grab()
+            self.Move_to_initial_position()
+        
     def Place_on_red(self):
 
         waypoints = []
@@ -41,15 +48,15 @@ class GUI(QDialog):
         waypoints.append(copy.deepcopy(waypoint1))
 
         waypoint2 = Pose()
-        waypoint2.position.x = 0.5
-        waypoint2.position.y = -0.5
+        waypoint2.position.x = 0.3
+        waypoint2.position.y = -0.3
         waypoint2.position.z = 0.2
         waypoint2.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint2))
 
         target_pose = Pose()
-        target_pose.position.x = 0.5
-        target_pose.position.y = -0.5
+        target_pose.position.x = 0.3
+        target_pose.position.y = -0.3
         target_pose.position.z = 0.1
         target_pose.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(target_pose))
@@ -80,17 +87,17 @@ class GUI(QDialog):
         self.arm.set_goal_tolerance(0.01)
 
         waypoint1 = Pose()
-        waypoint1.position.x = block_pose.position.x
-        waypoint1.position.y = block_pose.position.y
+        waypoint1.position.x = 0.5
+        waypoint1.position.y = 0
         waypoint1.position.z = arm_current_pose.pose.position.z
         waypoint1.orientation = arm_current_pose.pose.orientation  
 
         waypoints.append(copy.deepcopy(waypoint1))
 
         target_pose = Pose()
-        target_pose.position.x = block_pose.position.x
-        target_pose.position.y = block_pose.position.y
-        target_pose.position.z = block_pose.position.z
+        target_pose.position.x = 0.5
+        target_pose.position.y = 0
+        target_pose.position.z = 0.04
         target_pose.orientation = arm_current_pose.pose.orientation  
 
         waypoints.append(copy.deepcopy(target_pose))
@@ -113,7 +120,7 @@ rospy.init_node('controller')
 rospy.Subscriber("/block_pose", Pose, block_pose_callback)
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    window = GUI()
-    window.show()
-    sys.exit(app.exec_())
+    # app = QApplication(sys.argv)
+    scullion = Scullion()
+    scullion.show()
+    # sys.exit(app.exec_())

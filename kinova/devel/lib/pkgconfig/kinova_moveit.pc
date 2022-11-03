@@ -1,0 +1,8 @@
+prefix=/home/daniel/Desktop/kinova/devel
+
+Name: kinova_moveit
+Description: Description of kinova_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

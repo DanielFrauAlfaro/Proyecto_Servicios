@@ -7,9 +7,13 @@
     <!-- ros_control plugin -->
     <gazebo>
       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        <robotNamespace>${robot_namespace}</robotNamespace>
-        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-        <legacyModeNS>true</legacyModeNS>
+      </plugin>
+      <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+          <jointName>j2s6s300_joint_1, j2s6s300_joint_2, j2s6s300_joint_3, j2s6s300_joint_4, j2s6s300_joint_5, j2s6s300_joint_6,
+                     j2s6s300_joint_finger_1, j2s6s300_joint_finger_2, j2s6s300_joint_finger_3,
+                     j2s6s300_joint_finger_tip_1, j2s6s300_joint_finger_tip_2, j2s6s300_joint_finger_tip_3
+          </jointName>
+        <updateRate>100</updateRate>
       </plugin>
     </gazebo>
 
