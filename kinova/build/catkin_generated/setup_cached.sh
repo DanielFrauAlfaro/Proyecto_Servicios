@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/daniel/Desktop/kinova/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/daniel/Desktop/kinova/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/daniel/Desktop/kinova/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/daniel/Desktop/kinova/src:$ROS_PACKAGE_PATH"
+export PWD='/home/daniel/Desktop/Proyecto_Servicios/kinova/build'

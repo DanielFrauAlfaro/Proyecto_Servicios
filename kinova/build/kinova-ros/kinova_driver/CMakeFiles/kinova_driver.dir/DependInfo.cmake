@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_api.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_arm.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_comm.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_api.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_arm.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_comm.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,8 +25,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/daniel/Desktop/kinova/devel/include"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/include"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/include"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

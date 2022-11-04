@@ -1,12 +1,14 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys, copy
+'''
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.Qt import *
 from controller_window import Ui_Form
+'''
+import copy
 # ROS
 import rospy
 from geometry_msgs.msg import Pose
@@ -24,13 +26,15 @@ class Scullion():
         self.arm = moveit_commander.MoveGroupCommander("arm")
         self.gripper = moveit_commander.MoveGroupCommander("gripper")
         self.Move_to_initial_position()
-        
+       
+    # --------------------------- BUCLE DE CONTROL -------------------------
     def show(self):
-        while(True):
-            self.Place_on_red()
-            self.Grab()
-            self.Move_to_initial_position()
-        
+        self.Open()
+        self.Place_on_red()
+        self.Grab()
+        self.Move_to_initial_position()
+    # ----------------------------------------------------------------------
+    
     def Place_on_red(self):
 
         waypoints = []
@@ -48,16 +52,16 @@ class Scullion():
         waypoints.append(copy.deepcopy(waypoint1))
 
         waypoint2 = Pose()
-        waypoint2.position.x = 0.3
+        waypoint2.position.x = 0.5
         waypoint2.position.y = -0.3
         waypoint2.position.z = 0.2
         waypoint2.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint2))
 
         target_pose = Pose()
-        target_pose.position.x = 0.3
+        target_pose.position.x = 0.5
         target_pose.position.y = -0.3
-        target_pose.position.z = 0.1
+        target_pose.position.z = 0.04
         target_pose.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(target_pose))
 

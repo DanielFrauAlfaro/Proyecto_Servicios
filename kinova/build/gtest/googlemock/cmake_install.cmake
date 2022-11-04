@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/daniel/Desktop/kinova/install")
+  set(CMAKE_INSTALL_PREFIX "/home/daniel/Desktop/Proyecto_Servicios/kinova/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/daniel/Desktop/kinova/build/gtest/googletest/cmake_install.cmake")
+  include("/home/daniel/Desktop/Proyecto_Servicios/kinova/build/gtest/googletest/cmake_install.cmake")
 
 endif()
 

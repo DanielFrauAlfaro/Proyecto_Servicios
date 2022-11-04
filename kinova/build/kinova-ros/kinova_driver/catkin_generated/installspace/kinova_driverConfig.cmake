@@ -67,14 +67,14 @@ set(kinova_driver_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(kinova_driver_SOURCE_PREFIX /home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver)
-  set(kinova_driver_DEVEL_PREFIX /home/daniel/Desktop/kinova/devel)
+  set(kinova_driver_SOURCE_PREFIX /home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver)
+  set(kinova_driver_DEVEL_PREFIX /home/daniel/Desktop/Proyecto_Servicios/kinova/devel)
   set(kinova_driver_INSTALL_PREFIX "")
   set(kinova_driver_PREFIX ${kinova_driver_DEVEL_PREFIX})
 else()
   set(kinova_driver_SOURCE_PREFIX "")
   set(kinova_driver_DEVEL_PREFIX "")
-  set(kinova_driver_INSTALL_PREFIX /home/daniel/Desktop/kinova/install)
+  set(kinova_driver_INSTALL_PREFIX /home/daniel/Desktop/Proyecto_Servicios/kinova/install)
   set(kinova_driver_PREFIX ${kinova_driver_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/daniel/Desktop/kinova/install/lib;/home/daniel/kinova_/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/daniel/Desktop/Proyecto_Servicios/kinova/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniel/Desktop/kinova/src
+CMAKE_SOURCE_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniel/Desktop/kinova/build
+CMAKE_BINARY_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova/build
 
 # Utility rule file for visualization_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 
 kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 
 kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/daniel/Desktop/kinova/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniel/Desktop/kinova/src /home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver /home/daniel/Desktop/kinova/build /home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver /home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/daniel/Desktop/Proyecto_Servicios/kinova/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniel/Desktop/Proyecto_Servicios/kinova/src /home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver /home/daniel/Desktop/Proyecto_Servicios/kinova/build /home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver /home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
 

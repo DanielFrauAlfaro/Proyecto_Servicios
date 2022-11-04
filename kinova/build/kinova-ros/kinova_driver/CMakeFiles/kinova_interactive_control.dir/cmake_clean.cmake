@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/daniel/Desktop/kinova/devel/lib/kinova_driver/kinova_interactive_control"
-  "/home/daniel/Desktop/kinova/devel/lib/kinova_driver/kinova_interactive_control.pdb"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/lib/kinova_driver/kinova_interactive_control"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/lib/kinova_driver/kinova_interactive_control.pdb"
   "CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o"
 )
 

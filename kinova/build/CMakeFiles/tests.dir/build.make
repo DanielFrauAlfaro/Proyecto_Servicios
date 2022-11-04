@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniel/Desktop/kinova/src
+CMAKE_SOURCE_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniel/Desktop/kinova/build
+CMAKE_BINARY_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/daniel/Desktop/kinova/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniel/Desktop/kinova/src /home/daniel/Desktop/kinova/src /home/daniel/Desktop/kinova/build /home/daniel/Desktop/kinova/build /home/daniel/Desktop/kinova/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/daniel/Desktop/Proyecto_Servicios/kinova/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniel/Desktop/Proyecto_Servicios/kinova/src /home/daniel/Desktop/Proyecto_Servicios/kinova/src /home/daniel/Desktop/Proyecto_Servicios/kinova/build /home/daniel/Desktop/Proyecto_Servicios/kinova/build /home/daniel/Desktop/Proyecto_Servicios/kinova/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

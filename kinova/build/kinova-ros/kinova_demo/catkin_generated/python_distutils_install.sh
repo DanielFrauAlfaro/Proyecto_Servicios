@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_demo"
+echo_and_run cd "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_demo"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/daniel/Desktop/kinova/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/daniel/Desktop/Proyecto_Servicios/kinova/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/daniel/Desktop/kinova/install/lib/python3/dist-packages:/home/daniel/Desktop/kinova/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/daniel/Desktop/kinova/build" \
+    PYTHONPATH="/home/daniel/Desktop/Proyecto_Servicios/kinova/install/lib/python3/dist-packages:/home/daniel/Desktop/Proyecto_Servicios/kinova/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/daniel/Desktop/Proyecto_Servicios/kinova/build" \
     "/usr/bin/python3" \
-    "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_demo/setup.py" \
+    "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_demo/setup.py" \
      \
-    build --build-base "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_demo" \
+    build --build-base "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_demo" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/daniel/Desktop/kinova/install" --install-scripts="/home/daniel/Desktop/kinova/install/bin"
+    --install-layout=deb --prefix="/home/daniel/Desktop/Proyecto_Servicios/kinova/install" --install-scripts="/home/daniel/Desktop/Proyecto_Servicios/kinova/install/bin"

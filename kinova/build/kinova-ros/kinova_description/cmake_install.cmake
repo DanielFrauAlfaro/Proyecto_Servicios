@@ -1,8 +1,8 @@
-# Install script for directory: /home/daniel/Desktop/kinova/src/kinova-ros/kinova_description
+# Install script for directory: /home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/daniel/Desktop/kinova/install")
+  set(CMAKE_INSTALL_PREFIX "/home/daniel/Desktop/Proyecto_Servicios/kinova/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description/cmake" TYPE FILE FILES
-    "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig.cmake"
-    "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig-version.cmake"
+    "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig.cmake"
+    "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE FILE FILES "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE FILE FILES "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_description/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_description/urdf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_description/meshes" FILES_MATCHING REGEX "/[^/]*\\.dae$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_description/meshes" FILES_MATCHING REGEX "/[^/]*\\.dae$")
 endif()
 

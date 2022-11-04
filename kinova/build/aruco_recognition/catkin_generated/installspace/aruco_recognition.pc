@@ -1,4 +1,4 @@
-prefix=/home/daniel/Desktop/kinova/install
+prefix=/home/daniel/Desktop/Proyecto_Servicios/kinova/install
 
 Name: aruco_recognition
 Description: Description of aruco_recognition

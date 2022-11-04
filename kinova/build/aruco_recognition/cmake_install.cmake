@@ -1,8 +1,8 @@
-# Install script for directory: /home/daniel/Desktop/kinova/src/aruco_recognition
+# Install script for directory: /home/daniel/Desktop/Proyecto_Servicios/kinova/src/aruco_recognition
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/daniel/Desktop/kinova/install")
+  set(CMAKE_INSTALL_PREFIX "/home/daniel/Desktop/Proyecto_Servicios/kinova/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/daniel/Desktop/kinova/build/aruco_recognition/catkin_generated/installspace/aruco_recognition.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/aruco_recognition/catkin_generated/installspace/aruco_recognition.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aruco_recognition/cmake" TYPE FILE FILES
-    "/home/daniel/Desktop/kinova/build/aruco_recognition/catkin_generated/installspace/aruco_recognitionConfig.cmake"
-    "/home/daniel/Desktop/kinova/build/aruco_recognition/catkin_generated/installspace/aruco_recognitionConfig-version.cmake"
+    "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/aruco_recognition/catkin_generated/installspace/aruco_recognitionConfig.cmake"
+    "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/aruco_recognition/catkin_generated/installspace/aruco_recognitionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aruco_recognition" TYPE FILE FILES "/home/daniel/Desktop/kinova/src/aruco_recognition/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aruco_recognition" TYPE FILE FILES "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/aruco_recognition/package.xml")
 endif()
 

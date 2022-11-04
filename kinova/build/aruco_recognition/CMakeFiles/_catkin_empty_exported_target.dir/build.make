@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniel/Desktop/kinova/src
+CMAKE_SOURCE_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniel/Desktop/kinova/build
+CMAKE_BINARY_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_em
 .PHONY : aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/daniel/Desktop/kinova/build/aruco_recognition && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/daniel/Desktop/Proyecto_Servicios/kinova/build/aruco_recognition && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/daniel/Desktop/kinova/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniel/Desktop/kinova/src /home/daniel/Desktop/kinova/src/aruco_recognition /home/daniel/Desktop/kinova/build /home/daniel/Desktop/kinova/build/aruco_recognition /home/daniel/Desktop/kinova/build/aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/daniel/Desktop/Proyecto_Servicios/kinova/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniel/Desktop/Proyecto_Servicios/kinova/src /home/daniel/Desktop/Proyecto_Servicios/kinova/src/aruco_recognition /home/daniel/Desktop/Proyecto_Servicios/kinova/build /home/daniel/Desktop/Proyecto_Servicios/kinova/build/aruco_recognition /home/daniel/Desktop/Proyecto_Servicios/kinova/build/aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_recognition/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

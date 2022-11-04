@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_arm_kinematics.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_tf_updater.dir/src/kinova_arm_kinematics.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_tf_updater.dir/src/kinova_ros_types.cpp.o"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/src/nodes/kinova_tf_updater.cpp" "/home/daniel/Desktop/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_tf_updater.dir/src/nodes/kinova_tf_updater.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_arm_kinematics.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_tf_updater.dir/src/kinova_arm_kinematics.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_tf_updater.dir/src/kinova_ros_types.cpp.o"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/src/nodes/kinova_tf_updater.cpp" "/home/daniel/Desktop/Proyecto_Servicios/kinova/build/kinova-ros/kinova_driver/CMakeFiles/kinova_tf_updater.dir/src/nodes/kinova_tf_updater.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,8 +19,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/daniel/Desktop/kinova/devel/include"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_driver/include"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/include"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_driver/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

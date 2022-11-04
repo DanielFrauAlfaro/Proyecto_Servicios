@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/daniel/Desktop/kinova/devel/lib/kinova_driver/gripper_command_action_server"
-  "/home/daniel/Desktop/kinova/devel/lib/kinova_driver/gripper_command_action_server.pdb"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/lib/kinova_driver/gripper_command_action_server"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/lib/kinova_driver/gripper_command_action_server.pdb"
   "CMakeFiles/gripper_command_action_server.dir/src/joint_trajectory_action/gripper_command_action_server.cpp.o"
 )
 

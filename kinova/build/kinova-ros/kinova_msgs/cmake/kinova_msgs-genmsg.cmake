@@ -2,7 +2,7 @@
 
 message(STATUS "kinova_msgs: 37 messages, 12 services")
 
-set(MSG_I_FLAGS "-Ikinova_msgs:/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg;-Ikinova_msgs:/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ikinova_msgs:/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg;-Ikinova_msgs:/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,249 +17,249 @@ add_custom_target(kinova_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" "actionlib_msgs/GoalID:kinova_msgs/ArmJointAnglesResult:actionlib_msgs/GoalStatus:kinova_msgs/JointAngles:kinova_msgs/ArmJointAnglesGoal:kinova_msgs/ArmJointAnglesActionGoal:std_msgs/Header:kinova_msgs/ArmJointAnglesFeedback:kinova_msgs/ArmJointAnglesActionResult:kinova_msgs/ArmJointAnglesActionFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" "kinova_msgs/ArmJointAnglesActionFeedback:actionlib_msgs/GoalStatus:kinova_msgs/ArmJointAnglesGoal:kinova_msgs/ArmJointAnglesActionGoal:kinova_msgs/ArmJointAnglesActionResult:kinova_msgs/ArmJointAnglesFeedback:actionlib_msgs/GoalID:kinova_msgs/JointAngles:std_msgs/Header:kinova_msgs/ArmJointAnglesResult"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" "actionlib_msgs/GoalID:kinova_msgs/ArmJointAnglesGoal:kinova_msgs/JointAngles:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" "kinova_msgs/ArmJointAnglesGoal:actionlib_msgs/GoalID:kinova_msgs/JointAngles:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" "actionlib_msgs/GoalID:kinova_msgs/ArmJointAnglesResult:actionlib_msgs/GoalStatus:kinova_msgs/JointAngles:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:kinova_msgs/JointAngles:std_msgs/Header:kinova_msgs/ArmJointAnglesResult"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:kinova_msgs/JointAngles:std_msgs/Header:kinova_msgs/ArmJointAnglesFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" "actionlib_msgs/GoalStatus:kinova_msgs/ArmJointAnglesFeedback:actionlib_msgs/GoalID:kinova_msgs/JointAngles:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" "kinova_msgs/JointAngles"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" "kinova_msgs/JointAngles"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" "kinova_msgs/JointAngles"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" "kinova_msgs/JointAngles"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" "kinova_msgs/JointAngles"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" "kinova_msgs/JointAngles"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" "kinova_msgs/ArmPoseActionGoal:kinova_msgs/ArmPoseActionResult:actionlib_msgs/GoalID:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:kinova_msgs/ArmPoseResult:kinova_msgs/ArmPoseActionFeedback:actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/ArmPoseFeedback:kinova_msgs/ArmPoseGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" "kinova_msgs/ArmPoseActionGoal:kinova_msgs/ArmPoseActionResult:actionlib_msgs/GoalStatus:kinova_msgs/ArmPoseResult:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:kinova_msgs/ArmPoseActionFeedback:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/ArmPoseGoal:geometry_msgs/PoseStamped:kinova_msgs/ArmPoseFeedback"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" "actionlib_msgs/GoalID:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header:kinova_msgs/ArmPoseGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/ArmPoseGoal:geometry_msgs/PoseStamped"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" "actionlib_msgs/GoalID:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:kinova_msgs/ArmPoseResult:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" "actionlib_msgs/GoalStatus:kinova_msgs/ArmPoseResult:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/PoseStamped"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" "actionlib_msgs/GoalID:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/ArmPoseFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" "actionlib_msgs/GoalStatus:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/PoseStamped:kinova_msgs/ArmPoseFeedback"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" "geometry_msgs/Pose:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/PoseStamped"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" "geometry_msgs/Pose:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/PoseStamped"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" "geometry_msgs/Pose:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/PoseStamped"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" "actionlib_msgs/GoalID:kinova_msgs/Arm_KinovaPoseActionResult:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseGoal:kinova_msgs/Arm_KinovaPoseFeedback:kinova_msgs/Arm_KinovaPoseActionFeedback:actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/Arm_KinovaPoseResult:kinova_msgs/Arm_KinovaPoseActionGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" "kinova_msgs/Arm_KinovaPoseActionFeedback:kinova_msgs/Arm_KinovaPoseGoal:kinova_msgs/Arm_KinovaPoseFeedback:actionlib_msgs/GoalStatus:kinova_msgs/Arm_KinovaPoseActionResult:kinova_msgs/Arm_KinovaPoseResult:actionlib_msgs/GoalID:kinova_msgs/Arm_KinovaPoseActionGoal:std_msgs/Header:kinova_msgs/KinovaPose"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" "kinova_msgs/KinovaPose:actionlib_msgs/GoalID:kinova_msgs/Arm_KinovaPoseGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" "kinova_msgs/Arm_KinovaPoseGoal:actionlib_msgs/GoalID:kinova_msgs/KinovaPose:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" "actionlib_msgs/GoalID:kinova_msgs/KinovaPose:actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/Arm_KinovaPoseResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" "actionlib_msgs/GoalStatus:kinova_msgs/Arm_KinovaPoseResult:actionlib_msgs/GoalID:std_msgs/Header:kinova_msgs/KinovaPose"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" "actionlib_msgs/GoalID:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" "kinova_msgs/Arm_KinovaPoseFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header:kinova_msgs/KinovaPose"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" "kinova_msgs/KinovaPose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" "kinova_msgs/KinovaPose"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" "kinova_msgs/KinovaPose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" "kinova_msgs/KinovaPose"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" "kinova_msgs/KinovaPose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" "kinova_msgs/KinovaPose"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" "kinova_msgs/SetFingersPositionActionGoal:actionlib_msgs/GoalID:kinova_msgs/SetFingersPositionGoal:kinova_msgs/SetFingersPositionFeedback:kinova_msgs/FingerPosition:actionlib_msgs/GoalStatus:kinova_msgs/SetFingersPositionResult:kinova_msgs/SetFingersPositionActionResult:std_msgs/Header:kinova_msgs/SetFingersPositionActionFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" "actionlib_msgs/GoalStatus:kinova_msgs/SetFingersPositionActionResult:kinova_msgs/SetFingersPositionGoal:kinova_msgs/FingerPosition:kinova_msgs/SetFingersPositionFeedback:kinova_msgs/SetFingersPositionResult:actionlib_msgs/GoalID:std_msgs/Header:kinova_msgs/SetFingersPositionActionFeedback:kinova_msgs/SetFingersPositionActionGoal"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" "actionlib_msgs/GoalID:kinova_msgs/SetFingersPositionGoal:kinova_msgs/FingerPosition:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" "kinova_msgs/SetFingersPositionGoal:kinova_msgs/FingerPosition:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" "actionlib_msgs/GoalID:kinova_msgs/FingerPosition:actionlib_msgs/GoalStatus:kinova_msgs/SetFingersPositionResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" "actionlib_msgs/GoalStatus:kinova_msgs/FingerPosition:kinova_msgs/SetFingersPositionResult:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" "actionlib_msgs/GoalID:kinova_msgs/SetFingersPositionFeedback:kinova_msgs/FingerPosition:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" "actionlib_msgs/GoalStatus:kinova_msgs/FingerPosition:kinova_msgs/SetFingersPositionFeedback:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" "kinova_msgs/FingerPosition"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" "kinova_msgs/FingerPosition"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" "kinova_msgs/FingerPosition"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" "kinova_msgs/FingerPosition"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" "kinova_msgs/FingerPosition"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" "kinova_msgs/FingerPosition"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" "geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" "geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" "geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" "geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" ""
 )
 
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" ""
 )
 
 #
@@ -269,297 +269,297 @@ add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_cpp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
@@ -577,103 +577,103 @@ add_custom_target(kinova_msgs_generate_messages_cpp
 add_dependencies(kinova_msgs_generate_messages kinova_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_cpp _kinova_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -686,297 +686,297 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kinova_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_eus(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
@@ -994,103 +994,103 @@ add_custom_target(kinova_msgs_generate_messages_eus
 add_dependencies(kinova_msgs_generate_messages kinova_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_eus _kinova_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1103,297 +1103,297 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kinova_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_lisp(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
@@ -1411,103 +1411,103 @@ add_custom_target(kinova_msgs_generate_messages_lisp
 add_dependencies(kinova_msgs_generate_messages kinova_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_lisp _kinova_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1520,297 +1520,297 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kinova_msgs_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_nodejs(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
@@ -1828,103 +1828,103 @@ add_custom_target(kinova_msgs_generate_messages_nodejs
 add_dependencies(kinova_msgs_generate_messages kinova_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_nodejs _kinova_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1937,297 +1937,297 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kinova_msgs_generate_messages_nodej
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 
 ### Generating Services
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_srv_py(kinova_msgs
-  "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
@@ -2245,103 +2245,103 @@ add_custom_target(kinova_msgs_generate_messages_py
 add_dependencies(kinova_msgs_generate_messages kinova_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointAngles.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/JointTorque.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingers.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/PoseVelocityWithFingerVelocity.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/msg/CartesianForce.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Start.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/Stop.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/HomeArm.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetForceControlParams.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetEndEffectorOffset.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetNullSpaceModeState.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlMode.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/SetTorqueControlParameters.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ClearTrajectories.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/ZeroTorques.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/AddPoseToCartesianTrajectory.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/daniel/Desktop/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova/src/kinova-ros/kinova_msgs/srv/RunCOMParametersEstimation.srv" NAME_WE)
 add_dependencies(kinova_msgs_generate_messages_py _kinova_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
