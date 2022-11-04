@@ -30,7 +30,7 @@ class Scullion():
     # --------------------------- BUCLE DE CONTROL -------------------------
     def show(self):
         self.Open()
-        self.Place_on_red()
+        self.Pick_up_the_block()
         self.Grab()
         self.Move_to_initial_position()
     # ----------------------------------------------------------------------
@@ -91,17 +91,17 @@ class Scullion():
         self.arm.set_goal_tolerance(0.01)
 
         waypoint1 = Pose()
-        waypoint1.position.x = 0.5
-        waypoint1.position.y = 0
+        waypoint1.position.x = -0.3
+        waypoint1.position.y = -0.3
         waypoint1.position.z = arm_current_pose.pose.position.z
         waypoint1.orientation = arm_current_pose.pose.orientation  
 
         waypoints.append(copy.deepcopy(waypoint1))
 
         target_pose = Pose()
-        target_pose.position.x = 0.5
-        target_pose.position.y = 0
-        target_pose.position.z = 0.04
+        target_pose.position.x = -0.3
+        target_pose.position.y = -0.3
+        target_pose.position.z = 0.06
         target_pose.orientation = arm_current_pose.pose.orientation  
 
         waypoints.append(copy.deepcopy(target_pose))
