@@ -13,8 +13,17 @@ import copy
 import rospy
 from geometry_msgs.msg import Pose
 import moveit_commander
+import numpy as np
 
 # block_pose = Pose()
+
+def get_quaternion_from_euler(roll, pitch, yaw):
+  qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+  qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
+  qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
+  qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+ 
+  return [qx, qy, qz, qw]
 
 class Scullion():
 
@@ -25,15 +34,52 @@ class Scullion():
 
         self.arm = moveit_commander.MoveGroupCommander("arm")
         self.gripper = moveit_commander.MoveGroupCommander("gripper")
-        self.Move_to_initial_position()
+        
        
     # --------------------------- BUCLE DE CONTROL -------------------------
     def show(self):
         self.Open()
-        self.Pick_up_the_block()
+        self.Move_to_initial_position()
+        self.test()
         self.Grab()
+        
         self.Move_to_initial_position()
     # ----------------------------------------------------------------------
+    
+    def test(self):
+        waypoints = []
+        arm_current_pose = self.arm.get_current_pose()
+        self.arm.clear_pose_targets()
+        self.arm.set_goal_tolerance(0.01)
+
+        waypoint1 = Pose()
+        waypoint1.position.x = 0
+        waypoint1.position.y = 0.58
+        waypoint1.position.z = 0.5
+        
+        x,y,z,w = get_quaternion_from_euler(-1.57, 0, 0)
+        
+        waypoint1.orientation.x = x
+        waypoint1.orientation.y = y
+        waypoint1.orientation.z = z
+        waypoint1.orientation.w = w
+        waypoints.append(copy.deepcopy(waypoint1))
+        
+        waypoint2 = Pose()
+        waypoint2.position.x = 0
+        waypoint2.position.y = 0.4
+        waypoint2.position.z = 0.5
+        
+        x,y,z,w = get_quaternion_from_euler(3.14, 0, 0)
+        
+        waypoint2.orientation.x = x
+        waypoint2.orientation.y = y
+        waypoint2.orientation.z = z
+        waypoint2.orientation.w = w
+        # waypoints.append(copy.deepcopy(waypoint2))
+        
+        (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
+        self.arm.execute(plan, wait=True)
     
     def Place_on_red(self):
 
@@ -47,22 +93,40 @@ class Scullion():
         waypoint1 = Pose()
         waypoint1.position.x = arm_current_pose.pose.position.x
         waypoint1.position.y = arm_current_pose.pose.position.y
-        waypoint1.position.z = 0.2
+        waypoint1.position.z = 0.5
         waypoint1.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint1))
 
         waypoint2 = Pose()
-        waypoint2.position.x = 0.5
-        waypoint2.position.y = -0.3
-        waypoint2.position.z = 0.2
-        waypoint2.orientation = arm_current_pose.pose.orientation  
+        waypoint2.position.x = 0
+        waypoint2.position.y = -0.2
+        waypoint2.position.z = 0.5
+        x,y,z,w = get_quaternion_from_euler(0, 1.57, 1.57)
+        
+        print("----------------------")
+        print(x)
+        print(y)
+        print(z)
+        print(w)
+        print("----------------------")
+    
+        print(arm_current_pose.pose.orientation)
+        waypoint2.orientation.x = x
+        waypoint2.orientation.y = y
+        waypoint2.orientation.z = z
+        waypoint2.orientation.w = w 
+        #waypoint2.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint2))
 
         target_pose = Pose()
-        target_pose.position.x = 0.5
-        target_pose.position.y = -0.3
-        target_pose.position.z = 0.04
-        target_pose.orientation = arm_current_pose.pose.orientation  
+        target_pose.position.x = 0
+        target_pose.position.y = -0.34
+        target_pose.position.z = 0.5
+        target_pose.orientation.x = x
+        target_pose.orientation.y = y
+        target_pose.orientation.z = z
+        target_pose.orientation.w = w 
+        #target_pose.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(target_pose))
 
         print("target pose")

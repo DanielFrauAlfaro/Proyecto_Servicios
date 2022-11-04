@@ -146,7 +146,7 @@
 
     </xacro:macro>
 
-    <!-- camera -->
-    <xacro:camera_gazebo_v0 />
+    <!-- camera
+    <xacro:camera_gazebo_v0 /-->
 
 </robot>
