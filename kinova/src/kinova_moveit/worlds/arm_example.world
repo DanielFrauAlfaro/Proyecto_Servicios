@@ -4,76 +4,266 @@
     <light type="directional" name="my_light">
       <pose>0 0 10 0 0 0</pose>
     </light>
-    <!--<include>
+    <include>
       <uri>model://sun</uri>
-    </include>-->
+    </include>
     <include>
       <uri>model://ground_plane</uri>
     </include>
-    <include>
-      <name>aruco_i_block</name>
-      <uri>model://aruco_block_long</uri>
-      <static>false</static>
-      <pose>0.5 0 0.25 0 0 0</pose>
-    </include>
-    <include>
-      <name>aruco_i_block_2</name>
-      <uri>model://aruco_block_long_2</uri>
-      <static>false</static>
-      <pose>0.5 -0.3 0.25 0 0 0</pose>
-    </include>
-    <model name='unit_cylinder'>
-      <pose>-0.3 -0.3 0.025 0 -0 0</pose>
-      <static>false</static>
+    <model name='bookshelf'>
+      <static>1</static>
       <link name='link'>
         <inertial>
           <mass>1</mass>
-          <inertia>
-            <ixx>0</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0</izz>
-          </inertia>
-          <pose>0 0 0 0 0 0</pose>
         </inertial>
-        <collision name='collision'>
+        <collision name='back'>
+          <pose>0 0.005 0.6 0 -0 0</pose>
           <geometry>
-            <cylinder>
-              <radius>0.05</radius>
-              <length>0.1</length>
-            </cylinder>
+            <box>
+              <size>0.9 0.01 1.2</size>
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
             <contact>
               <ode/>
             </contact>
-            <bounce/>
-            <friction>
-              <ode>
-                <mu>1.2</mu>
-                <mu2>1.2</mu2>
-              </ode>
-            </friction>
           </surface>
         </collision>
-        <visual name='visual'>
+        <visual name='visual1'>
+          <pose>0 0.005 0.6 0 -0 0</pose>
           <geometry>
-            <cylinder>
-              <radius>0.05</radius>
-              <length>0.1</length>
-            </cylinder>
+            <box>
+              <size>0.9 0.01 1.2</size>
+            </box>
           </geometry>
           <material>
             <script>
-              <name>Gazebo/Red</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
             </script>
           </material>
         </visual>
+        <collision name='left_side'>
+          <pose>0.45 -0.195 0.6 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.4 1.2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual2'>
+          <pose>0.45 -0.195 0.6 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.4 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='right_side'>
+          <pose>-0.45 -0.195 0.6 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.4 1.2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual3'>
+          <pose>-0.45 -0.195 0.6 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.4 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='bottom'>
+          <pose>0 -0.195 0.03 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.06</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual4'>
+          <pose>0 -0.195 0.03 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.06</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='top'>
+          <pose>0 -0.195 1.19 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual5'>
+          <pose>0 -0.195 1.19 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='low_shelf'>
+          <pose>0 -0.195 0.43 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual6'>
+          <pose>0 -0.195 0.43 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='high_shelf'>
+          <pose>0 -0.195 0.8 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual7'>
+          <pose>0 -0.195 0.8 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.88 0.4 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
       </link>
+      <pose>0 0.9 0 0 -0 0</pose>
     </model>
+
+    <include>
+      <name>aruco_i_block</name>
+      <uri>model://aruco_block_long</uri>
+      <static>0</static>
+      <pose> 0 0.55 0.9 0 1.57 -1.57</pose>
+    </include>
+
+    <include>
+      <name>aruco_i_block_2</name>
+      <uri>model://aruco_block_long_2</uri>
+      <static>0</static>
+      <pose>0.25 0.55 0.9 0 1.57 -1.57</pose>
+    </include>
+
   </world>
 </sdf>
