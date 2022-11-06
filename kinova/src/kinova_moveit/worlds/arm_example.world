@@ -10,6 +10,7 @@
     <include>
       <uri>model://ground_plane</uri>
     </include>
+    <!--
     <model name='bookshelf'>
       <static>1</static>
       <link name='link'>
@@ -249,20 +250,20 @@
         <gravity>1</gravity>
       </link>
       <pose>0 0.9 0 0 -0 0</pose>
-    </model>
+    </model> -->
 
     <include>
       <name>aruco_i_block</name>
       <uri>model://aruco_block_long</uri>
       <static>0</static>
-      <pose> 0 0.6 0.5 0 1.57 -1.57</pose>
+      <pose> 0 0.5 0 0 0 0</pose> <!--0 1.57 -1.57 -->
     </include>
 
     <include>
       <name>aruco_i_block_2</name>
       <uri>model://aruco_block_long_2</uri>
       <static>0</static>
-      <pose>0.25 0.6 0.5 0 1.57 -1.57</pose>
+      <pose>0.5 0.5 0 0 0 0</pose> <!-- 0 1.57 -1.57 -->
     </include>
 
   </world>
