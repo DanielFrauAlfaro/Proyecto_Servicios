@@ -182,7 +182,13 @@
         <origin xyz="0.022 0 0" />
         <xacro:inertia_cylinder height="0.03"  radius = "0.004" mass="0.01"/>
     </inertial>
-
+    <contact>
+      <lateral_friction value="1.0"/>
+      <rolling_friction value="1.0"/>
+      <inertia_scaling value="3.0"/>
+      <contact_cfm value="0.0"/>
+      <contact_erp value="1.0"/>
+    </contact>
   </xacro:unless>
 
   <!-- finger_distal = 58 -->
@@ -192,6 +198,13 @@
         <origin xyz="0.022 0 0" />
         <xacro:inertia_cylinder height="0.03"  radius = "0.004" mass="0.01"/>
     </inertial>
+    <contact>
+      <lateral_friction value="1.0"/>
+      <rolling_friction value="1.0"/>
+      <inertia_scaling value="3.0"/>
+      <contact_cfm value="0.0"/>
+      <contact_erp value="1.0"/>
+    </contact>
   </xacro:unless>
 
 </xacro:macro>
