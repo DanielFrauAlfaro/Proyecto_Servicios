@@ -1,0 +1,8 @@
+prefix=/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel
+
+Name: kinova_control
+Description: Description of kinova_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
