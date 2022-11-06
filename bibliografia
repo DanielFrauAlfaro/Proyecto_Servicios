@@ -1,8 +1,0 @@
----------- Bibliografía --------
-
-Especificar Pose en URDF: http://sdformat.org/tutorials?tut=specify_pose
-Documentación URDF: http://wiki.ros.org/urdf/XML/link
-Robotic Toolbox on Python: https://petercorke.github.io/robotics-toolbox-python/intro.html
-  - Install robotic toolbox: 
-Kinova Parameters: https://github.com/JenniferBuehler/jaco-arm-pkgs/blob/master/jaco_arm/jaco_description/doc/DH%20Parameters%20-%20Kinova%20-%201.1.6.pdf
-
