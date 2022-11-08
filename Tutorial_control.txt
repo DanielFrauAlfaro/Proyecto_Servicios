@@ -1,4 +1,4 @@
------------ Tutorial Control -------------- 
+--------------------------- Tutorial Control ------------------------- 
 
 ---> El proceso se ha realizado con ROS Noetic, aunque no debería dar problema para otras distribuciones
 
