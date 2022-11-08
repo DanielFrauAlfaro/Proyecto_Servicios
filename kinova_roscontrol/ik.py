@@ -12,13 +12,9 @@ T_tool = transl(0,0,0.1214)
 
 q = [0.0, 2.9, 1.3 ,-2.07, 1.4, 0.0]
 T = kinova.fkine(q)
-print(T)
+
 sol = kinova.ikine_LM(T,q0 = q)
-print(sol)
-
-a = [1, 2, 3]
-
-print(a[1])
+# print(sol)
 
 traj = rtb.jtraj(kinova.qr, q, 100)
 # kinova.plot(traj.q)
@@ -29,7 +25,14 @@ T0 = SE3(0.6, -0.5, 0.0)
 
 T1 = SE3(0.4, 0.5, 0.2)
 
-Ts = rtb.tools.trajectory.ctraj(T0, T1, len(t))
+# Ts = rtb.tools.trajectory.ctraj(T0, T1, len(t))
 
-sol = kinova.ikine_LM(Ts)   
-kinova.plot(sol.q)
+# sol = kinova.ikine_LM(Ts)   
+# kinova.plot(sol.q)
+
+T = SE3(-0.39, -0.14, 0.09) * SE3.RPY(-178.625, 0.24, 84.517)
+print(T)
+sol = kinova.ikine_LM(T, ilimit=1000, rlimit=1000)  
+print(sol)
+
+kinova.teach()
