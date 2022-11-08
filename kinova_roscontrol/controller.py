@@ -25,24 +25,42 @@ class Controller():
     
     def action(self):
         q = [pi/2, pi, pi ,0.0, 0.0, 0.0]
-        # traj = rtb.jtraj(q,self.model.qr,300)
         
         T0 = self.model.fkine(q)
-        T1 = SE3(0.3, 0, 0.5) * SE3.RPY(0.1, 0.2, 0.3)
-                
-        t = np.arange(0, 1, 0.10)
-        Ts = rtb.tools.trajectory.ctraj(T0, T1, len(t))
+        T1 = SE3(0, 0.5, 0.1)
+        print(T1)
+        q1 = self.model.ikine_LM(T1)
         
-        traj = self.model.ikine_LM(Ts, rlimit=500)   
+        print(q1)
+        
+        print("---------- Cartesian trajectory ---------")
+        t = np.arange(0, 1, 0.20)
+        # Ts = rtb.tools.trajectory.ctraj(T0, T1, len(t))
+        
+        print("------------ Joint trajectory -----------")        
+        # traj = self.model.ikine_LM(Ts, rlimit=500)
+        traj = rtb.jtraj(q,q1.q,300)
+
         print(traj)
         rate = rospy.Rate(20)
         j = 0
-        while not rospy.is_shutdown() and j<len(t):
+        
+        while not rospy.is_shutdown() and j<300:
+            
             for i in range(6):
                 self.publishers[i].publish(traj.q[j,i])
             j = j + 1
             rate.sleep()
-
+    
+    def home(self):
+        q = [pi/2, pi, pi ,0.0, 0.0, 0.0]
+        
+        rate = rospy.Rate(5)
+    
+        for i in range(6):
+            print(i)
+            self.publishers[i].publish(q[i])
+            rate.sleep()
 
 if __name__ == '__main__':
     controller = Controller()
