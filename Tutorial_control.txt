@@ -1,0 +1,58 @@
+----------- Tutorial Control -------------- 
+
+---> El proceso se ha realizado con ROS Noetic, aunque no debería dar problema para otras distribuciones
+
+  - 1. Clonar el repositorio Github con los paquetes del Kinova en el direcotrio "my_project/src". Este paquete está en el directorio
+"kinova" de nuestro repositorio:
+        git clone https://github.com/Kinovarobotics/kinova-ros
+       
+       Instalar ROS-Control:
+        sudo apt-get install ros-$distro-ros-control ros-$distro-ros-controllers
+       
+       Instalar Robotic-Toolbox Python:
+        pip install roboticstoolbox-python 
+       
+  - 2. Desde "my_project" compilar y actualizar el bash:
+        catkin_make & source devel/setup.bash
+
+  - IMPORTANTE: el paquete incorpora varios modelos de robots de la marca Kinova (Mico, Jaco, ...) por lo que cada programa está preparado
+para recibir cualquiera. Así, hay varias condiciones "if" según el nombre del robot. En nuestro caso estaremos usando el j2n6s300, que quiere
+decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis grados de libertad. 
+
+  - 3. Paquetes relevantes en la simulación:
+        3.1. GAZEBO: "kinova_roscontrol/src/kinova-ros/kinova_gazebo": Los paquetes de simulación están en esta carpeta . Ahí hay dos sub-carpetas, "world" y "launch"
+            3.1.1. World: ahí están los modelos del mundo en la simulación de Gazebo. En nuestro caso estamos usando un archivo personalizado para
+          simular el funcionamiento del robot, el "arm_example.world". Ahí se importan elementos básicos como el suelo o una luz, un armario pero está
+          comentado, se indica con la etiqueta "<model>bookshelf</model>". Luego, se incorporan unos objetos para simular los botes manipulables
+            3.1.2. Launch: ahí están los archivos ".launch" que lanzan los programas. El "robot_launch.launch" se encarga de lanzar
+          el modelo del robot, el modelo del mundo y los conroladores. 
+
+            IMPORTANTE: si se ha instalado el repositiorio desde la web original y no desde el Github del proyecto, es importante que a la hora
+          de lanzar los modelos del robot (línea 36 para nuestro robot y 48, 63 y 76 para los demás) de debe eliminar la etiqueta de "ns". Esto lo
+          que provoca es que el robot lance sus topics con un espacio de nombres determinado, lo que provoca que el ROS-Control y Gazebo no detecten
+          las articulaciones, pues no tienen el nombre esperado, por lo que no se consigue cargar el controlador. 
+            Otra opción sería cambiar el controlador para que pudiera aceptar ese espacio de nombres, pero en este caso se ha procedido de esta manera
+
+        3.2. MODELOS: "kinova_roscontrol/src/kinova_description": aquí están los diferentes modelos robots Kinova.
+            3.2.1: Launch: un fichero .launch que se encarga de lanzar el robot en un entorno
+            3.2.2: Meshes: aquí se encuentran los modelados 3D de cada una de las articulaciones de los robots incorporados en el proyecto
+            3.2.3: URDF: en esta carpeta están los archivos de configuración URDF. Estos archivos hacen referencia a los modelados tridimensionales
+          de la anterior carpeta. En estos archivos no solo se importan los modelados sino que se definen inercias, masas y transimisiones, así como
+          colisiones y diferentes uniones entre las piezas. El fichero que nos interesa es el "j2n6s300_standalone.xacro", que es el que se llama desde 
+          el "robot_launch.launch" para importar el modelo del robot en Gazebo
+
+        3.3. CONTROL: "kinova_roscontrol/src/kinova_control": en esta carpeta están los archivos referentes al control del robot.
+            3.3.1: Config: en esta carpeta están los controladores especificados en ROS-Control. En nuestro caso, se ha creado uno personalizado, 
+          más sencillo que los del ejemplo llamado "controlador.yaml". Es importante que se especiquen los nombres de la articulacuón asociada a cada
+          controlador. Igualmente, el nombre que se le da al controlador es el correspondiente al topic donde se envían los comandos de movimiento.
+            3.3.2: Launch: en esta carpeta están los ficheros .launch que se encargan de cargar los controladores del robot. Hay un archivo que carga
+          rqt, pero no se va a usar en el proyecto
+            3.3.3: Src: en esta carpeta hay un programa para mover el robot, pero da problemas para ejecutarlo y el formato no parece ser correcto
+
+  - 4. SIMULACIÓN: para lanzar la simulación se debe ejecutar el comando:
+        roslaunch kinova_gazebo robot_launch.launch
+
+  - 5. CONTROL EN EJECUCIÓN: la ejecución se realiza mediante ROS-Control, por lo que el control se realizará mediante topics. Para ello, se 
+programará en un script de Python llamado "controller.py", ubicado en la raíz del proyecto. Cabe destacar que ROS-Control no admite de base un
+controlador cartesiano, solo se admiten comandos articulares, por lo que se va a utilizar la Robotic-Toolbox de Python por Peter Corke para el cálculo
+de inversas.
