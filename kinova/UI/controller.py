@@ -12,6 +12,7 @@ import copy
 # ROS
 import rospy
 from geometry_msgs.msg import Pose
+from trajectory_msgs.msg import JointTrajectory
 import moveit_commander
 import numpy as np
 
@@ -35,20 +36,16 @@ class Scullion():
         self.arm = moveit_commander.MoveGroupCommander("arm")
         self.gripper = moveit_commander.MoveGroupCommander("gripper")
         
+        self.pub = rospy.Publisher("/arm_controller/command", JointTrajectory, queue_size=10)
+        
        
     # --------------------------- BUCLE DE CONTROL -------------------------
     def show(self):
-        self.Open()
+        
         self.Move_to_initial_position()
-        self.Open()
-        self.Open()
-        self.Open()
+
         self.test()
-        self.Grab()
-        self.test2()
-        self.Open()
-        self.Open()
-        self.Open()
+        
         self.Move_to_initial_position()
     # ----------------------------------------------------------------------
     
@@ -72,11 +69,9 @@ class Scullion():
         waypoint1.orientation = arm_current_pose.pose.orientation
         waypoints.append(copy.deepcopy(waypoint1))
         
-        
-        
         (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
-        self.arm.execute(plan, wait=True)
-        print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+        # self.arm.execute(plan, wait=True)
+        print(plan.joint_trajectory)
     
     def test2(self):
         waypoints = []
