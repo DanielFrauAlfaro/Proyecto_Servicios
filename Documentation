@@ -5,4 +5,7 @@ Documentación URDF: http://wiki.ros.org/urdf/XML/link
 Robotic Toolbox on Python: https://petercorke.github.io/robotics-toolbox-python/intro.html
   - Install robotic toolbox: 
 Kinova Parameters: https://github.com/JenniferBuehler/jaco-arm-pkgs/blob/master/jaco_arm/jaco_description/doc/DH%20Parameters%20-%20Kinova%20-%201.1.6.pdf
-
+RobotMsg MoveIT: http://docs.ros.org/en/noetic/api/moveit_msgs/html/msg/RobotTrajectory.html
+MoveGroup Tutorial MoveIT: http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/doc/move_group_python_interface/move_group_python_interface_tutorial.html
+MoveIT Doc: http://docs.ros.org/en/jade/api/moveit_commander/html/classmoveit__commander_1_1move__group_1_1MoveGroupCommander.html
+Proyecto de ejemplo: https://www.youtube.com/watch?v=_flpwM8yyVM
