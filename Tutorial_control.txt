@@ -56,3 +56,27 @@ decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis g
 programará en un script de Python llamado "controller.py", ubicado en la raíz del proyecto. Cabe destacar que ROS-Control no admite de base un
 controlador cartesiano, solo se admiten comandos articulares, por lo que se va a utilizar la Robotic-Toolbox de Python por Peter Corke para el cálculo
 de inversas.
+
+    LO QUE SE VA A INTENTAR HACER ES USAR EL PLANIFICADOR DE TRAYECTORIAS DE MOVEIT PERO PUBLICANDO LOS DATOS EN LOS TOPICS DE UN CONTROLADOR DE
+POSICIÓN NORMAL.
+    
+    Se ha observado que MoveIT planifica en cartesianas, pero a la hora de pasárselo al robot se pasan a articulares. El inconveniente es que el 
+topic que recibe los comandos (/$(name_group)_controller/command) solo acepta comandos tipo trajectory_msgs/JointTrajectory por lo que hace la ejecución
+de la trayectoria sin supervisión
+    Una alternativa podría ser la de separar los puntos y hacer la trayectoria punto por punto, aunque no seguiría el propósito del controlador y 
+sería muy costoso computacionalmente separar cada punto y asignarlo a otro mensaje.
+    Por lo tanto, se va a PROBAR a usar el planificador en cartesianas, computarlas para pasarlas a articulares (MoveIT) y usar un controlador 
+articular para mover el robot (ROS-Control) publicando en los topics del controlador correspondientes. 
+
+    VENTAJAS MOVEIT:                                                    VENTAJAS ROS-CONTROL + ROBOTIC TOOLBX:
+      - Fácil de usar y planificar trayectorias                           - Control de trayectorias articulares
+      - Capacidad de modelar cualquier robot en URDF                      - Uso de mayor variedad de controladores (posición, velocidad, par, ...)
+                     
+    DESVENTAJAS MOVEIT:                                                 DESVENTAJAS ROS-CONTROL + ROBOTIC TOOLBX:
+      - Solo permite ejecución de trayectorias enteras                    - No permite trayectrias cartesianas directamente
+    (aunque se podría modificar para hacerlo punto por punto -->          - Cálculo de inversas y posiciones ineficiente (ikine_LM)
+    mucho trabajo)
+      - NO permite el control de trayectorias articular
+      - No permite detener la ejecución
+
+    Al juntar estas dos herramientas se tiene un control articular con la planificación de trayectorias
