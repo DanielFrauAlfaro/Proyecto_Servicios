@@ -3,10 +3,10 @@
   <name>kinova_moveit</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the j2s6s300 with the MoveIt Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the j2n6s300 with the MoveIt Motion Planning Framework
   </description>
-  <author email="robo@yahoo.com">robot_mania</author>
-  <maintainer email="robo@yahoo.com">robot_mania</maintainer>
+  <author email="danielfraualfa@gmail.com">Daniel</author>
+  <maintainer email="danielfraualfa@gmail.com">Daniel</maintainer>
 
   <license>BSD</license>
 
