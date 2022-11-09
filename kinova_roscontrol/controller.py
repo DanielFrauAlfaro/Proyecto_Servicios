@@ -8,6 +8,8 @@ from math import pi
 from std_msgs.msg import Float64
 import numpy as np
 from spatialmath import *
+from geometry_msgs.msg import Pose
+import moveit_commander
 
 class Controller():
     def __init__(self):
@@ -22,7 +24,9 @@ class Controller():
             self.publishers.append(rospy.Publisher("/j2n6s300_joint_finger_tip_" + str(j) + "_controller/command", Float64,queue_size=10))
             
         self.model = rtb.models.DH.Jaco()
-    
+        self.arm = moveit_commander.MoveGroupCommander("arm")
+        self.gripper = moveit_commander.MoveGroupCommander("gripper")
+        
     def action(self):
         q = [pi/2, pi, pi ,0.0, 0.0, 0.0]
         
@@ -64,4 +68,4 @@ class Controller():
 
 if __name__ == '__main__':
     controller = Controller()
-    controller.action()
+    # controller.action()
