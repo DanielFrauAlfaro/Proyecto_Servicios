@@ -256,14 +256,14 @@
       <name>aruco_i_block</name>
       <uri>model://aruco_block_long</uri>
       <static>0</static>
-      <pose> 0 0.5 0 0 0 0</pose> <!--0 1.57 -1.57 -->
+      <pose> 0.5 0 0 0 0 0</pose> <!--0 1.57 -1.57 -->
     </include>
 
     <include>
       <name>aruco_i_block_2</name>
       <uri>model://aruco_block_long_2</uri>
       <static>0</static>
-      <pose>0.5 0.5 0 0 0 0</pose> <!-- 0 1.57 -1.57 -->
+      <pose>0.3 0.3 0 0 0 0</pose> <!-- 0 1.57 -1.57 -->
     </include>
 
   </world>

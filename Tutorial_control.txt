@@ -12,6 +12,11 @@
        Instalar Robotic-Toolbox Python:
         pip install roboticstoolbox-python 
        
+       Instalar MoveIT:
+        sudo apt install ros-noetic-moveit-core
+        sudo apt install ros-noetic-moveit-ros-move-group
+        sudo apt install ros-noetic-moveit 
+       
   - 2. Desde "my_project" compilar y actualizar el bash:
         catkin_make & source devel/setup.bash
 
