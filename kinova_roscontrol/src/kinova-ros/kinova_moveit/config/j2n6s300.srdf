@@ -29,6 +29,14 @@
         <joint name="j2n6s300_joint_5" value="0"/>
         <joint name="j2n6s300_joint_6" value="0"/>
     </group_state>
+    <group_state name="ready" group="arm_kinvoa">
+        <joint name="j2n6s300_joint_1" value="0"/>
+        <joint name="j2n6s300_joint_2" value="3.5135"/>
+        <joint name="j2n6s300_joint_3" value="4.7716"/>
+        <joint name="j2n6s300_joint_4" value="0.8852"/>
+        <joint name="j2n6s300_joint_5" value="-2.3084"/>
+        <joint name="j2n6s300_joint_6" value="1.1282"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="end_effector" parent_link="j2n6s300_end_effector" group="gripper_kinova"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->

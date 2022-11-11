@@ -13,7 +13,7 @@
   </include>
 
   <!-- send robot urdf to param server -->
-  <param name="robot_description" command="xacro  '$(find kinova_description)/urdf/j2n6s300_standalone.xacro'" />
+  <param name="robot_description" textfile="$(find kinova_moveit)/config/gazebo_j2n6s300.urdf" />
 
   <!-- unpause only after loading robot model -->
   <arg name="unpause" value="$(eval '' if arg('paused') else '-unpause')" />
