@@ -13,6 +13,7 @@
         pip install roboticstoolbox-python 
        
 <<<<<<< HEAD
+<<<<<<< HEAD
        Instalar MoveIT:
         sudo apt install ros-noetic-moveit-core
         sudo apt install ros-noetic-moveit-ros-move-group
@@ -22,6 +23,8 @@
 #############################################################################################################################################
 
 
+=======
+>>>>>>> parent of 814878d (Instalar MoveIT)
 =======
 >>>>>>> parent of 814878d (Instalar MoveIT)
   - 2. Desde "my_project" compilar y actualizar el bash:
