@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/bui
 include kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmPoseFeedback.dir/progress.make
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmPoseFeedback:
-	cd /home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/build/kinova-ros/kinova_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kinova_msgs /home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/PoseStamped
+	cd /home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/build/kinova-ros/kinova_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kinova_msgs /home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg geometry_msgs/PoseStamped:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion
 
 _kinova_msgs_generate_messages_check_deps_ArmPoseFeedback: kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmPoseFeedback
 _kinova_msgs_generate_messages_check_deps_ArmPoseFeedback: kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmPoseFeedback.dir/build.make

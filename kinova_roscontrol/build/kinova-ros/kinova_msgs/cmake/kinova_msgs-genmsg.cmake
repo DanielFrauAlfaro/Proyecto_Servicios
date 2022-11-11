@@ -64,22 +64,22 @@ add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" "kinova_msgs/ArmJointAnglesFeedback:kinova_msgs/ArmJointAnglesResult:std_msgs/Header:kinova_msgs/ArmJointAnglesActionResult:actionlib_msgs/GoalID:kinova_msgs/JointAngles:kinova_msgs/ArmJointAnglesActionFeedback:actionlib_msgs/GoalStatus:kinova_msgs/ArmJointAnglesActionGoal:kinova_msgs/ArmJointAnglesGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg" "actionlib_msgs/GoalStatus:kinova_msgs/ArmJointAnglesFeedback:kinova_msgs/ArmJointAnglesResult:kinova_msgs/ArmJointAnglesActionGoal:std_msgs/Header:kinova_msgs/ArmJointAnglesGoal:kinova_msgs/ArmJointAnglesActionResult:actionlib_msgs/GoalID:kinova_msgs/JointAngles:kinova_msgs/ArmJointAnglesActionFeedback"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:kinova_msgs/JointAngles:kinova_msgs/ArmJointAnglesGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg" "kinova_msgs/ArmJointAnglesGoal:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/JointAngles"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" "kinova_msgs/ArmJointAnglesResult:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/JointAngles:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg" "actionlib_msgs/GoalStatus:kinova_msgs/ArmJointAnglesResult:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/JointAngles"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" "kinova_msgs/ArmJointAnglesFeedback:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/JointAngles:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg" "actionlib_msgs/GoalStatus:kinova_msgs/ArmJointAnglesFeedback:std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/JointAngles"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg" NAME_WE)
@@ -99,57 +99,57 @@ add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg" "kinova_msgs/ArmPoseResult:std_msgs/Header:kinova_msgs/ArmPoseFeedback:kinova_msgs/ArmPoseActionGoal:kinova_msgs/ArmPoseActionFeedback:actionlib_msgs/GoalID:geometry_msgs/Point:kinova_msgs/ArmPoseGoal:geometry_msgs/Quaternion:actionlib_msgs/GoalStatus:geometry_msgs/Pose:geometry_msgs/PoseStamped:kinova_msgs/ArmPoseActionResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg" "kinova_msgs/ArmPoseActionResult:actionlib_msgs/GoalStatus:kinova_msgs/ArmPoseActionFeedback:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:kinova_msgs/ArmPoseFeedback:std_msgs/Header:kinova_msgs/ArmPoseResult:geometry_msgs/Pose:actionlib_msgs/GoalID:geometry_msgs/Point:kinova_msgs/ArmPoseActionGoal:kinova_msgs/ArmPoseGoal"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" "std_msgs/Header:actionlib_msgs/GoalID:geometry_msgs/Point:kinova_msgs/ArmPoseGoal:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg" "geometry_msgs/PoseStamped:std_msgs/Header:geometry_msgs/Pose:actionlib_msgs/GoalID:geometry_msgs/Point:geometry_msgs/Quaternion:kinova_msgs/ArmPoseGoal"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" "kinova_msgs/ArmPoseResult:std_msgs/Header:actionlib_msgs/GoalID:geometry_msgs/Point:geometry_msgs/Quaternion:actionlib_msgs/GoalStatus:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg" "actionlib_msgs/GoalStatus:geometry_msgs/PoseStamped:std_msgs/Header:kinova_msgs/ArmPoseResult:geometry_msgs/Pose:actionlib_msgs/GoalID:geometry_msgs/Point:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" "std_msgs/Header:kinova_msgs/ArmPoseFeedback:actionlib_msgs/GoalID:geometry_msgs/Point:geometry_msgs/Quaternion:actionlib_msgs/GoalStatus:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg" "actionlib_msgs/GoalStatus:geometry_msgs/PoseStamped:kinova_msgs/ArmPoseFeedback:std_msgs/Header:geometry_msgs/Pose:actionlib_msgs/GoalID:geometry_msgs/Point:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg" "geometry_msgs/PoseStamped:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg" "geometry_msgs/PoseStamped:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg" "geometry_msgs/PoseStamped:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" "kinova_msgs/Arm_KinovaPoseGoal:std_msgs/Header:kinova_msgs/Arm_KinovaPoseFeedback:kinova_msgs/Arm_KinovaPoseActionFeedback:kinova_msgs/Arm_KinovaPoseActionResult:actionlib_msgs/GoalID:kinova_msgs/Arm_KinovaPoseActionGoal:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseResult:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg" "actionlib_msgs/GoalStatus:kinova_msgs/Arm_KinovaPoseActionResult:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseActionFeedback:std_msgs/Header:kinova_msgs/Arm_KinovaPoseResult:kinova_msgs/Arm_KinovaPoseFeedback:kinova_msgs/Arm_KinovaPoseActionGoal:actionlib_msgs/GoalID:kinova_msgs/Arm_KinovaPoseGoal"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg" "std_msgs/Header:kinova_msgs/KinovaPose:actionlib_msgs/GoalID:kinova_msgs/Arm_KinovaPoseGoal"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" "std_msgs/Header:actionlib_msgs/GoalID:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseResult:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg" "actionlib_msgs/GoalStatus:kinova_msgs/KinovaPose:std_msgs/Header:kinova_msgs/Arm_KinovaPoseResult:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" "std_msgs/Header:kinova_msgs/Arm_KinovaPoseFeedback:actionlib_msgs/GoalID:kinova_msgs/KinovaPose:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg" "actionlib_msgs/GoalStatus:kinova_msgs/KinovaPose:std_msgs/Header:kinova_msgs/Arm_KinovaPoseFeedback:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg" NAME_WE)
@@ -169,22 +169,22 @@ add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" "kinova_msgs/SetFingersPositionActionFeedback:kinova_msgs/SetFingersPositionGoal:kinova_msgs/SetFingersPositionActionGoal:kinova_msgs/SetFingersPositionFeedback:std_msgs/Header:kinova_msgs/FingerPosition:kinova_msgs/SetFingersPositionActionResult:kinova_msgs/SetFingersPositionResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg" "actionlib_msgs/GoalStatus:kinova_msgs/SetFingersPositionGoal:std_msgs/Header:kinova_msgs/FingerPosition:kinova_msgs/SetFingersPositionResult:actionlib_msgs/GoalID:kinova_msgs/SetFingersPositionFeedback:kinova_msgs/SetFingersPositionActionGoal:kinova_msgs/SetFingersPositionActionResult:kinova_msgs/SetFingersPositionActionFeedback"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:kinova_msgs/SetFingersPositionGoal:kinova_msgs/FingerPosition"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg" "std_msgs/Header:kinova_msgs/SetFingersPositionGoal:kinova_msgs/FingerPosition:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" "std_msgs/Header:kinova_msgs/SetFingersPositionResult:kinova_msgs/FingerPosition:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/FingerPosition:kinova_msgs/SetFingersPositionResult:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" NAME_WE)
 add_custom_target(_kinova_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" "kinova_msgs/SetFingersPositionFeedback:std_msgs/Header:kinova_msgs/FingerPosition:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kinova_msgs" "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/FingerPosition:actionlib_msgs/GoalID:kinova_msgs/SetFingersPositionFeedback"
 )
 
 get_filename_component(_filename "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg" NAME_WE)
@@ -325,25 +325,25 @@ _generate_msg_cpp(kinova_msgs
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
@@ -367,67 +367,67 @@ _generate_msg_cpp(kinova_msgs
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
@@ -451,25 +451,25 @@ _generate_msg_cpp(kinova_msgs
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_cpp(kinova_msgs
@@ -742,25 +742,25 @@ _generate_msg_eus(kinova_msgs
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
@@ -784,67 +784,67 @@ _generate_msg_eus(kinova_msgs
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
@@ -868,25 +868,25 @@ _generate_msg_eus(kinova_msgs
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_eus(kinova_msgs
@@ -1159,25 +1159,25 @@ _generate_msg_lisp(kinova_msgs
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
@@ -1201,67 +1201,67 @@ _generate_msg_lisp(kinova_msgs
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
@@ -1285,25 +1285,25 @@ _generate_msg_lisp(kinova_msgs
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_lisp(kinova_msgs
@@ -1576,25 +1576,25 @@ _generate_msg_nodejs(kinova_msgs
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
@@ -1618,67 +1618,67 @@ _generate_msg_nodejs(kinova_msgs
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
@@ -1702,25 +1702,25 @@ _generate_msg_nodejs(kinova_msgs
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_nodejs(kinova_msgs
@@ -1993,25 +1993,25 @@ _generate_msg_py(kinova_msgs
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmJointAnglesFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/JointAngles.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
@@ -2035,67 +2035,67 @@ _generate_msg_py(kinova_msgs
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
+  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/ArmPoseFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/KinovaPose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/Arm_KinovaPoseFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
@@ -2119,25 +2119,25 @@ _generate_msg_py(kinova_msgs
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionGoal.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs
   "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_msgs/msg/FingerPosition.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/kinova_msgs/msg/SetFingersPositionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kinova_msgs
 )
 _generate_msg_py(kinova_msgs

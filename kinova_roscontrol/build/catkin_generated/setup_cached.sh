@@ -8,9 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/build'
-export PYTHONPATH="/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src:$ROS_PACKAGE_PATH"
