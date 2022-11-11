@@ -17,6 +17,10 @@
         sudo apt install ros-noetic-moveit-ros-move-group
         sudo apt install ros-noetic-moveit 
        
+
+#############################################################################################################################################
+
+
   - 2. Desde "my_project" compilar y actualizar el bash:
         catkin_make & source devel/setup.bash
 
@@ -85,3 +89,9 @@ articular para mover el robot (ROS-Control) publicando en los topics del control
       - No permite detener la ejecución
 
     Al juntar estas dos herramientas se tiene un control articular con la planificación de trayectorias
+
+    Primero se va a hacer el control con MoveIT para definir mejor las posiciones finales, luego se cogerán esas posiciones para el control de
+posición directo.
+    El problema que se tuvo al calcular la cinemática inversa con la Robotic-Toolbox de Peter Corke de Python era que la posicición de la que se
+partía (el brazo complemente estirado) era una singularidad, por lo que al posicionarlo en otra con mayor manipulabilidad de las articulaciones
+se conseguía planificar y realizar el 100% de la trayectoria programada 
