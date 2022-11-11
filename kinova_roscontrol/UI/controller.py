@@ -32,7 +32,7 @@ class Scullion():
         # self.ui = Ui_Form()
         # self.ui.setupUi(self)
 
-        self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
+        self.arm = moveit_commander.MoveGroupCommander("arm_kinvoa")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
         
        
@@ -92,8 +92,8 @@ class Scullion():
 
         target_pose = Pose()
         target_pose.position.x = 0
-        target_pose.position.y = -0.34
-        target_pose.position.z = 0.5
+        target_pose.position.y = -0.5
+        target_pose.position.z = 0.06
 
         target_pose.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(target_pose))
