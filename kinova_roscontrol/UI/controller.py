@@ -10,6 +10,7 @@ from controller_window import Ui_Form
 '''
 import copy
 import os
+import time
 
 # ROS
 import rospy
@@ -53,7 +54,23 @@ class Scullion():
         
         self.Move_to_initial_position()
 
+        time.sleep(2)
+        
         self.test2()
+        
+        time.sleep(2)
+        
+        self.Grab()
+        
+        time.sleep(2)
+        
+        self.Place_on_red()
+        
+        time.sleep(2)
+        
+        self.Open()
+        
+        time.sleep(2)
         
         self.Move_to_initial_position()
     # ----------------------------------------------------------------------
@@ -104,7 +121,7 @@ class Scullion():
         waypoint1 = Pose()
         waypoint1.position.x = arm_current_pose.pose.position.x
         waypoint1.position.y = arm_current_pose.pose.position.y
-        waypoint1.position.z = 0.5
+        waypoint1.position.z = 0.3
         waypoint1.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint1))
 
@@ -112,7 +129,7 @@ class Scullion():
         waypoint2 = Pose()
         waypoint2.position.x = 0
         waypoint2.position.y = -0.5
-        waypoint2.position.z = 0.5
+        waypoint2.position.z = 0.3
     
         waypoint2.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint2))
@@ -129,12 +146,12 @@ class Scullion():
         self.arm.execute(plan, wait=True)
 
     def Grab(self):
-        self.gripper.set_goal_tolerance(0.01)
+        self.gripper.set_goal_tolerance(0.05)
         self.gripper.set_named_target("close")
         self.gripper.go()
 
     def Open(self):
-        self.gripper.set_goal_tolerance(0.01)
+        self.gripper.set_goal_tolerance(0.05)
         self.gripper.set_named_target("open")
         self.gripper.go()
 
