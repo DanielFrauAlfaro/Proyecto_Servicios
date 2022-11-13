@@ -9,13 +9,17 @@ from PyQt5.Qt import *
 from controller_window import Ui_Form
 '''
 import copy
+import os
+
 # ROS
 import rospy
 from geometry_msgs.msg import Pose
 import moveit_commander
 import numpy as np
 
-# block_pose = Pose()
+# Speech recognition
+import speech_recognition as sr
+
 
 def get_quaternion_from_euler(roll, pitch, yaw):
   qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
@@ -32,16 +36,24 @@ class Scullion():
         # self.ui = Ui_Form()
         # self.ui.setupUi(self)
 
-        self.arm = moveit_commander.MoveGroupCommander("arm_kinvoa")
+        self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
+        self.r = sr.Recognizer()
         
-       
+    def controller(self):
+        with sr.Microphone() as micro:
+
+            os.system('clear')
+
+            self.r.adjust_for_ambient_noise(micro)
+            
+            
     # --------------------------- BUCLE DE CONTROL -------------------------
     def show(self):
         
         self.Move_to_initial_position()
 
-        self.test()
+        self.test2()
         
         self.Move_to_initial_position()
     # ----------------------------------------------------------------------
@@ -61,9 +73,24 @@ class Scullion():
         waypoints.append(copy.deepcopy(waypoint1))
         
         (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
+        self.arm.execute(plan, wait=True)  
+          
+    def test2(self):
+        waypoints = []
+        arm_current_pose = self.arm.get_current_pose()
+        self.arm.clear_pose_targets()
+        self.arm.set_goal_tolerance(0.01)
+
+        waypoint1 = Pose()
+        waypoint1.position.x = 0.35
+        waypoint1.position.y = 0.35
+        waypoint1.position.z = 0.06
+
+        waypoint1.orientation = arm_current_pose.pose.orientation
+        waypoints.append(copy.deepcopy(waypoint1))
+        
+        (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
         self.arm.execute(plan, wait=True)
-        print(type(plan))
-    
         
     def Place_on_red(self):
 
@@ -98,19 +125,15 @@ class Scullion():
         target_pose.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(target_pose))
 
-        print("target pose")
-        print(target_pose)
         (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
         self.arm.execute(plan, wait=True)
 
     def Grab(self):
-        print(str(self.gripper.get_current_state()))
         self.gripper.set_goal_tolerance(0.01)
         self.gripper.set_named_target("close")
         self.gripper.go()
 
     def Open(self):
-        print(str(self.gripper.get_current_state()))
         self.gripper.set_goal_tolerance(0.01)
         self.gripper.set_named_target("open")
         self.gripper.go()
@@ -139,8 +162,6 @@ class Scullion():
 
         waypoints.append(copy.deepcopy(target_pose))
 
-        print("target pose")
-        print(target_pose)
         (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
         self.arm.execute(plan, wait=True)
 
