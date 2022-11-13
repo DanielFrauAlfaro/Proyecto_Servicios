@@ -56,7 +56,7 @@ class Scullion():
 
         time.sleep(2)
         
-        self.test2()
+        self.test()
         
         time.sleep(2)
         
@@ -125,6 +125,12 @@ class Scullion():
         waypoint1.orientation = arm_current_pose.pose.orientation  
         waypoints.append(copy.deepcopy(waypoint1))
 
+        waypoint3 = Pose()
+        waypoint3.position.x = 0.3
+        waypoint3.position.y = 0
+        waypoint3.position.z = 0.3
+        waypoint3.orientation = arm_current_pose.pose.orientation  
+        waypoints.append(copy.deepcopy(waypoint3))
 
         waypoint2 = Pose()
         waypoint2.position.x = 0
