@@ -12,21 +12,11 @@
        Instalar Robotic-Toolbox Python:
         pip install roboticstoolbox-python 
        
-<<<<<<< HEAD
-<<<<<<< HEAD
        Instalar MoveIT:
         sudo apt install ros-noetic-moveit-core
         sudo apt install ros-noetic-moveit-ros-move-group
         sudo apt install ros-noetic-moveit 
        
-
-#############################################################################################################################################
-
-
-=======
->>>>>>> parent of 814878d (Instalar MoveIT)
-=======
->>>>>>> parent of 814878d (Instalar MoveIT)
   - 2. Desde "my_project" compilar y actualizar el bash:
         catkin_make & source devel/setup.bash
 
@@ -101,3 +91,6 @@ posición directo.
     El problema que se tuvo al calcular la cinemática inversa con la Robotic-Toolbox de Peter Corke de Python era que la posicición de la que se
 partía (el brazo complemente estirado) era una singularidad, por lo que al posicionarlo en otra con mayor manipulabilidad de las articulaciones
 se conseguía planificar y realizar el 100% de la trayectoria programada 
+
+    Solo con MoveIT funciona bien
+    Se ha hecho un programa que reaccione a la pulsación de las teclas del teclado
