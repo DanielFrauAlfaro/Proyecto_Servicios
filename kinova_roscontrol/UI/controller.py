@@ -11,6 +11,7 @@ from controller_window import Ui_Form
 import copy
 import os
 import time
+from pynput import keyboard as kb
 
 # ROS
 import rospy
@@ -41,40 +42,61 @@ class Scullion():
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
         self.r = sr.Recognizer()
         
-    def controller(self):
-        with sr.Microphone() as micro:
-
-            os.system('clear')
-
-            self.r.adjust_for_ambient_noise(micro)
-            
-            
-    # --------------------------- BUCLE DE CONTROL -------------------------
-    def show(self):
-        
         self.Move_to_initial_position()
+                
+    def select(self, tecla):
+        if(str(tecla) == 'r'):
+            self.grab_red()
+            
+        elif(str(tecla) == 'g'):
+            self.grab_green()
+            
+        elif(str(tecla) == 'b'):
+            self.grab_blue()
+        
 
+    def grab_red(self):
         time.sleep(2)
-        
-        self.test()
-        
-        time.sleep(2)
-        
-        self.Grab()
-        
-        time.sleep(2)
-        
-        self.Place_on_red()
-        
-        time.sleep(2)
-        
         self.Open()
-        
         time.sleep(2)
-        
+        self.test2()
+        time.sleep(2)
+        self.Grab()
+        time.sleep(2)
+        self.Place_on_red()
+        time.sleep(2)
+        self.Open()
+        time.sleep(2)
         self.Move_to_initial_position()
-    # ----------------------------------------------------------------------
-    
+        
+    def grab_green(self):
+        time.sleep(2)
+        self.Open()
+        time.sleep(2)
+        self.test()
+        time.sleep(2)
+        self.Grab()
+        time.sleep(2)
+        self.Place_on_red()
+        time.sleep(2)
+        self.Open()
+        time.sleep(2)
+        self.Move_to_initial_position()
+        
+    def grab_blue(self):
+        time.sleep(2)
+        self.Open()
+        time.sleep(2)
+        self.test3()
+        time.sleep(2)
+        self.Grab()
+        time.sleep(2)
+        self.Place_on_red()
+        time.sleep(2)
+        self.Open()
+        time.sleep(2)
+        self.Move_to_initial_position()
+       
     def test(self):
         waypoints = []
         arm_current_pose = self.arm.get_current_pose()
@@ -100,6 +122,23 @@ class Scullion():
 
         waypoint1 = Pose()
         waypoint1.position.x = 0.35
+        waypoint1.position.y = 0.35
+        waypoint1.position.z = 0.06
+
+        waypoint1.orientation = arm_current_pose.pose.orientation
+        waypoints.append(copy.deepcopy(waypoint1))
+        
+        (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
+        self.arm.execute(plan, wait=True)
+        
+    def test3(self):
+        waypoints = []
+        arm_current_pose = self.arm.get_current_pose()
+        self.arm.clear_pose_targets()
+        self.arm.set_goal_tolerance(0.01)
+
+        waypoint1 = Pose()
+        waypoint1.position.x = -0.35
         waypoint1.position.y = 0.35
         waypoint1.position.z = 0.06
 
@@ -157,7 +196,7 @@ class Scullion():
         self.gripper.go()
 
     def Open(self):
-        self.gripper.set_goal_tolerance(0.05)
+        self.gripper.set_goal_tolerance(0.1)
         self.gripper.set_named_target("open")
         self.gripper.go()
 
@@ -197,11 +236,32 @@ def block_pose_callback(data):
     global block_pose
     block_pose = data
 
+scullion = Scullion()
+
+def callback(tecla):
+    global scullion
+    
+    print("Se ha pulsado la tecla ")
+    
+    if(str(tecla) == "'r'"):
+        print("R")
+        scullion.grab_red()
+            
+    elif(str(tecla) == "'g'"):
+        print("G")
+        scullion.grab_green()
+           
+    elif(str(tecla) == "'b"):
+        print("B")
+        scullion.grab_blue()
+
 rospy.init_node('controller')
 rospy.Subscriber("/block_pose", Pose, block_pose_callback)
 
 if __name__ == '__main__':
     # app = QApplication(sys.argv)
-    scullion = Scullion()
-    scullion.show()
+    print("start")
+    kb.Listener(callback).run()
+    print("end")
     # sys.exit(app.exec_())
+    
