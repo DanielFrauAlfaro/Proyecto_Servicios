@@ -3,11 +3,11 @@
   <arg name="paused" default="false"/>
   <arg name="gazebo_gui" default="true"/>
   <arg name="initial_joint_positions" doc="Initial joint configuration of the robot"
-       default=" -J j2n6s300_joint_1 0 -J j2n6s300_joint_2 3.14159 -J j2n6s300_joint_3 3.14159 -J j2n6s300_joint_4 0 -J j2n6s300_joint_5 0 -J j2n6s300_joint_6 0"/>
+       default=" -J j2n6s300_joint_1 0 -J j2n6s300_joint_2 3.1415 -J j2n6s300_joint_3 3.1415 -J j2n6s300_joint_4 0.0 -J j2n6s300_joint_5 0.0 -J j2n6s300_joint_6 0.0 -J j2n6s300_joint_finger_1 0 -J j2n6s300_joint_finger_2 0 -J j2n6s300_joint_finger_3 0 -J j2n6s300_joint_finger_tip_1 0 -J j2n6s300_joint_finger_tip_2 0 -J j2n6s300_joint_finger_tip_3 0"/>
 
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" default="worlds/empty.world"/>
+    <arg name="world_name" default="$(find kinova_gazebo)/worlds/arm_example.world"/>
     <arg name="paused" value="true"/>
     <arg name="gui" value="$(arg gazebo_gui)"/>
   </include>

@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_arm_kinvoa_controller
+  - name: fake_arm_kinova_controller
     type: $(arg fake_execution_type)
     joints:
       - j2n6s300_joint_1
@@ -18,5 +18,7 @@ controller_list:
       - j2n6s300_joint_finger_3
       - j2n6s300_joint_finger_tip_3
 initial:  # Define initial robot poses per group
-  - group: arm_kinvoa
+  - group: arm_kinova
     pose: zeros
+  - group: gripper_kinova
+    pose: open
