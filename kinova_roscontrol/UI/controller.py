@@ -8,6 +8,16 @@ from PyQt5.QtGui import *
 from PyQt5.Qt import *
 from controller_window import Ui_Form
 '''
+
+'''
+KinovaCommException: Could not initialize Kinova API
+
+RLException: Invalid <param> tag: Cannot load command parameter [robot_description]: no such command [['/opt/ros/noetic/share/xacro/xacro.py', '/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_description/urdf/m1n6s300_standalone.xacro']]. 
+
+Param xml is <param name="robot_description" command="$(find xacro)/xacro.py '$(find kinova_description)/urdf/$(arg kinova_robotType)_standalone.xacro'"/>
+The traceback for the exception was written to the log file
+'''
+
 import copy
 import os
 import time
@@ -16,12 +26,12 @@ from pynput import keyboard as kb
 # ROS
 import rospy
 from geometry_msgs.msg import Pose
+from std_msgs.msg import String
 import moveit_commander
 import numpy as np
 
 # Speech recognition
 import speech_recognition as sr
-
 
 def get_quaternion_from_euler(roll, pitch, yaw):
   qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
@@ -37,21 +47,23 @@ class Scullion():
         # super(GUI, self).__init__(parent)
         # self.ui = Ui_Form()
         # self.ui.setupUi(self)
-
+        
+        rospy.Subscriber("/voice_ui", String, self.list)
+        
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
         self.r = sr.Recognizer()
         
         self.Move_to_initial_position()
-                
-    def select(self, tecla):
-        if(str(tecla) == 'r'):
+    
+    def list(self, data):
+        if data.data == "rojo":
             self.grab_red()
-            
-        elif(str(tecla) == 'g'):
+        
+        if data.data == "verde":
             self.grab_green()
             
-        elif(str(tecla) == 'b'):
+        if data.data == "azul":
             self.grab_blue()
         
 
@@ -259,9 +271,7 @@ rospy.init_node('controller')
 rospy.Subscriber("/block_pose", Pose, block_pose_callback)
 
 if __name__ == '__main__':
-    # app = QApplication(sys.argv)
-    print("start")
-    kb.Listener(callback).run()
-    print("end")
-    # sys.exit(app.exec_())
+    rate = rospy.Rate(10)
+    while rospy.is_not_shutdown():
+        rate.sleep()
     

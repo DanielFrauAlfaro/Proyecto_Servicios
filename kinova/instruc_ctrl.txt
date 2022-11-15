@@ -1,5 +1,0 @@
---------- Kinova Simulation --------
-
- - Se ejecuta "roslaunch kinova_moveit demo_gazebo.launch" donde se lanza la simulación en Gazebo del robot, el aruco y la plataforma, así como de la simulación en RVIZ con el modelo del robot y el planificador de trayectorias
- - Se ejecuta "rosrun aruco_recognition arucp_pose_estimation.py" para ejecutar en la cámara la estimación de la posición del ARUCO
- - Se ejecuta "python3 controller.py" donde se ejecuta la interfaz de usuario y el planificador de trayectorias

@@ -1,8 +1,0 @@
------------------- Kinova -----------------------------
-
-  - Instalar paquetes de ROS Control (sudo apt install ros-$distro-ros-control)
-  - En el fichero "kinova_control.launch" de la carpeta "kinova_control", eliminar los tags de ns; el controlador se lanza con un namespace diferente al del spawner del controlado, por lo que no lo encuentra
-  - Si se quiere usar otro controlador, llamarlo desde "kinova_control" con los argumentos correctos, que son el nombre del controlador de cada articulación
-  
-  - Lanzar la simulación con "roslaunch kinova_gazebo robot_launch.launch"
-    - En el archivo "robot_launch.launch" poner a "true" la variable de "paused", para que la simulación empiece pausada, sino el robot se cae pues no tiene controlador activo

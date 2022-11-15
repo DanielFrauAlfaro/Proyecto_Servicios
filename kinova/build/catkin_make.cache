@@ -1,2 +1,0 @@
-aruco_recognition:kinova_description:kinova_moveit
--DCATKIN_DEVEL_PREFIX=/home/daniel/Desktop/Proyecto_Servicios/kinova/devel -DCMAKE_INSTALL_PREFIX=/home/daniel/Desktop/Proyecto_Servicios/kinova/install -G Unix Makefiles

@@ -4,8 +4,6 @@ import os
 r = sr.Recognizer()
 with sr.Microphone() as micro:
 
-    os.system('clear')
-
     r.adjust_for_ambient_noise(micro)
     print('Escuchando.', end='',flush=True)
     while True:
