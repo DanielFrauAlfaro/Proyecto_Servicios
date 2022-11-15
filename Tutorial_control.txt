@@ -94,3 +94,17 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
 
     Solo con MoveIT funciona bien
     Se ha hecho un programa que reaccione a la pulsación de las teclas del teclado
+
+    La interfaz y la cámar se va a lanzar desde un nodo a parte, de manera que reciban datos desde alli y no se coman la ejecucion del controlador
+    Se ha depurado el código para que esté mas reutilizado: 
+      - Solo hay una funcion de move (va al objeto) con parametros de posicionarlo
+      - Solo hay un grab (para hacer cada viaje)
+      - El place_on_target esta parametrizado con la posicion del lugar (por si hay varios)
+      - Se añaden los atributos de cada bloque a la clase
+      - Se añade una lista de los ingredientes y si estan en sus posiciones
+    También se han añadido algunas tareas
+
+
+############################### Robot Real #############################################
+  El error del API puede ser o por el USB (que no lo detecta) o por el archivo en kinova-ros/kinova_bringup/launch/config/robot_parameters.yaml o 
+multiple_robots.yaml

@@ -2,14 +2,6 @@
 # -*- coding: utf-8 -*-
 
 '''
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.Qt import *
-from controller_window import Ui_Form
-'''
-
-'''
 KinovaCommException: Could not initialize Kinova API
 
 RLException: Invalid <param> tag: Cannot load command parameter [robot_description]: no such command [['/opt/ros/noetic/share/xacro/xacro.py', '/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_description/urdf/m1n6s300_standalone.xacro']]. 
@@ -25,10 +17,11 @@ from pynput import keyboard as kb
 
 # ROS
 import rospy
-from geometry_msgs.msg import Pose, Position
+from geometry_msgs.msg import Pose, Point
 from std_msgs.msg import String
 import moveit_commander
 import numpy as np
+from pynput import keyboard as kb
 
 # Transformar de ángulos de Euler a cuaternios
 def get_quaternion_from_euler(roll, pitch, yaw):
@@ -57,6 +50,9 @@ def get_quaternion_from_euler(roll, pitch, yaw):
 class Scullion():
 
     def __init__(self,parent=None):
+        # Inicializar el nodo
+        rospy.init_node("scullion")
+        
         # Suscriptor al nodo del control por voz
         rospy.Subscriber("/voice_ui", String, self.list)
         
@@ -81,9 +77,9 @@ class Scullion():
         # Lista de ingredientes y sus posiciones
         self.ingredients = []
         
-        self.red = Position()
-        self.green = Position()
-        self.blue = Position()
+        self.red = Point()
+        self.green = Point()
+        self.blue = Point()
         
         self.red.x = 0.35
         self.red.y = 0.35
@@ -234,23 +230,27 @@ scullion = Scullion()
 def callback(tecla):
     global scullion
     
+    s = String()
+    
     print("Se ha pulsado la tecla ")
     
     if(str(tecla) == "'r'"):
         print("R")
-        scullion.grab_red()
+        s.data = "rojo"
+        scullion.list(s)
             
     elif(str(tecla) == "'g'"):
         print("G")
-        scullion.grab_green()
+        s.data = "verde"
+        scullion.list(s)
            
     elif(str(tecla) == "'b"):
         print("B")
-        scullion.grab_blue()
+        s.data = "azul"
+        scullion.list(s)
 
 
 # Main
 if __name__ == '__main__':
-    while rospy.is_not_shutdown():
-        a = 1
+    kb.Listener(callback).run()
     
