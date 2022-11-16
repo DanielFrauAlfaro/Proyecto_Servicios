@@ -35,13 +35,11 @@ def get_quaternion_from_euler(roll, pitch, yaw):
 
 
 
-############################### IMPORTANTE #####################################
-# AHORA EL PROGRAMA ESTÁ PARA LA SIMULACIÓN, NO SABEMOS SI FUNCIONARÁ ASI CON MOVEIT
-# DIRECTAMENTE. AUN ASÍ SE PUEDE PLANIFICAR CON MOVEIT, PERO HABRÍA QUE TENER LAS POSICIONES
-# DEL ROBOT EN CADA MOMENTO --> LAS COSAS QUE ESTAN CON "REAL TODO REAL" SON LAS QUE DEPENDEN DEL REAL
-
-
-
+############################### IMPORTANTE ################################################################
+# AHORA EL PROGRAMA ESTÁ PARA LA SIMULACIÓN, NO SABEMOS SI FUNCIONARÁ ASI CON MOVEIT                      #
+# DIRECTAMENTE. AUN ASÍ SE PUEDE PLANIFICAR CON MOVEIT, PERO HABRÍA QUE TENER LAS POSICIONES              #
+# DEL ROBOT EN CADA MOMENTO --> LAS COSAS QUE ESTAN CON "REAL TODO REAL" SON LAS QUE DEPENDEN DEL REAL    #
+###########################################################################################################
 
 
 
@@ -72,6 +70,7 @@ class Scullion():
         #############################################
         
         # Se mueve el robot a la posición inicial
+        print(" ------------ Moving to initial position ---------")
         self.Move_to_initial_position()
         
         # Lista de ingredientes y sus posiciones
@@ -122,22 +121,22 @@ class Scullion():
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place):
-        time.sleep(2)
+        time.sleep(1)
         self.Open()
 
-        time.sleep(2)
+        time.sleep(1)
         self.move(x_move, y_move, z_move)
 
-        time.sleep(2)
+        time.sleep(1)
         self.Grab()
 
-        time.sleep(2)
+        time.sleep(1)
         self.place_on_target(x_place, y_place)
 
-        time.sleep(2)
+        time.sleep(1)
         self.Open()
 
-        time.sleep(2)
+        time.sleep(1)
         self.Move_to_initial_position()
 
 
@@ -206,7 +205,7 @@ class Scullion():
 
 # Funciones para abrir y cerrar la pinza (J1: 0.3, J2: 1.3)
     def Grab(self):
-        self.gripper.set_goal_tolerance(0.05)
+        self.gripper.set_goal_tolerance(0.1)
         self.gripper.set_named_target("close")
         self.gripper.go()
 
@@ -252,5 +251,6 @@ def callback(tecla):
 
 # Main
 if __name__ == '__main__':
+    print("------- Start --------")
     kb.Listener(callback).run()
     
