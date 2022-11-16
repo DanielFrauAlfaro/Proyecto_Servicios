@@ -104,6 +104,17 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
       - Se añade una lista de los ingredientes y si estan en sus posiciones
     También se han añadido algunas tareas
 
+################ Cámara #######################
+    Se ha añadido una camara; en el archivo de urdf del robot se incluye la siguiente línea en los includes del principio:
+      - <xacro:include filename="$(find kinova_description)/urdf/camera/camera.urdf.xacro"/>
+
+    Luego, en la macro del xacro se define la posición de la cámara (los valores puede ir cambiando):
+      - <xacro:camera_v0 parent="${prefix}_link_base">
+	       <origin xyz="0.4 0.4 0.5" rpy="0 0.785375 -1.57075"/>
+        </xacro:camera_v0>
+    
+    Al final del acrhivo, justo antes de la última etiqueta, se añade:
+      - <xacro:camera_gazebo_v0 />
 
 ############################### Robot Real #############################################
   El error del API puede ser o por el USB (que no lo detecta) o por el archivo en kinova-ros/kinova_bringup/launch/config/robot_parameters.yaml o 
