@@ -19,6 +19,6 @@ controller_list:
       - j2n6s300_joint_finger_tip_3
 initial:  # Define initial robot poses per group
   - group: arm_kinova
-    pose: zeros
+    pose: ready
   - group: gripper_kinova
     pose: open
