@@ -5,17 +5,17 @@ joint_state_controller:
 j2n6s300_joint_1_controller:
   type: effort_controllers/JointPositionController
   joint: j2n6s300_joint_1
-  pid: {p: 220.0, i: 4.0, d: 1.0, i_clmap_min: -100.0, i_clamp_max: 100.0}
+  pid: {p: 500.0, i: 4.0, d: 10.0, i_clmap_min: -100.0, i_clamp_max: 100.0}
 
 j2n6s300_joint_2_controller:
   type: effort_controllers/JointPositionController
   joint: j2n6s300_joint_2
-  pid: {p: 8000.0, i: 85.0, d: 25.0, i_clmap_min: -100.0, i_clamp_max: 100.0}
+  pid: {p: 220.0, i: 0.0, d: 20.0, i_clmap_min: -200.0, i_clamp_max: 200.0}
   
 j2n6s300_joint_3_controller:
   type: effort_controllers/JointPositionController
   joint: j2n6s300_joint_3
-  pid: {p: 8000.0, i: 85.0, d: 20.0, i_clmap_min: -100.0, i_clamp_max: 100.0}
+  pid: {p: 500.0, i: 0.0, d: 10.0, i_clmap_min: -200.0, i_clamp_max: 200.0}
 
 j2n6s300_joint_4_controller:
   type: effort_controllers/JointPositionController
