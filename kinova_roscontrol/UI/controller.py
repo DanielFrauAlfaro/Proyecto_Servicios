@@ -121,9 +121,8 @@ class Scullion():
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place):
-        time.sleep(1)
-        self.Open()
-
+        self.move(x_move, y_move, z_move + 0.2)
+        
         time.sleep(1)
         self.move(x_move, y_move, z_move)
 
@@ -243,7 +242,7 @@ def callback(tecla):
         s.data = "verde"
         scullion.list(s)
            
-    elif(str(tecla) == "'b"):
+    elif(str(tecla) == "'b'"):
         print("B")
         s.data = "azul"
         scullion.list(s)
