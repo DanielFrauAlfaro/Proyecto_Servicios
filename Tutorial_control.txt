@@ -102,7 +102,13 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
       - El place_on_target esta parametrizado con la posicion del lugar (por si hay varios)
       - Se añaden los atributos de cada bloque a la clase
       - Se añade una lista de los ingredientes y si estan en sus posiciones
+      - Se añade una lista de comandos
     También se han añadido algunas tareas
+
+    Se ha hecho otro controlador llamado controller_voice.py. El anterior funciona con las teclas del teclado, el nuevo se suscribe a varios topics
+  como el de la interfaz por voz y la cámara. En este nuevo controlador se almacenan los comandos provenientes de la interfaz, a la vez que se 
+  modifican las variables de ingredientes. El programa se ejecuta en un bucle de control implementado como un método de la clase
+
 
 ################ Cámara #######################
     Se ha añadido una camara; en el archivo de urdf del robot se incluye la siguiente línea en los includes del principio:
