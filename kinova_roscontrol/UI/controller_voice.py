@@ -54,8 +54,8 @@ class Scullion():
         # Suscriptor al nodo del control por voz
         rospy.Subscriber("/voice_ui", String, self.__voice_cb)
         
-        # TODO: suscribirse al nodo de la cámara
-        print("TODO: susciptor al nodo de la cámara")
+        # Suscriptor al nodo de la cámara
+        rospy.Subscriber("/camera", String, self.__camera_cb)
         
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
@@ -125,9 +125,16 @@ class Scullion():
         '''
         #########################################
      
+     
+    # Callback de la interfaz por voz: recoge los comandos y los almacena
     def __voice_cb(self, data):
         self.__cmd.append(data)
 
+
+    # TODO: Callback de la cámara: se codifica el comando
+    def __camera_cb(self, data):
+        print(" ------- TODO: camera callback ------")
+        
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place):
@@ -218,10 +225,12 @@ class Scullion():
         self.gripper.set_named_target("close")
         self.gripper.go()
 
+
     def Open(self):
         self.gripper.set_goal_tolerance(0.1)
         self.gripper.set_named_target("open")
         self.gripper.go()
+
 
     # Función para ir a la posición inicial
     def Move_to_initial_position(self):
