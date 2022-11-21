@@ -35,4 +35,9 @@
     </node>
   </group>
 
+
+  <!-- Cambios en el original -->
+  <include file="$(find kinova_moveit)/launch/demo.launch">
+  </include>
+
 </launch>
