@@ -50,7 +50,7 @@ def getCurrentFingerPosition(prefix_):
     topic_address = '/' + prefix_ + 'driver/out/finger_position'
     rospy.Subscriber(topic_address, kinova_msgs.msg.FingerPosition, setCurrentFingerPosition)
     rospy.wait_for_message(topic_address, kinova_msgs.msg.FingerPosition)
-    print 'obtained current finger position '
+    print('obtained current finger position ')
 
 
 def setCurrentFingerPosition(feedback):
