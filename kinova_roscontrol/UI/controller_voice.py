@@ -64,14 +64,9 @@ class Scullion():
         # Lista con las posiciones articulares del robot
         self.q = [] 
         
-        # Se mueve el robot a la posición inicial
         ################# REAL TODO REAL ############
         # OBTENER LAS POSICIONES ACTUALES DEL ROBOT: con un callback del topic presumiblemente
         #############################################
-        
-        # Se mueve el robot a la posición inicial
-        print(" ------------ Moving to initial position ---------")
-        self.Move_to_initial_position()
         
         # Lista de ingredientes y sus posiciones
         self.__ingredients = []
@@ -92,7 +87,14 @@ class Scullion():
         self.pepper.y = 0.5
         self.__ingredients.append(("pimienta", True))
         
+        # Lista de comandos
         self.__cmd = []
+        
+        
+        # Se mueve el robot a la posición inicial
+        print(" ------------ Moving to initial position ---------")
+        self.Move_to_initial_position()
+        
     
     
     #  TODO: Bucle de control
