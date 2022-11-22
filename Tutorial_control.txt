@@ -18,6 +18,8 @@
         sudo apt install ros-noetic-moveit 
        
   - 2. Desde "my_project" compilar y actualizar el bash:
+  	rm build 
+	rm devel
         catkin_make & source devel/setup.bash
 
   - IMPORTANTE: el paquete incorpora varios modelos de robots de la marca Kinova (Mico, Jaco, ...) por lo que cada programa está preparado
@@ -56,6 +58,18 @@ decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis g
 
   - 4. SIMULACIÓN: para lanzar la simulación se debe ejecutar el comando:
         roslaunch kinova_gazebo robot_launch.launch
+	source devel/setup.bash
+	[conda activate env_name] //if python installed in env
+	roscore 
+	ctr+shift+T
+	source... [conda...]
+	roslaunch kinova_moveit demo_gazebo.launch 
+	ctr+shift+T
+	source...[conda...]
+	cd UI
+	python controller.py
+	[inputs are rgb]
+	
 
   - 5. CONTROL EN EJECUCIÓN: la ejecución se realiza mediante ROS-Control, por lo que el control se realizará mediante topics. Para ello, se 
 programará en un script de Python llamado "controller.py", ubicado en la raíz del proyecto. Cabe destacar que ROS-Control no admite de base un
