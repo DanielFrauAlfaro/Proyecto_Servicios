@@ -57,7 +57,6 @@ decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis g
             3.3.3: Src: en esta carpeta hay un programa para mover el robot, pero da problemas para ejecutarlo y el formato no parece ser correcto
 
   - 4. SIMULACIÓN: para lanzar la simulación se debe ejecutar el comando:
-        roslaunch kinova_gazebo robot_launch.launch
 	source devel/setup.bash
 	[conda activate env_name] //if python installed in env
 	roscore 
