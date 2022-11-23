@@ -21,7 +21,6 @@ from geometry_msgs.msg import Pose, Point
 from std_msgs.msg import String
 import moveit_commander
 import numpy as np
-from pynput import keyboard as kb
 
 # Transformar de ángulos de Euler a cuaternios
 def get_quaternion_from_euler(roll, pitch, yaw):
@@ -67,7 +66,7 @@ class Scullion():
         ################# REAL TODO REAL ############
         # OBTENER LAS POSICIONES ACTUALES DEL ROBOT: con un callback del topic presumiblemente
         #############################################
-        
+
         # Lista de ingredientes y sus posiciones
         self.__ingredients = []
         
@@ -94,6 +93,7 @@ class Scullion():
         # Se mueve el robot a la posición inicial
         print(" ------------ Moving to initial position ---------")
         self.Move_to_initial_position()
+        self.Open()
         
     
     
@@ -102,21 +102,25 @@ class Scullion():
         print("------- TODO: Bucle de control --------")
         
         while not rospy.is_shutdown():
+            
             if len(self.__cmd) > 0:
                 
                 command = self.__cmd.pop(0)
                 
                 if command == "sal" and self.__ingredients[0][1]:
                     self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y)
-                    self.__ingredients[0][1] = False
+                    tupla = ("sal",False)
+                    self.__ingredients[0] = tupla
 
                 elif command == "azucar" and self.__ingredients[1][1]:
                     self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y,)
-                    self.__ingredients[1][1] = False
+                    tupla = ("azucar",False)
+                    self.__ingredients[1] = tupla
                                         
                 elif command == "pimienta" and self.__ingredients[2][1]:
+                    tupla = ("pimienta",False)
                     self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y)
-                    self.__ingredients[2][1] = False
+                    self.__ingredients[2] = tupla
 
         ################## TODO #################
         '''
@@ -130,7 +134,8 @@ class Scullion():
      
     # Callback de la interfaz por voz: recoge los comandos y los almacena
     def __voice_cb(self, data):
-        self.__cmd.append(data)
+        self.__cmd.append(data.data)
+
 
 
     # TODO: Callback de la cámara: se codifica el comando
