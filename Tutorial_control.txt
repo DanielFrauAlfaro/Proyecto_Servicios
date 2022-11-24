@@ -123,6 +123,21 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
   modifican las variables de ingredientes. El programa se ejecuta en un bucle de control implementado como un método de la clase
 
 
+    Para que el control con el teclado funcione mejor se ha creado otro archivo, el controller_.py que se suscribe al topic "/teclas" publicado por otro
+  nodo, el que se lanza desde el archivo teclas.py, ambos ubicados en la carpeta UI. De esta manera, desde el nodo "teclas" se detectan las pulsaciones
+  de teclas y se publica en el topic. En el controlador del robot se lee ese topic y se añade su contenido a una lista de comandos. 
+    La ejecución del nuevo controlador se basa en un bucle infinito y dos callbacks; uno para detectar las teclas (simulando el control por voz) y 
+  otro para visualizar la cámara. Estos callbacks añaden comandos a la lista de comandos para ser ejecutados en el bucle de control
+    Se ha probado con el script de la cámara y una modificación del script original del reconocimiento de arucos y se ha comprobado que funciona
+  bien el algoritmo con las teclas.
+
+  POSIBLES MEJORAS:
+    - Feedback sonoro al usuario: que te diga que hacer
+    - Control de trayectorias e interrupciones en la ejecucion: que se detecten manos (p. ej) y detenga la trayectoria
+    - Añadir más ingredientes: añadir ingredientes al sistema
+    - Añadir lugares de recogida: ampliar los lugares de recogida del robot. Adaptar el algoritmo de la cámara para que acepte más ingredientes que
+    recoger
+
 ################ Cámara #######################
     Se ha añadido una camara; en el archivo de urdf del robot se incluye la siguiente línea en los includes del principio:
       - <xacro:include filename="$(find kinova_description)/urdf/camera/camera.urdf.xacro"/>
