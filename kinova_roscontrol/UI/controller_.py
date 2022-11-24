@@ -104,18 +104,26 @@ class Scullion():
             if len(self.cmd) > 0:
                     
                 command = self.cmd.pop(0)
-                    
-                if command  == "rojo":
-                    self.grab(self.red.x, self.red.y, 0.06, 0, -0.5)
                 
-                if command  == "verde":
+                if command  == "rojo" and self.ingredients[0][1]:
+                    self.grab(self.red.x, self.red.y, 0.06, 0, -0.5)
+                    tupla = ("red",False)
+                    self.__ingredients[0] = tupla
+                
+                if command  == "verde" and self.ingredients[1][1]:
                     self.grab(self.green.x, self.green.y, 0.06, 0, -0.5)
+                    tupla = ("green",False)
+                    self.__ingredients[1] = tupla
                     
-                if command  == "azul":
+                if command  == "azul" and self.ingredients[2][1]:
                     self.grab(self.blue.x, self.blue.y, 0.06, 0, -0.5)
+                    tupla = ("blue",False)
+                    self.__ingredients[2] = tupla
                     
-                if command == "0":
+                if command == "0" and not self.ingredients[0][1]:
                     self.grab(0, -0.5, 0.06, self.red.x, self.red.y)
+                    tupla = ("red",True)
+                    self.__ingredients[0] = tupla
         
     def rec(self, data):
         self.cmd.append(data.data)
