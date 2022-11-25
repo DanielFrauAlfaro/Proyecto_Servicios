@@ -19,11 +19,10 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 
 class AR():
 
-    def __init__(self, videoPort):
-        self.dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50) # Rojo: DICT_4X4_50   Verde: DICT_6X6_250
-        self.dictionary2 = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
-        
-        self.blocks = []
+    def __init__(self, videoPort, cameraMatrix, distortionCoefficients):
+        self.cameraMatrix = cameraMatrix
+        self.distortionCoefficients = distortionCoefficients
+        self.dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
     def find_ARMarker(self, frame):
         self.frame = frame
@@ -36,10 +35,6 @@ class AR():
         self.halfWidth = int(self.Width / 2)
         self.corners, self.ids, self.rejectedImgPoints = aruco.detectMarkers(self.frame, self.dictionary)
         aruco.drawDetectedMarkers(self.frame, self.corners, self.ids, (0,255,0))
-        
-        self.corners2, self.ids2, self.rejectedImgPoints2 = aruco.detectMarkers(self.frame, self.dictionary2)
-        aruco.drawDetectedMarkers(self.frame, self.corners2, self.ids2, (0,255,0))
-        
 
     def show(self):
         cv2.imshow("result", self.frame)
@@ -54,19 +49,6 @@ class AR():
         else:
             return True
 
-
-####################################
-    def get_exist_Marker2(self):
-        return len(self.corners2)
-
-    def is_exist_marker2(self, i):
-        num = self.get_exist_Marker2()
-        if i >= num:
-            return False
-        else:
-            return True
-#################################
-
     def release(self):
         self.cap.release()
 
@@ -74,38 +56,46 @@ class AR():
         if self.is_exist_marker(i):
             return self.corners[i]
 
-#############################################
-    def get_ARMarker_points2(self, i):
-        if self.is_exist_marker2(i):
-            return self.corners2[i]
-##############################################
-
-
-
     def get_average_point_marker(self, i):
         if self.is_exist_marker(i):
             points = self.get_ARMarker_points(i)
-            print(points)
             points_reshape = np.reshape(np.array(points), (4, -1))
             G = np.mean(points_reshape, axis = 0)
             cv2.circle(self.frame, (int(G[0]), int(G[1])), 10, (255, 255, 255), 5)
-            print(int(G[0]))
-            print(int(G[1]))
-            print("---------")
-        if self.is_exist_marker2(i):
-            points = self.get_ARMarker_points2(i)
-            print(points)
-            points_reshape = np.reshape(np.array(points), (4, -1))
-            G = np.mean(points_reshape, axis = 0)
-            cv2.circle(self.frame, (int(G[0]), int(G[1])), 10, (255, 255, 255), 5)
-            print(int(G[0]))
-            print(int(G[1]))
-            print("---------")
-            print("")
-        
             return G[0], G[1]
 
-myCap = AR(0)
+    def get_ARMarker_pose(self, i):
+        if self.is_exist_marker(i):
+            rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
+            self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
+            return rvec, tvec
+
+    def get_degrees(self, i):
+        if self.is_exist_marker(i):
+            rvec, tvec, = self.get_ARMarker_pose(i)
+
+            Xtemp = tvec[0][0][0]
+            Ytemp = tvec[0][0][1]*math.cos(-pi/4) - tvec[0][0][2]*math.sin(-pi/4)
+            Ztemp = tvec[0][0][1]*math.sin(-pi/4) + tvec[0][0][2]*math.cos(-pi/4)
+
+            Xtemp2 = Xtemp - 0.4
+            Ytemp2 = Ytemp - 0.5
+            Ztemp2 = Ztemp - 0.4
+
+            Xtarget = -Xtemp2
+            Ytarget = -Ztemp2
+            Ztarget = -Ytemp2
+
+            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+
+            (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
+            if pitch_angle < 0:
+                roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
+            return Xtarget, Ytarget, Ztarget, roll_angle, pitch_angle, yaw_angle
+
+camera_matrix = np.matrix([[381.36246688113556, 0.0, 320.5], [0.0, 381.36246688113556, 240.5], [0.0, 0.0, 1.0]])
+distortion = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
+myCap = AR(0, camera_matrix, distortion)
 
 pub_block_pose = rospy.Publisher('/block_pose', Pose, queue_size=10)
 block_pose = Pose()
@@ -114,7 +104,14 @@ def callback_color_img(data):
     cv_color_image = bridge.imgmsg_to_cv2(data, "bgr8")
     myCap.find_ARMarker(cv_color_image)
     myCap.get_average_point_marker(0)
-    
+    try:
+        Xtarget, Ytarget, Ztarget, roll_angle, pitch_angle, yaw_angle = myCap.get_degrees(0)
+        block_pose.position.x = Xtarget
+        block_pose.position.y = Ytarget
+        block_pose.position.z = Ztarget
+        pub_block_pose.publish(block_pose)
+    except:
+        print("No marker detected!")
     myCap.show()
     if cv2.waitKey(1) > 0:
         myCap.release()
