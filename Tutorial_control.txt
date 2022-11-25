@@ -129,7 +129,9 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
     La ejecución del nuevo controlador se basa en un bucle infinito y dos callbacks; uno para detectar las teclas (simulando el control por voz) y 
   otro para visualizar la cámara. Estos callbacks añaden comandos a la lista de comandos para ser ejecutados en el bucle de control
     Se ha probado con el script de la cámara y una modificación del script original del reconocimiento de arucos y se ha comprobado que funciona
-  bien el algoritmo con las teclas.
+  bien el algoritmo con las teclas. 
+    La cámara ahora apunto directamente hacia abajo y no tiene colisión. Cuando detecta un bloque durante 10 segundos envía un callback al script de
+  control, de manera que se almacena el comando en la lista de comandos.
 
   POSIBLES MEJORAS:
     - Feedback sonoro al usuario: que te diga que hacer
@@ -137,6 +139,7 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
     - Añadir más ingredientes: añadir ingredientes al sistema
     - Añadir lugares de recogida: ampliar los lugares de recogida del robot. Adaptar el algoritmo de la cámara para que acepte más ingredientes que
     recoger
+    - Añadir aviso de si el objeto sigue estando para su recogida, por si se ha quitado por algún motivo (con un cliente servidor o similar)
 
 ################ Cámara #######################
     Se ha añadido una camara; en el archivo de urdf del robot se incluye la siguiente línea en los includes del principio:
