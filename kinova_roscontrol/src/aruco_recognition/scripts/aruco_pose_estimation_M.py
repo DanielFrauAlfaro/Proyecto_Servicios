@@ -21,10 +21,14 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 class AR():
 
     def __init__(self, videoPort):
-        self.dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50) # Rojo: DICT_4X4_50   Verde: DICT_6X6_250
+        self.dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50) # Rojo: DICT_4X4_50   Verde: DICT_6X6_250   Azul: DICT_5X5_50
         self.dictionary2 = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
+        self.dictionary3 = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
+        
         
         self.blocks = []
+        self.blocks.append(False)
+        self.blocks.append(False)
         self.blocks.append(False)
         self.blocks.append(False)
         self.blocks.append(False)
@@ -35,10 +39,14 @@ class AR():
         self.blocks_pos.append([-1, -1])
         self.blocks_pos.append([-1, -1])
         self.blocks_pos.append([-1, -1])
+        self.blocks_pos.append([-1, -1])
+        self.blocks_pos.append([-1, -1])
         
         self.blocks_time = []
         self.blocks_time.append(0.0)
         self.blocks_time.append(0.0) 
+        self.blocks_time.append(0.0) 
+        self.blocks_time.append(0.0)
         self.blocks_time.append(0.0) 
         self.blocks_time.append(0.0) 
         
@@ -58,6 +66,9 @@ class AR():
         
         self.corners2, self.ids2, self.rejectedImgPoints2 = aruco.detectMarkers(self.frame, self.dictionary2)
         aruco.drawDetectedMarkers(self.frame, self.corners2, self.ids2, (0,255,0))
+        
+        self.corners3, self.ids3, self.rejectedImgPoints3 = aruco.detectMarkers(self.frame, self.dictionary3)
+        aruco.drawDetectedMarkers(self.frame, self.corners3, self.ids3, (0,255,0))
         
 
     def show(self):
@@ -84,6 +95,18 @@ class AR():
             return False
         else:
             return True
+        
+    def get_exist_Marker3(self):
+        return len(self.corners3)
+
+    def is_exist_marker3(self, i):
+        num = self.get_exist_Marker3()
+        if i >= num:
+            return False
+        else:
+            return True
+        
+        
 #################################
 
     def release(self):
@@ -97,6 +120,9 @@ class AR():
     def get_ARMarker_points2(self, i):
         if self.is_exist_marker2(i):
             return self.corners2[i]
+    def get_ARMarker_points3(self, i):
+        if self.is_exist_marker3(i):
+            return self.corners3[i]
 ##############################################
 
 
@@ -114,6 +140,7 @@ class AR():
             self.blocks_pos[0] = [-1, -1]
             self.blocks[0] = False
         
+        
         if self.is_exist_marker2(i):
             points = self.get_ARMarker_points2(i)
             points_reshape = np.reshape(np.array(points), (4, -1))
@@ -121,11 +148,23 @@ class AR():
             cv2.circle(self.frame, (int(G[0]), int(G[1])), 10, (255, 255, 255), 5)
             
             self.blocks_pos[1] = [int(G[0]), int(G[1])]
-            
-            
+        
         else:
             self.blocks_pos[1] = [-1, -1]
             self.blocks[1] = False
+            
+            
+        if self.is_exist_marker3(i):
+            points = self.get_ARMarker_points3(i)
+            points_reshape = np.reshape(np.array(points), (4, -1))
+            G = np.mean(points_reshape, axis = 0)
+            cv2.circle(self.frame, (int(G[0]), int(G[1])), 10, (255, 255, 255), 5)
+            
+            self.blocks_pos[1] = [int(G[0]), int(G[1])]
+            
+        else:   
+            self.blocks_pos[2] = [-1, -1]
+            self.blocks[2] = False
         
             
 
@@ -139,12 +178,12 @@ def callback_color_img(data):
     myCap.find_ARMarker(cv_color_image)
     myCap.get_average_point_marker(0)
     
-    for i in range(1):
+    for i in range(2):
         x = myCap.blocks_pos[i][0]
         y = myCap.blocks_pos[i][1]
         
-        prev_x = myCap.blocks_pos[i+2][0]
-        prev_y = myCap.blocks_pos[i+2][1]
+        prev_x = myCap.blocks_pos[i + len(myCap.blocks)/2][0]
+        prev_y = myCap.blocks_pos[i + len(myCap.blocks)/2][1]
         
         margin = 0.2
         
@@ -156,10 +195,10 @@ def callback_color_img(data):
         if myCap.blocks[i]:
             if (x >= prev_x-prev_x*margin and x <= prev_x+prev_x*margin) and \
                 (y >= prev_y-prev_y*margin and y <= prev_y+prev_y*margin):
-                myCap.blocks_time[i+2] = time.time()
-                print("wait ", myCap.blocks_time[i+2] - myCap.blocks_time[0])
+                myCap.blocks_time[i + len(myCap.blocks)/2 ] = time.time()
+                print("wait ", myCap.blocks_time[i + len(myCap.blocks)/2] - myCap.blocks_time[0])
             
-            if (myCap.blocks_time[i+2] - myCap.blocks_time[i]) > 10.0:
+            if (myCap.blocks_time[i + len(myCap.blocks)/2] - myCap.blocks_time[i]) > 10.0:
                 print("################### READY #######################")
                 msg = String()
                 msg.data = str(i)
@@ -171,9 +210,9 @@ def callback_color_img(data):
     if cv2.waitKey(1) > 0:
         myCap.release()
         cv2.destroyAllWindows()
-        
-    myCap.blocks_pos[2] = myCap.blocks_pos[0]
-    myCap.blocks_pos[3] = myCap.blocks_pos[1]
+    
+    for i in range(len(myCap.blocks)/2):
+        myCap.blocks_pos[i + len(myCap.blocks)/2] = myCap.blocks_pos[i]
 
 def commander():
 
