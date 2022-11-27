@@ -51,10 +51,10 @@ class Scullion():
         rospy.init_node("scullion")
         
         # Suscriptor al nodo del control por voz
-        rospy.Subscriber("/voice_ui", String, self.__voice_cb)
+        rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
-        rospy.Subscriber("/camera", String, self.__camera_cb)
+        rospy.Subscriber("/camera", String, self.__cb)
         
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
@@ -97,16 +97,19 @@ class Scullion():
         
     
     
-    #  TODO: Bucle de control
+    # Bucle de control
     def control_loop(self):
-        print("------- TODO: Bucle de control --------")
         
+        # Bucle de control
         while not rospy.is_shutdown():
             
+            # Comprueba que hay un comando a realizar
             if len(self.__cmd) > 0:
                 
+                # Saca el comando de la lista de comandos
                 command = self.__cmd.pop(0)
                 
+                # Realiza el pick and place si tiene que dar un ingrediente, luego pone la tupla a False (no hay ingrediente en la zona de almacén)
                 if command == "sal" and self.__ingredients[0][1]:
                     self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y)
                     tupla = ("sal",False)
@@ -121,26 +124,28 @@ class Scullion():
                     tupla = ("pimienta",False)
                     self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y)
                     self.__ingredients[2] = tupla
-
-        ################## TODO #################
-        '''
-            BUCLE DE CONTROL COMO UNA MÁQUINA DE ESTADOS
-              - Estado inicial: reposo
-              - Comando por voz: coge el objeto y lo deja
-              - Aparece objeto zona de recogida: se detecta cual es y lo deja en su lugar
-        '''
-        #########################################
+                
+                # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
+                elif command == "0" and not self.ingredients[0][1]:
+                    self.grab(0, -0.5, 0.06, self.salt.x, self.salt.y)
+                    tupla = ("sal",True)
+                    self.ingredients[0] = tupla
+                
+                elif command == "1" and not self.ingredients[1][1]:
+                    self.grab(0, -0.5, 0.06, self.pepper.x, self.pepper.y)
+                    tupla = ("pimienta",True)
+                    self.ingredients[1] = tupla
+                    
+                elif command == "2" and not self.ingredients[2][1]:
+                    self.grab(0, -0.5, 0.06, self.sugar.x, self.sugar.y)
+                    tupla = ("azucar",True)
+                    self.ingredients[2] = tupla
      
      
-    # Callback de la interfaz por voz: recoge los comandos y los almacena
-    def __voice_cb(self, data):
+     
+    # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
+    def __cb(self, data):
         self.__cmd.append(data.data)
-
-
-
-    # TODO: Callback de la cámara: se codifica el comando
-    def __camera_cb(self, data):
-        print(" ------- TODO: camera callback ------")
         
         
     # Función donde se llama a todos los pasos para coger el objeto 
