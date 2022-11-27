@@ -97,40 +97,55 @@ class Scullion():
         self.cmd = []
     
     
-    #  TODO: Bucle de control
+    # Bucle de control
     def control_loop(self):
-        print("------- TODO: Bucle de control --------")
+        
+        # Bucle de control
         while not rospy.is_shutdown():
-            if len(self.cmd) > 0:
+            if len(self.cmd) > 0:               # Si hay un comando por realizar
                     
-                command = self.cmd.pop(0)
+                command = self.cmd.pop(0)       # Se extrae el comando y se selecciona la acción
                 
+                # Se coge el objeto y se pasa a la zona de manipulación, luego se pone a False la tupla (no está en la zona de alamcenaje)
                 if command  == "rojo" and self.ingredients[0][1]:
                     self.grab(self.red.x, self.red.y, 0.06, 0, -0.5)
                     tupla = ("red",False)
-                    self.__ingredients[0] = tupla
+                    self.ingredients[0] = tupla
                 
                 if command  == "verde" and self.ingredients[1][1]:
                     self.grab(self.green.x, self.green.y, 0.06, 0, -0.5)
                     tupla = ("green",False)
-                    self.__ingredients[1] = tupla
+                    self.ingredients[1] = tupla
                     
                 if command  == "azul" and self.ingredients[2][1]:
                     self.grab(self.blue.x, self.blue.y, 0.06, 0, -0.5)
                     tupla = ("blue",False)
-                    self.__ingredients[2] = tupla
-                    
+                    self.ingredients[2] = tupla
+                
+                # Se coge el objeto y se guarda en la zona de almacenaje, luego se pone a True la tupla (está en la zona de almacenaje)
                 if command == "0" and not self.ingredients[0][1]:
                     self.grab(0, -0.5, 0.06, self.red.x, self.red.y)
                     tupla = ("red",True)
-                    self.__ingredients[0] = tupla
-        
+                    self.ingredients[0] = tupla
+                
+                if command == "1" and not self.ingredients[1][1]:
+                    self.grab(0, -0.5, 0.06, self.green.x, self.green.y)
+                    tupla = ("green",True)
+                    self.ingredients[1] = tupla
+                    
+                if command == "2" and not self.ingredients[2][1]:
+                    self.grab(0, -0.5, 0.06, self.blue.x, self.blue.y)
+                    tupla = ("blue",True)
+                    self.ingredients[2] = tupla
+    
+    
+    # Callbacks de la cámara y de las teclas (simula interfaz por voz)
     def rec(self, data):
         self.cmd.append(data.data)
     def teclas(self, data):
         self.cmd.append(data.data)
           
-    # Callback del interfaz por voz (AHORA ESTÁ DEL TECLADO)
+    # Callback del interfaz por voz (AHORA ESTÁ DEL TECLADO Y EN BUCLE INFINITO)
     def list(self, data):
         if data.data == "rojo":
             self.grab(self.red.x, self.red.y, 0.06, 0, -0.5)
