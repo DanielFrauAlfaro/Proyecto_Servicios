@@ -69,6 +69,14 @@ decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis g
 	python controller.py
 	[inputs are rgb]
 	
+  OTRAS FORMAS DE EJECUTAR:
+
+  - Control mediantes las teclas del teclado, la tecla 'r', 'g' y 'b' para que el robot vaya a por los bloques rojo, verde y azul respectivamente
+      roslaunch kinova_gazebo key_control.launch
+  
+  - Control mediante la voz:
+      roslaunch kinova_gazebo voice_control.launch
+
 
   - 5. CONTROL EN EJECUCIÓN: la ejecución se realiza mediante ROS-Control, por lo que el control se realizará mediante topics. Para ello, se 
 programará en un script de Python llamado "controller.py", ubicado en la raíz del proyecto. Cabe destacar que ROS-Control no admite de base un
