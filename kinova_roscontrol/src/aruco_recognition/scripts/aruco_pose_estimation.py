@@ -62,25 +62,30 @@ class AR():
             points_reshape = np.reshape(np.array(points), (4, -1))
             G = np.mean(points_reshape, axis = 0)
             cv2.circle(self.frame, (int(G[0]), int(G[1])), 10, (255, 255, 255), 5)
+            
+            print(G)
+            
             return G[0], G[1]
 
     def get_ARMarker_pose(self, i):
         if self.is_exist_marker(i):
             rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
-            self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
+            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
             return rvec, tvec
 
     def get_degrees(self, i):
+        print(self.is_exist_marker(i))
         if self.is_exist_marker(i):
+            print("a")
             rvec, tvec, = self.get_ARMarker_pose(i)
-
+            print(rvec)
             Xtemp = tvec[0][0][0]
-            Ytemp = tvec[0][0][1]*math.cos(-pi/4) - tvec[0][0][2]*math.sin(-pi/4)
-            Ztemp = tvec[0][0][1]*math.sin(-pi/4) + tvec[0][0][2]*math.cos(-pi/4)
+            Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
+            Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
 
-            Xtemp2 = Xtemp - 0.4
-            Ytemp2 = Ytemp - 0.5
-            Ztemp2 = Ztemp - 0.4
+            Xtemp2 = Xtemp - 0.0
+            Ytemp2 = Ytemp + 0.5
+            Ztemp2 = Ztemp - 0.5
 
             Xtarget = -Xtemp2
             Ytarget = -Ztemp2

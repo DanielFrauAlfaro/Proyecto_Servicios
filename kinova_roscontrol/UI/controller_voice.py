@@ -54,7 +54,7 @@ class Scullion():
         rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
-        rospy.Subscriber("/camera", String, self.__cb)
+        rospy.Subscriber("/camera", String, self.__cb_camera)
         
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
@@ -145,6 +145,9 @@ class Scullion():
      
     # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
     def __cb(self, data):
+        self.__cmd.append(data.data)
+        
+    def __cb_camera(self, data):
         self.__cmd.append(data.data)
         
         

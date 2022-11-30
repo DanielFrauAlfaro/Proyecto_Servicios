@@ -22,7 +22,10 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 class AR():
     
     # Diccionarios
-    def __init__(self, videoPort):
+    def __init__(self, videoPort, cameraMatrix, distortionCoefficients):
+        self.cameraMatrix = cameraMatrix
+        self.distortionCoefficients = distortionCoefficients
+        
         self.dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50) # Rojo: DICT_4X4_50   Verde: DICT_6X6_250   Azul: DICT_5X5_50
         self.dictionary2 = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
         self.dictionary3 = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
@@ -36,7 +39,11 @@ class AR():
         
         # Lista de la posición actual y anterior de los bloques (0 - 2: actual | 3 - 5: previas)
         self.blocks_pos = []
-
+        
+        self.Pose_msgs = []
+        
+        for i in range(3):
+            self.Pose_msgs.append(String())
         
         # Lista del tiempo que llevan en pantalla (0 - 2: actual | 3 - 5: previas)
         self.blocks_time = []
@@ -46,6 +53,7 @@ class AR():
             self.blocks_time.append(0.0)
             self.blocks_pos.append([-1, -1])
             self.blocks.append(False)
+
             
         # Publisher para comunicar al nodo del robot
         self.publisher = rospy.Publisher("/ready", String, queue_size=10)
@@ -178,10 +186,110 @@ class AR():
         
     def release(self):
         self.cap.release()
+        
+        
+    def get_ARMarker_pose(self, i):
+        if self.is_exist_marker(i):
+            rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
+            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
+            return rvec, tvec
     
+    def get_ARMarker_pose2(self, i):
+        if self.is_exist_marker2(i):
+            rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners2[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
+            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
+            return rvec, tvec
+        
+    
+    def get_ARMarker_pose3(self, i):
+        if self.is_exist_marker3(i):
+            rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners3[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
+            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
+            return rvec, tvec
+
+    def get_degrees(self, i):
+        if self.is_exist_marker(i):
+            rvec, tvec, = self.get_ARMarker_pose(i)
+            Xtemp = tvec[0][0][0]
+            Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
+            Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
+
+            Xtemp2 = Xtemp - 0.0
+            Ytemp2 = Ytemp + 0.5
+            Ztemp2 = Ztemp - 0.5
+
+            Xtarget = -Xtemp2
+            Ytarget = -Ztemp2
+            Ztarget = -Ytemp2
+
+            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+
+            (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
+            if pitch_angle < 0:
+                roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
+            
+            self.Pose_msgs[0] = str(-Xtarget) + " "
+            self.Pose_msgs[0] += str(-Ytarget) + " 0"
+            
+
+            
+        if self.is_exist_marker2(i):
+            rvec, tvec, = self.get_ARMarker_pose2(i)
+            Xtemp = tvec[0][0][0]
+            Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
+            Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
+
+            Xtemp2 = Xtemp - 0.0
+            Ytemp2 = Ytemp + 0.5
+            Ztemp2 = Ztemp - 0.5
+
+            Xtarget = -Xtemp2
+            Ytarget = -Ztemp2
+            Ztarget = -Ytemp2
+
+            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+
+            (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
+            if pitch_angle < 0:
+                roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
+            
+            self.Pose_msgs[1] = str(-Xtarget) + " "
+            self.Pose_msgs[1] += str(-Ytarget) + " 1"
+          
+            
+        if self.is_exist_marker3(i):
+            rvec, tvec, = self.get_ARMarker_pose3(i)
+            Xtemp = tvec[0][0][0]
+            Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
+            Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
+
+            Xtemp2 = Xtemp - 0.0
+            Ytemp2 = Ytemp + 0.5
+            Ztemp2 = Ztemp - 0.5
+
+            Xtarget = -Xtemp2
+            Ytarget = -Ztemp2
+            Ztarget = -Ytemp2
+
+            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+
+            (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
+            if pitch_angle < 0:
+                roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
+            
+            self.Pose_msgs[2] = str(-Xtarget) + " "
+            self.Pose_msgs[2] += str(-Ytarget) + " 2"
+                
+                
+            
+        
+            
+
+camera_matrix = np.matrix([[381.36246688113556, 0.0, 320.5], [0.0, 381.36246688113556, 240.5], [0.0, 0.0, 1.0]])
+distortion = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
 
 # Se declara el objeto del reconocedor
-myCap = AR(0)
+myCap = AR(0, camera_matrix, distortion)
 
 # Callback de la cámara
 '''          FUNCIONAMIENTO
@@ -200,7 +308,7 @@ def callback_color_img(data):
     cv_color_image = bridge.imgmsg_to_cv2(data, "bgr8")
     myCap.find_ARMarker(cv_color_image)
     myCap.get_average_point_marker(0)
-    
+    myCap.get_degrees(0)
     for i in range(myCap.N):
         x = myCap.blocks_pos[i][0]
         y = myCap.blocks_pos[i][1]
@@ -221,11 +329,12 @@ def callback_color_img(data):
                 myCap.blocks_time[i + myCap.N] = time.time()
                 print("wait ", myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i])
             
-            if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 10.0:
+            if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 5.0:
                 print("################### READY #######################")
                 msg = String()
                 msg.data = str(i)
-                myCap.publisher.publish(msg)
+                myCap.publisher.publish(myCap.Pose_msgs[i])
+                print(myCap.Pose_msgs[i])
                 myCap.blocks[i]= False
      
     for i in range(myCap.N):
