@@ -125,20 +125,23 @@ class Scullion():
                         tupla = ("blue",False)
                         self.ingredients[2] = tupla
                 
-                else:
+                elif len(command) == 3:
+                    print("hola")
+                    X = float(command[0])
+                    Y =  float(command[1])
                     # Se coge el objeto y se guarda en la zona de almacenaje, luego se pone a True la tupla (está en la zona de almacenaje)
                     if command[2] == "0":
-                        self.grab(float(command[0]), float(command[1]), 0.06, self.red.x, self.red.y)
+                        self.grab(X,Y, 0.06, self.red.x, self.red.y)
                         tupla = ("red",True)
                         self.ingredients[0] = tupla
                     
                     if command[2] == "1" :
-                        self.grab(float(command[0]), float(command[1]), 0.06, self.green.x, self.green.y)
+                        self.grab(X,Y, 0.06, self.green.x, self.green.y)
                         tupla = ("green",True)
                         self.ingredients[1] = tupla
                         
                     if command[2] == "2":
-                        self.grab(float(command[0]), float(command[1]), 0.06, self.blue.x, self.blue.y)
+                        self.grab(X,Y, 0.06, self.blue.x, self.blue.y)
                         tupla = ("blue",True)
                         self.ingredients[2] = tupla
     

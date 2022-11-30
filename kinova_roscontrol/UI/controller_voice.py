@@ -54,7 +54,7 @@ class Scullion():
         rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
-        rospy.Subscriber("/camera", String, self.__cb_camera)
+        rospy.Subscriber("/camera", String, self.__cb)
         
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
@@ -108,46 +108,48 @@ class Scullion():
                 
                 # Saca el comando de la lista de comandos
                 command = self.__cmd.pop(0)
+                command = command.lower().split()
                 
                 # Realiza el pick and place si tiene que dar un ingrediente, luego pone la tupla a False (no hay ingrediente en la zona de almacén)
-                if command == "sal" and self.__ingredients[0][1]:
-                    self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y)
-                    tupla = ("sal",False)
-                    self.__ingredients[0] = tupla
+                if len(command) == 1:
+                    if command[0] == "sal" and self.__ingredients[0][1]:
+                        self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y)
+                        tupla = ("sal",False)
+                        self.__ingredients[0] = tupla
 
-                elif command == "azucar" and self.__ingredients[1][1]:
-                    self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y,)
-                    tupla = ("azucar",False)
-                    self.__ingredients[1] = tupla
-                                        
-                elif command == "pimienta" and self.__ingredients[2][1]:
-                    tupla = ("pimienta",False)
-                    self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y)
-                    self.__ingredients[2] = tupla
-                
-                # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
-                elif command == "0" and not self.ingredients[0][1]:
-                    self.grab(0, -0.5, 0.06, self.salt.x, self.salt.y)
-                    tupla = ("sal",True)
-                    self.ingredients[0] = tupla
-                
-                elif command == "1" and not self.ingredients[1][1]:
-                    self.grab(0, -0.5, 0.06, self.pepper.x, self.pepper.y)
-                    tupla = ("pimienta",True)
-                    self.ingredients[1] = tupla
+                    elif command[0] == "azucar" and self.__ingredients[1][1]:
+                        self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y,)
+                        tupla = ("azucar",False)
+                        self.__ingredients[1] = tupla
+                                            
+                    elif command[0] == "pimienta" and self.__ingredients[2][1]:
+                        tupla = ("pimienta",False)
+                        self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y)
+                        self.__ingredients[2] = tupla
+                        
+                else:
+                    X = float(command[0])
+                    Y =  float(command[1])
+                    # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
+                    if command[2] == "0":
+                        self.grab(X,Y, 0.06, self.salt.x, self.salt.y)
+                        tupla = ("sal",True)
+                        self.ingredients[0] = tupla
                     
-                elif command == "2" and not self.ingredients[2][1]:
-                    self.grab(0, -0.5, 0.06, self.sugar.x, self.sugar.y)
-                    tupla = ("azucar",True)
-                    self.ingredients[2] = tupla
+                    elif command[2] == "1":
+                        self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y)
+                        tupla = ("pimienta",True)
+                        self.ingredients[1] = tupla
+                        
+                    elif command[2] == "2":
+                        self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y)
+                        tupla = ("azucar",True)
+                        self.ingredients[2] = tupla
      
      
      
     # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
     def __cb(self, data):
-        self.__cmd.append(data.data)
-        
-    def __cb_camera(self, data):
         self.__cmd.append(data.data)
         
         

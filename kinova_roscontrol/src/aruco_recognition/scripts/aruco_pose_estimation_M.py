@@ -23,6 +23,7 @@ class AR():
     
     # Diccionarios
     def __init__(self, videoPort, cameraMatrix, distortionCoefficients):
+        # Matriz de parámetros intrínsecos (calibración) y de distorsión
         self.cameraMatrix = cameraMatrix
         self.distortionCoefficients = distortionCoefficients
         
@@ -40,6 +41,7 @@ class AR():
         # Lista de la posición actual y anterior de los bloques (0 - 2: actual | 3 - 5: previas)
         self.blocks_pos = []
         
+        # Mensajes a enviar por el topic
         self.Pose_msgs = []
         
         for i in range(3):
@@ -187,29 +189,33 @@ class AR():
     def release(self):
         self.cap.release()
         
-        
+    
+    # Funciones para cada Aruco para obtener los vectores de rotación y tralsación en el sistema de la cámara
     def get_ARMarker_pose(self, i):
         if self.is_exist_marker(i):
             rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
-            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
             return rvec, tvec
     
     def get_ARMarker_pose2(self, i):
         if self.is_exist_marker2(i):
             rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners2[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
-            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
             return rvec, tvec
-        
     
     def get_ARMarker_pose3(self, i):
         if self.is_exist_marker3(i):
             rvec, tvec, _ = aruco.estimatePoseSingleMarkers(self.corners3[i], arucoMarkerLength, self.cameraMatrix, self.distortionCoefficients)
-            # self.frame = aruco.drawAxis(self.frame, self.cameraMatrix, self.distortionCoefficients, rvec, tvec, 0.1)
             return rvec, tvec
 
+
+    # Se obtiene la posición en el sistema global de cada uno de los arucos
     def get_degrees(self, i):
         if self.is_exist_marker(i):
+            
+            # Obtiene rotación y traslación
             rvec, tvec, = self.get_ARMarker_pose(i)
+            
+            # Se pasa a coordenadas globales (pi/2, es el ángulo que está girado la cámara
+            #                                 [0.0, -0.5, 0.5 son las coordenadas de la cámara])
             Xtemp = tvec[0][0][0]
             Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
             Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
@@ -218,23 +224,29 @@ class AR():
             Ytemp2 = Ytemp + 0.5
             Ztemp2 = Ztemp - 0.5
 
-            Xtarget = -Xtemp2
+            Xtarget = Xtemp2
             Ytarget = -Ztemp2
             Ztarget = -Ytemp2
 
             print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
 
+            # Se obtienen los ángulos de Euler
             (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
             if pitch_angle < 0:
                 roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
             
+            # Se construye el mensaje
             self.Pose_msgs[0] = str(-Xtarget) + " "
             self.Pose_msgs[0] += str(-Ytarget) + " 0"
-            
 
             
         if self.is_exist_marker2(i):
+            
+            # Obtiene rotación y traslación
             rvec, tvec, = self.get_ARMarker_pose2(i)
+            
+            # Se pasa a coordenadas globales (pi/2, es el ángulo que está girado la cámara
+            #                                 [0.0, -0.5, 0.5 son las coordenadas de la cámara])
             Xtemp = tvec[0][0][0]
             Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
             Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
@@ -243,7 +255,9 @@ class AR():
             Ytemp2 = Ytemp + 0.5
             Ztemp2 = Ztemp - 0.5
 
-            Xtarget = -Xtemp2
+
+            
+            Xtarget = Xtemp2
             Ytarget = -Ztemp2
             Ztarget = -Ytemp2
 
@@ -253,12 +267,18 @@ class AR():
             if pitch_angle < 0:
                 roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
             
+            # Se construye el mensaje
             self.Pose_msgs[1] = str(-Xtarget) + " "
             self.Pose_msgs[1] += str(-Ytarget) + " 1"
           
             
         if self.is_exist_marker3(i):
+            
+            # Obtiene rotación y traslación
             rvec, tvec, = self.get_ARMarker_pose3(i)
+            
+            # Se pasa a coordenadas globales (pi/2, es el ángulo que está girado la cámara
+            #                                 [0.0, -0.5, 0.5 son las coordenadas de la cámara])
             Xtemp = tvec[0][0][0]
             Ytemp = tvec[0][0][1]*math.cos(pi/2) - tvec[0][0][2]*math.sin(pi/2)
             Ztemp = tvec[0][0][1]*math.sin(pi/2) + tvec[0][0][2]*math.cos(pi/2)
@@ -267,16 +287,18 @@ class AR():
             Ytemp2 = Ytemp + 0.5
             Ztemp2 = Ztemp - 0.5
 
-            Xtarget = -Xtemp2
+            Xtarget = Xtemp2
             Ytarget = -Ztemp2
             Ztarget = -Ytemp2
 
             print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
 
+            # Se obtienen los ángulos de Euler
             (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
             if pitch_angle < 0:
                 roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
             
+            # Se construye el mensaje
             self.Pose_msgs[2] = str(-Xtarget) + " "
             self.Pose_msgs[2] += str(-Ytarget) + " 2"
                 
@@ -294,9 +316,9 @@ myCap = AR(0, camera_matrix, distortion)
 # Callback de la cámara
 '''          FUNCIONAMIENTO
     Se pasa la imagen a una matriz (en ROS se pasa como un vector uint8). Luego, se detectan los aruco en la imagen para después obtener sus
-posiciones y actualizar su presencia.
-    Luego, para cada bloque se guarda la posición actual y la previa. 
-    En orden de IFS:
+posiciones y actualizar su presencia. Luego se obtienen sus posiciones en elsistema de referencia del mundo
+    Luego, para cada bloque se guarda la posición actual y la previa. (dela cámara, es más estable)
+    En orden de IFs:
         - Si la posición previa es inválida y la actual no: acaba de detectarse --> se considera que el bloque existe y se empieza la cuenta del tiempo
         - Si el bloque existe: 
           - Si el bloque no se ha movido más allá de un margen: se actualiza el tiempo
@@ -309,6 +331,7 @@ def callback_color_img(data):
     myCap.find_ARMarker(cv_color_image)
     myCap.get_average_point_marker(0)
     myCap.get_degrees(0)
+    
     for i in range(myCap.N):
         x = myCap.blocks_pos[i][0]
         y = myCap.blocks_pos[i][1]
@@ -329,7 +352,7 @@ def callback_color_img(data):
                 myCap.blocks_time[i + myCap.N] = time.time()
                 print("wait ", myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i])
             
-            if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 5.0:
+            if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 10.0:
                 print("################### READY #######################")
                 msg = String()
                 msg.data = str(i)
