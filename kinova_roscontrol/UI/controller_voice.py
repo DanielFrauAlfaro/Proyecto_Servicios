@@ -3,15 +3,12 @@
 
 '''
 KinovaCommException: Could not initialize Kinova API
-
 RLException: Invalid <param> tag: Cannot load command parameter [robot_description]: no such command [['/opt/ros/noetic/share/xacro/xacro.py', '/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_description/urdf/m1n6s300_standalone.xacro']]. 
-
 Param xml is <param name="robot_description" command="$(find xacro)/xacro.py '$(find kinova_description)/urdf/$(arg kinova_robotType)_standalone.xacro'"/>
 The traceback for the exception was written to the log file
 '''
 
 import copy
-import os
 import time
 from pynput import keyboard as kb
 
@@ -55,6 +52,9 @@ class Scullion():
         
         # Suscriptor al nodo de la cámara
         rospy.Subscriber("/camera", String, self.__cb)
+
+        #Publica la disponibilidad de los ingredientes
+        self.pub = rospy.Publisher("/ingredients",String,queue_size=10)
         
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
@@ -112,36 +112,54 @@ class Scullion():
                 
                 # Realiza el pick and place si tiene que dar un ingrediente, luego pone la tupla a False (no hay ingrediente en la zona de almacén)
                 if len(command) == 1:
+
+                    #Mensaje para comunicar a la interfaz el ingrediente que se coge
+                    mensaje = String()
+
                     if command[0] == "sal" and self.__ingredients[0][1]:
+                        mensaje.data = "sal"
+                        self.pub.publish(mensaje)
                         self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y)
                         tupla = ("sal",False)
                         self.__ingredients[0] = tupla
-
+                        
+                        
                     elif command[0] == "azucar" and self.__ingredients[1][1]:
+                        mensaje.data = "azucar"
+                        self.pub.publish(mensaje)
                         self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y,)
                         tupla = ("azucar",False)
                         self.__ingredients[1] = tupla
+                        
                                             
                     elif command[0] == "pimienta" and self.__ingredients[2][1]:
                         tupla = ("pimienta",False)
+                        mensaje.data = "pimienta"
+                        self.pub.publish(mensaje)
                         self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y)
                         self.__ingredients[2] = tupla
                         
-                else:
+                elif len(command) > 1:
                     X = float(command[0])
                     Y =  float(command[1])
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
                     if command[2] == "0":
+                        mensaje.data = "sal"
+                        self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.salt.x, self.salt.y)
                         tupla = ("sal",True)
                         self.ingredients[0] = tupla
                     
                     elif command[2] == "1":
+                        mensaje.data = "pimienta"
+                        self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y)
                         tupla = ("pimienta",True)
                         self.ingredients[1] = tupla
                         
                     elif command[2] == "2":
+                        mensaje.data = "azucar"
+                        self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y)
                         tupla = ("azucar",True)
                         self.ingredients[2] = tupla
@@ -262,4 +280,3 @@ if __name__ == '__main__':
     scullion = Scullion()
     
     scullion.control_loop()
-    
