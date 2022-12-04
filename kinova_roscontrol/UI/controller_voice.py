@@ -80,7 +80,7 @@ class Scullion():
         
         self.sugar.x = -0.35
         self.sugar.y = 0.35
-        self.__ingredients.append(("azucar", True))
+        self.__ingredients.append(("azúcar", True))
         
         self.pepper.x = 0.0
         self.pepper.y = 0.5
@@ -124,11 +124,11 @@ class Scullion():
                         self.__ingredients[0] = tupla
                         
                         
-                    elif command[0] == "azucar" and self.__ingredients[1][1]:
-                        mensaje.data = "azucar"
+                    elif command[0] == "azúcar" and self.__ingredients[1][1]:
+                        mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
                         self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y,)
-                        tupla = ("azucar",False)
+                        tupla = ("azúcar",False)
                         self.__ingredients[1] = tupla
                         
                                             
@@ -140,8 +140,8 @@ class Scullion():
                         self.__ingredients[2] = tupla
                         
                 elif len(command) > 1:
-                    X = float(command[0])
-                    Y =  float(command[1])
+
+                    X,Y = map(float,command)
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
                     if command[2] == "0":
                         mensaje.data = "sal"
@@ -158,10 +158,10 @@ class Scullion():
                         self.ingredients[1] = tupla
                         
                     elif command[2] == "2":
-                        mensaje.data = "azucar"
+                        mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y)
-                        tupla = ("azucar",True)
+                        tupla = ("azúcar",True)
                         self.ingredients[2] = tupla
      
      
