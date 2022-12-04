@@ -9,31 +9,51 @@ import pyttsx3
 from random import randint
 
 # Lista de ingredientes disponibles
-INGREDIENTS = ["sal","azucar","pimienta"]
+INGREDIENTS = ["sal","azúcar","pimienta"]
 
 # Text to speech
 def tts(text):
+    print(f"\n -kinova: {text}")
     engine.say(text)
     engine.runAndWait()
 
 # Función para que las frases sean aleatorias
-def random_tts(text):
-    comandos ={ 0:"Marchando",
-                1:"Voy a por",
-                2:"Cogiendo",
-                3: "Agarrando" }
-
-    tts(comandos[randint(0,3)] + text)
+def random_tts_phrases(text,returning=False):
+    phrases ={  0: "Marchando",
+                1: "Voy a por",
+                2: "Cogiendo",
+                3: "Aquí tienes",
+                4: "Guardando",
+                5: "Dejando",
+                6: "Almacenando",
+                7: "Devolviendo" }
+    
+    offset = 0
+    if returning: offset = 4 
+    tts(f"{phrases[randint(0,3)+offset]} {text}")
 
 # Callback para modificar la lista de ingredientes disponibles
-# Si estaba disponible significa que lo ha cogido, por lo que ya no está disponible
-# Si no lo estaba significa que lo ha guardado, por lo que se vuelve disponible
 def ingredients_cb(ingredient):
-    if ingredient.data in INGREDIENTS: 
+    if ingredient.data in INGREDIENTS:
+        random_tts_phrases(ingredient.data) 
         INGREDIENTS.remove(ingredient.data)
-
-    else: 
+    else:
+        random_tts_phrases({ingredient.data}, returning=True) 
         INGREDIENTS.append(ingredient.data)
+
+#Comandos de voz
+def process_commands(text):
+    #Listar ingredientes
+    if "ingredientes" in text:
+        tts(f"Los ingredientes disponibles son: {', '.join(INGREDIENTS)}")
+
+    #Comandos de ingredientes    
+    msg = String()
+
+    for ingredient in INGREDIENTS:
+        if ingredient in text:
+            msg.data = ingredient
+            pub.publish(msg)
 
 # Función main
 if __name__ == "__main__":
@@ -58,48 +78,46 @@ if __name__ == "__main__":
     engine.setProperty('rate',120)
     engine.setProperty('voice','spanish')
 
-    #Frase inicial
-    tts("¿Qué ingredientes quieres?")
-
     #Texto reconocido
-    text = ""
+    text = None
+
+    #Comienzo
+    setup = False
+    tts("¿Qué ingredientes quieres?")
 
     #BUCLE
     while not rospy.is_shutdown():
 
         with sr.Microphone() as micro:
+            
+            #Primera iteracion
+            if not setup:
+                os.system("clear")
+                print("Escuchando",end='',flush=True)
+                setup = True
 
             # r.adjust_for_ambient_noise(micro)
-
-            audio =  r.listen(micro,10,3)
+            audio =  r.listen(micro,10,4)
 
             try:
                 #Reconoce el texto
                 text = r.recognize_google(audio,language="es-ES")
-                print('\n Has dicho: {}'.format(text))
-
+                print(f"\n -Has dicho: {text}")
                 text = text.lower().split()
 
-            except:
-                print('.', end='',flush=True)
+            except sr.RequestError:
+                #No hay conexion con la API
+                tts("Conexión fuera de alcance")
 
-        mensaje = String()
-            
-        if("sal" in text and "sal" in INGREDIENTS):
-            random_tts("la sal")
-            mensaje.data = "sal"
-            pub.publish(mensaje)
+            except sr.UnknownValueError:
+                #No se pudo reconocer el habla
+                print(".",end='',flush=True)
 
-        if("pimienta" in text and "pimienta" in INGREDIENTS):
-            random_tts("la pimienta")
-            mensaje.data = "pimienta"
-            pub.publish(mensaje)
+        if text is not None:
+            process_commands(text)
+            text = None
+            os.system("clear")
+            print("\nEscuchando",end='',flush=True)
 
-        if("azúcar" in text and "azucar" in INGREDIENTS):
-            random_tts("el azúcar")
-            mensaje.data = "azucar"
-            pub.publish(mensaje)
-
-        text = ""
         rate.sleep()
 
