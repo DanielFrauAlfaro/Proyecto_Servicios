@@ -161,6 +161,8 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
     Al final del acrhivo, justo antes de la última etiqueta, se añade:
       - <xacro:camera_gazebo_v0 />
 
-############################### Robot Real #############################################
-  El error del API puede ser o por el USB (que no lo detecta) o por el archivo en kinova-ros/kinova_bringup/launch/config/robot_parameters.yaml o 
-multiple_robots.yaml
+
+  Se han cambiado la posición de los bloques para que hayan dos zonas; una donde el robot deja los bloques y otra desde donde los recoge, para que
+no se molesten los bloques ya dejados con los que vienen. También se ha cambiado la clausura de la pinza, ahora se cierra menos para que los dedos
+no tiemblen tanto al coger los objetos, los coja mal o que de un error en la planificiación de trayectorias porque la articulación no está en la
+posición esperada.
