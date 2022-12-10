@@ -73,9 +73,12 @@ decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis g
 
   - Control mediantes las teclas del teclado, la tecla 'r', 'g' y 'b' para que el robot vaya a por los bloques rojo, verde y azul respectivamente
       roslaunch kinova_gazebo key_control.launch
+      rosrun controllers controller_.py
   
   - Control mediante la voz:
       roslaunch kinova_gazebo voice_control.launch
+      rosrun controllers controller_voice.py
+
 
 
   - 5. CONTROL EN EJECUCIÓN: la ejecución se realiza mediante ROS-Control, por lo que el control se realizará mediante topics. Para ello, se 
@@ -166,3 +169,6 @@ se conseguía planificar y realizar el 100% de la trayectoria programada
 no se molesten los bloques ya dejados con los que vienen. También se ha cambiado la clausura de la pinza, ahora se cierra menos para que los dedos
 no tiemblen tanto al coger los objetos, los coja mal o que de un error en la planificiación de trayectorias porque la articulación no está en la
 posición esperada.
+
+  Para mejorar la actuación del robot se ha disminuido el margen de tolerancia de las posiciones objetivo, para que llegue mejor a las posiciones
+y no falle tanto en las planificaciones posteriores
