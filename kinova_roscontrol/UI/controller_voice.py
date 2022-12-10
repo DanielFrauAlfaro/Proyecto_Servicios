@@ -74,16 +74,16 @@ class Scullion():
         self.pepper = Point()
         self.sugar = Point()
         
-        self.salt.x = 0.35
-        self.salt.y = 0.35
+        self.salt.x = -0.43
+        self.salt.y = 0.14
         self.__ingredients.append(("sal", True))
         
         self.sugar.x = -0.35
         self.sugar.y = 0.35
         self.__ingredients.append(("azúcar", True))
         
-        self.pepper.x = 0.0
-        self.pepper.y = 0.5
+        self.pepper.x = -0.17 
+        self.pepper.y = 0.44
         self.__ingredients.append(("pimienta", True))
         
         # Lista de comandos
@@ -119,7 +119,7 @@ class Scullion():
                     if command[0] == "sal" and self.__ingredients[0][1]:
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
-                        self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y)
+                        self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y, True)
                         tupla = ("sal",False)
                         self.__ingredients[0] = tupla
                         
@@ -127,7 +127,7 @@ class Scullion():
                     elif command[0] == "azúcar" and self.__ingredients[1][1]:
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
-                        self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y,)
+                        self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y, True)
                         tupla = ("azúcar",False)
                         self.__ingredients[1] = tupla
                         
@@ -136,7 +136,7 @@ class Scullion():
                         tupla = ("pimienta",False)
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y)
+                        self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y, True)
                         self.__ingredients[2] = tupla
                         
                 elif len(command) > 1:
@@ -146,21 +146,21 @@ class Scullion():
                     if command[2] == "0":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
-                        self.grab(X,Y, 0.06, self.salt.x, self.salt.y)
+                        self.grab(X,Y, 0.06, self.salt.x, self.salt.y, False)
                         tupla = ("sal",True)
                         self.ingredients[0] = tupla
                     
                     elif command[2] == "1":
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y)
+                        self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y, False)
                         tupla = ("pimienta",True)
                         self.ingredients[1] = tupla
                         
                     elif command[2] == "2":
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
-                        self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y)
+                        self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y, False)
                         tupla = ("azúcar",True)
                         self.ingredients[2] = tupla
      
@@ -172,7 +172,7 @@ class Scullion():
         
         
     # Función donde se llama a todos los pasos para coger el objeto 
-    def grab(self, x_move, y_move, z_move, x_place, y_place):
+    def grab(self, x_move, y_move, z_move, x_place, y_place, interm):
         self.move(x_move, y_move, z_move + 0.2)
         
         time.sleep(1)
@@ -182,7 +182,7 @@ class Scullion():
         self.Grab()
 
         time.sleep(1)
-        self.place_on_target(x_place, y_place)
+        self.place_on_target(x_place, y_place, interm)
 
         time.sleep(1)
         self.Open()
@@ -211,7 +211,7 @@ class Scullion():
      
 
     # Función que coloca el objeto en el lugar correspondiente
-    def place_on_target(self, x, y):
+    def place_on_target(self, x, y, interm):
 
         waypoints = []
 
@@ -228,12 +228,21 @@ class Scullion():
         waypoints.append(copy.deepcopy(waypoint1))
 
         waypoint3 = Pose()
-        waypoint3.position.x = 0.3
-        waypoint3.position.y = 0
-        waypoint3.position.z = 0.3
-        waypoint3.orientation = arm_current_pose.pose.orientation  
-        waypoints.append(copy.deepcopy(waypoint3))
-
+        
+        if interm == True:
+            waypoint3.position.x = 0
+            waypoint3.position.y = 0.3
+            waypoint3.position.z = 0.3
+            waypoint3.orientation = arm_current_pose.pose.orientation  
+            waypoints.append(copy.deepcopy(waypoint3))
+        
+        else:
+            waypoint3.position.x = 0.35
+            waypoint3.position.y = 0.1
+            waypoint3.position.z = 0.3
+            waypoint3.orientation = arm_current_pose.pose.orientation  
+            waypoints.append(copy.deepcopy(waypoint3))
+            
         waypoint2 = Pose()
         waypoint2.position.x = x
         waypoint2.position.y = y
