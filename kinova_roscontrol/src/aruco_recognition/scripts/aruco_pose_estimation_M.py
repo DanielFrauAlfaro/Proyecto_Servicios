@@ -50,6 +50,8 @@ class AR():
         # Lista del tiempo que llevan en pantalla (0 - 2: actual | 3 - 5: previas)
         self.blocks_time = []
 
+        self.sec = [0, 0, 0]
+        self.prev_sec = [0,0,0]
         
         for k in range(self.N * 2):
             self.blocks_time.append(0.0)
@@ -339,7 +341,7 @@ def callback_color_img(data):
         prev_x = myCap.blocks_pos[i + myCap.N][0]
         prev_y = myCap.blocks_pos[i + myCap.N][1]
         
-        margin = 0.2
+        margin = 0.05
         
         if myCap.blocks_pos[i+myCap.N] == [-1, -1] and myCap.blocks_pos[i] != [-1, -1]:
             myCap.blocks[i] = True
@@ -350,8 +352,14 @@ def callback_color_img(data):
             if (x >= prev_x-prev_x*margin and x <= prev_x+prev_x*margin) and \
                 (y >= prev_y-prev_y*margin and y <= prev_y+prev_y*margin):
                 myCap.blocks_time[i + myCap.N] = time.time()
-                print("wait ", myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i])
-            
+                
+                myCap.sec[i] = int(myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i])
+                    
+                if myCap.sec[i] != myCap.prev_sec[i]:
+                    print("wait ", myCap.sec[i])
+                    myCap.prev_sec[i] = myCap.sec[i]
+                
+                            
             if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 10.0:
                 print("################### READY #######################")
                 msg = String()
@@ -363,10 +371,10 @@ def callback_color_img(data):
     for i in range(myCap.N):
         myCap.blocks_pos[i + myCap.N] = myCap.blocks_pos[i]   
     
-    myCap.show()
+    '''myCap.show()
     if cv2.waitKey(1) > 0:
         myCap.release()
-        cv2.destroyAllWindows()
+        cv2.destroyAllWindows()'''
     
     
 # Bucle infinito mientras funcione ROS
