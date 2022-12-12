@@ -23,6 +23,7 @@ import moveit_commander
 import numpy as np
 from pynput import keyboard as kb
 
+
 # Transformar de ángulos de Euler a cuaternios
 def get_quaternion_from_euler(roll, pitch, yaw):
   qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
@@ -31,17 +32,6 @@ def get_quaternion_from_euler(roll, pitch, yaw):
   qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
  
   return [qx, qy, qz, qw]
-
-
-
-
-############################### IMPORTANTE ################################################################
-# AHORA EL PROGRAMA ESTÁ PARA LA SIMULACIÓN, NO SABEMOS SI FUNCIONARÁ ASI CON MOVEIT                      #
-# DIRECTAMENTE. AUN ASÍ SE PUEDE PLANIFICAR CON MOVEIT, PERO HABRÍA QUE TENER LAS POSICIONES              #
-# DEL ROBOT EN CADA MOMENTO --> LAS COSAS QUE ESTAN CON "REAL TODO REAL" SON LAS QUE DEPENDEN DEL REAL    #
-###########################################################################################################
-
-
 
 
 # Clase para el control del robot
@@ -65,11 +55,6 @@ class Scullion():
         
         # Lista con las posiciones articulares del robot
         self.q = [] 
-        
-        # Se mueve el robot a la posición inicial
-        ################# REAL TODO REAL ############
-        # OBTENER LAS POSICIONES ACTUALES DEL ROBOT: con un callback del topic presumiblemente
-        #############################################
         
         # Se mueve el robot a la posición inicial
         print(" ------------ Moving to initial position ---------")
