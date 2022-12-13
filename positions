@@ -1,0 +1,31 @@
+positions
+
+HOME:
+
+rosrun kinova_demo pose_action_client.py -v m1n6s300 mq -- 0.2 0 0.3 0.794731 -0.6059 0.03549 0.00087
+
+PICK ARRIBA: 
+
+rosrun kinova_demo pose_action_client.py -v m1n6s300 mq -- 0.35 0 0.3 0.794731 -0.6059 0.03549 0.00087
+
+PICK ABAJO: 
+
+rosrun kinova_demo pose_action_client.py -v m1n6s300 mq -- 0.35 0 0.05 0.794731 -0.6059 0.03549 0.00087
+
+PLACE ARRIBA: 
+
+rosrun kinova_demo pose_action_client.py -v m1n6s300 mq -- 0 -0.35 0.3 0.794731 -0.6059 0.03549 0.00087
+
+PLACE ABAJO: 
+
+rosrun kinova_demo pose_action_client.py -v m1n6s300 mq -- 0 -0.35 0.05 0.794731 -0.6059 0.03549 0.00087
+
+
+GIPPER OPEN 
+
+rosrun kinova_demo fingers_action_client.py m1n6s300 percent -- 0 0 0
+
+
+GRIPPER CLOSE
+
+rosrun kinova_demo fingers_action_client.py m1n6s300 percent -- 60 60 60
