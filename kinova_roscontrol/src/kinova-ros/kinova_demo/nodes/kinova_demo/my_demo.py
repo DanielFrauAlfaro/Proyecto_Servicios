@@ -8,6 +8,8 @@ import sys
 
 import actionlib
 import kinova_msgs.msg
+import std_msgs.msg
+import geometry_msgs.msg
 
 import argparse
 
@@ -15,6 +17,30 @@ import argparse
 """ Global variable """
 prefix = 'm1n6s300_'  # m1n6s300
 
+
+def cartesian_pose_client(position, orientation):
+    """Send a cartesian goal to the action server."""
+    action_address = '/' + prefix + 'driver/pose_action/tool_pose'
+    client = actionlib.SimpleActionClient(action_address, kinova_msgs.msg.ArmPoseAction)
+    client.wait_for_server()
+
+    goal = kinova_msgs.msg.ArmPoseGoal()
+    goal.pose.header = std_msgs.msg.Header(frame_id=(prefix + 'link_base'))
+    goal.pose.pose.position = geometry_msgs.msg.Point(
+        x=position[0], y=position[1], z=position[2])
+    goal.pose.pose.orientation = geometry_msgs.msg.Quaternion(
+        x=orientation[0], y=orientation[1], z=orientation[2], w=orientation[3])
+
+    # print('goal.pose in client 1: {}'.format(goal.pose.pose)) # debug
+
+    client.send_goal(goal)
+
+    if client.wait_for_result(rospy.Duration(10.0)):
+        return client.get_result()
+    else:
+        client.cancel_all_goals()
+        print('        the cartesian action timed-out')
+        return None
 
 def gripper_client(finger_positions):
     """Send a gripper goal to the action server."""
@@ -88,3 +114,34 @@ def getcurrentJointCommand(prefix_):
 # Main
 if __name__ == '__main__':
     print("Starting demo")
+    joint_angle_client([1.57, 3.5135, 4.7716, 0.8852, -2.3084, 1.1282])
+
+    cartesian_pose_client([0.5, 0, 0.26], [0.79, -0.6059, 0.0359, 0.00087])
+    
+    
+    '''
+    
+Posición de agarre (superior)  (JOINTS):    (Position: [x = 0.5, y = 0.0, z = 0.26])
+
+    <joint name="j2n6s300_joint_1" value="0.1048575812317214"/>
+    <joint name="j2n6s300_joint_2" value="2.5416042919908124"/>
+    <joint name="j2n6s300_joint_3" value="4.5650001372527305"/>
+    <joint name="j2n6s300_joint_4" value="0.38050183567458795"/>
+    <joint name="j2n6s300_joint_5" value="-1.2330303362193176"/>
+    <joint name="j2n6s300_joint_6" value="0.702691615105369"/> 
+
+                                (CARTESIAN ORIENTATION): [X = 0.794731, Y = -0.6059, Z = 0.03549, W = 0.00087]
+
+
+
+Posición de agarre (inferior)  (JOINTS):    (Position: [x = 0.5, y = 0.0, z = 0.06])
+
+    <joint name="j2n6s300_joint_1" value="0.10755548301292706/>
+    <joint name="j2n6s300_joint_2" value="2.188503829630644"/>
+    <joint name="j2n6s300_joint_3" value="4.729273331377606"/>
+    <joint name="j2n6s300_joint_4" value="0.24368134950591092"/>
+    <joint name="j2n6s300_joint_5" value="-0.6329153886244301"/>
+    <joint name="j2n6s300_joint_6" value="0.4743015064614271"/> 
+
+                                (CARTESIAN ORIENTATION): [X = 0.794731, Y = -0.6059, Z = 0.03549, W = 0.00087]
+    '''
