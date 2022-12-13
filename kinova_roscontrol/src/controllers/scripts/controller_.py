@@ -111,7 +111,7 @@ class Scullion():
                         self.ingredients[2] = tupla
                 
                 elif len(command) == 3:
-                    print("hola")
+                    
                     X = float(command[0])
                     Y =  float(command[1])
                     # Se coge el objeto y se guarda en la zona de almacenaje, luego se pone a True la tupla (está en la zona de almacenaje)
