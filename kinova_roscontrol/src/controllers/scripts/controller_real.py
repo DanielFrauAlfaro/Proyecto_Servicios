@@ -37,7 +37,7 @@ class Scullion():
         rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
-        rospy.Subscriber("/camera", String, self.__cb)
+        rospy.Subscriber("/ready", String, self.__cb)
 
         #Publica la disponibilidad de los ingredientes
         self.pub = rospy.Publisher("/ingredients",String,queue_size=10)
@@ -103,14 +103,13 @@ class Scullion():
                         
                 elif len(command) > 1:
 
-                    X,Y = map(float,command)
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
                     if command[2] == "0":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
                         self.grab(0, -0.35, 0.05, self.salt.x, self.salt.y, False)
                         tupla = ("sal",True)
-                        self.ingredients[0] = tupla
+                        self.__ingredients[0] = tupla
      
      
      
