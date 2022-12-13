@@ -63,6 +63,8 @@ decir un robot Kinova Jaco versión 2.0 con 3 dedos en el efector final y seis g
 	ctr+shift+T
 	source... [conda...]
 	roslaunch kinova_moveit demo_gazebo.launch 
+	* roslaunch controllers scullion_tiles.launch
+	*rosrun controllers controller_.py
 	ctr+shift+T
 	source...[conda...]
 	cd UI
