@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-import copy
 import time
-from pynput import keyboard as kb
 
 # ROS
 import rospy
@@ -14,16 +12,6 @@ import geometry_msgs.msg
 import kinova_msgs.msg
 from geometry_msgs.msg import Point
 from std_msgs.msg import String
-import numpy as np
-
-# Transformar de ángulos de Euler a cuaternios
-def get_quaternion_from_euler(roll, pitch, yaw):
-  qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
-  qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
-  qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
-  qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
- 
-  return [qx, qy, qz, qw]
 
 
 # Clase para el control del robot
@@ -42,12 +30,6 @@ class Scullion():
         #Publica la disponibilidad de los ingredientes
         self.pub = rospy.Publisher("/ingredients",String,queue_size=10)
         
-        # Lista con las posiciones articulares del robot
-        self.q = [] 
-        
-        ################# REAL TODO REAL ############
-        # OBTENER LAS POSICIONES ACTUALES DEL ROBOT: con un callback del topic presumiblemente
-        #############################################
 
         # Lista de ingredientes y sus posiciones
         self.__ingredients = []

@@ -1,43 +1,15 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 
-'''
-KinovaCommException: Could not initialize Kinova API
-RLException: Invalid <param> tag: Cannot load command parameter [robot_description]: no such command [['/opt/ros/noetic/share/xacro/xacro.py', '/home/daniel/Desktop/Proyecto_Servicios/kinova_roscontrol/src/kinova-ros/kinova_description/urdf/m1n6s300_standalone.xacro']]. 
-Param xml is <param name="robot_description" command="$(find xacro)/xacro.py '$(find kinova_description)/urdf/$(arg kinova_robotType)_standalone.xacro'"/>
-The traceback for the exception was written to the log file
-'''
 
 import copy
 import time
-from pynput import keyboard as kb
 
 # ROS
 import rospy
 from geometry_msgs.msg import Pose, Point
 from std_msgs.msg import String
 import moveit_commander
-import numpy as np
-
-# Transformar de ángulos de Euler a cuaternios
-def get_quaternion_from_euler(roll, pitch, yaw):
-  qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
-  qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
-  qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
-  qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
- 
-  return [qx, qy, qz, qw]
-
-
-
-
-############################### IMPORTANTE ################################################################
-# AHORA EL PROGRAMA ESTÁ PARA LA SIMULACIÓN, NO SABEMOS SI FUNCIONARÁ ASI CON MOVEIT                      #
-# DIRECTAMENTE. AUN ASÍ SE PUEDE PLANIFICAR CON MOVEIT, PERO HABRÍA QUE TENER LAS POSICIONES              #
-# DEL ROBOT EN CADA MOMENTO --> LAS COSAS QUE ESTAN CON "REAL TODO REAL" SON LAS QUE DEPENDEN DEL REAL    #
-###########################################################################################################
-
-
 
 
 # Clase para el control del robot
@@ -60,13 +32,6 @@ class Scullion():
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
         
-        # Lista con las posiciones articulares del robot
-        self.q = [] 
-        
-        ################# REAL TODO REAL ############
-        # OBTENER LAS POSICIONES ACTUALES DEL ROBOT: con un callback del topic presumiblemente
-        #############################################
-
         # Lista de ingredientes y sus posiciones
         self.__ingredients = []
         
