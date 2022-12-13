@@ -96,8 +96,8 @@ if __name__ == "__main__":
                 print("Escuchando",end='',flush=True)
                 setup = True
 
-            # r.adjust_for_ambient_noise(micro)
-            audio =  r.listen(micro,10,4)
+            r.adjust_for_ambient_noise(micro)
+            audio =  r.listen(micro,None,4)
 
             try:
                 #Reconoce el texto
