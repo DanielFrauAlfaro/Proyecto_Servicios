@@ -51,7 +51,7 @@ class Scullion():
         rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
-        rospy.Subscriber("/camera", String, self.__cb)
+        rospy.Subscriber("/ready", String, self.__cb)
 
         #Publica la disponibilidad de los ingredientes
         self.pub = rospy.Publisher("/ingredients",String,queue_size=10)
@@ -109,17 +109,17 @@ class Scullion():
                 # Saca el comando de la lista de comandos
                 command = self.__cmd.pop(0)
                 command = command.lower().split()
+
+                #Mensaje para comunicar a la interfaz el ingrediente que se coge
+                mensaje = String()
                 
                 # Realiza el pick and place si tiene que dar un ingrediente, luego pone la tupla a False (no hay ingrediente en la zona de almacén)
                 if len(command) == 1:
 
-                    #Mensaje para comunicar a la interfaz el ingrediente que se coge
-                    mensaje = String()
-
                     if command[0] == "sal" and self.__ingredients[0][1]:
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
-                        self.grab(self.salt.x, self.salt.y, 0.06, self.salt.x, -self.salt.y, True)
+                        self.grab(self.salt.x, self.salt.y, 0.06, 0.5, 0, True)
                         tupla = ("sal",False)
                         self.__ingredients[0] = tupla
                         
@@ -127,7 +127,7 @@ class Scullion():
                     elif command[0] == "azúcar" and self.__ingredients[1][1]:
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
-                        self.grab(self.sugar.x, self.sugar.y, 0.06, self.sugar.x, -self.sugar.y, True)
+                        self.grab(self.sugar.x, self.sugar.y, 0.06,0.35, 0.35, True)
                         tupla = ("azúcar",False)
                         self.__ingredients[1] = tupla
                         
@@ -136,38 +136,40 @@ class Scullion():
                         tupla = ("pimienta",False)
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(self.pepper.x, self.pepper.y, 0.06, self.pepper.x, -self.pepper.y, True)
+                        self.grab(self.pepper.x, self.pepper.y, 0.06, 0.35, -0.15, True)
                         self.__ingredients[2] = tupla
                         
                 elif len(command) > 1:
 
-                    X,Y = map(float,command)
+                    X = float(command[0])
+                    Y = float(command[1])
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
                     if command[2] == "0":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.salt.x, self.salt.y, False)
                         tupla = ("sal",True)
-                        self.ingredients[0] = tupla
+                        self.__ingredients[0] = tupla
                     
                     elif command[2] == "1":
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y, False)
                         tupla = ("pimienta",True)
-                        self.ingredients[1] = tupla
+                        self.__ingredients[1] = tupla
                         
                     elif command[2] == "2":
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y, False)
                         tupla = ("azúcar",True)
-                        self.ingredients[2] = tupla
+                        self.__ingredients[2] = tupla
      
      
      
     # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
     def __cb(self, data):
+        print(data)
         self.__cmd.append(data.data)
         
         
