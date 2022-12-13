@@ -1,0 +1,21 @@
+<launch>
+
+<!-- specify the planning pipeline -->
+
+  <arg name="pipeline" default="ompl" />
+
+  <!-- Gazebo specific options -->
+  <arg name="gazebo_gui" default="true"/>
+  <arg name="paused" default="false"/>
+
+  <!-- launch the gazebo simulator and spawn the robot -->
+  <include file="$(find kinova_bringup)/launch/kinova_robot.launch" >
+    <arg name="use_urdf" value="true"/>
+    <arg name="kinova_robotType" value="m1n6s300"/>
+  </include>
+
+
+  <node name="interface" pkg="voice_interface" type="voice_interface.py"/>
+  <node name="camera" pkg="aruco_recognition" type="real_aruco.py" output="screen"/>
+
+</launch>
