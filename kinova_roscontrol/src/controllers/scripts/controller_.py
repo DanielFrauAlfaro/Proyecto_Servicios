@@ -46,9 +46,6 @@ class Scullion():
         rospy.Subscriber("/ready", String, self.rec)
         rospy.Subscriber("/teclas", String, self.teclas)
         
-        # TODO: suscribirse al nodo de la cámara
-        print("TODO: susciptor al nodo de la cámara")
-        
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
@@ -91,7 +88,6 @@ class Scullion():
                     
                 command = self.cmd.pop(0)       # Se extrae el comando y se selecciona la acción
                 command = command.lower().split()
-                print(command)
                 
                 if len(command) == 1:
                     # Se coge el objeto y se pasa a la zona de manipulación, luego se pone a False la tupla (no está en la zona de alamcenaje)
@@ -134,7 +130,6 @@ class Scullion():
     # Callbacks de la cámara y de las teclas (simula interfaz por voz)
     def rec(self, data):
         self.cmd.append(data.data)
-        print("data.data")
     def teclas(self, data):
         self.cmd.append(data.data)
           
@@ -263,39 +258,13 @@ class Scullion():
         self.arm.go()
 
 
-# Se define el objeto
-scullion = Scullion()
-scullion.control_loop()
-
-# Se define el callback de la presión de la tecla
-def callback(tecla):
-    global scullion
-    
-    s = String()
-    
-    print("Se ha pulsado la tecla ")
-    
-    if(str(tecla) == "'r'"):
-        print("R")
-        scullion.cmd.append("rojo")
-            
-    elif(str(tecla) == "'g'"):
-        print("G")
-        scullion.cmd.append("verde")
-           
-    elif(str(tecla) == "'b'"):
-        print("B")
-        scullion.cmd.append("azul")
-
-        
-    else:
-        scullion.Move_to_initial_position()
 
 
 # Main
 if __name__ == '__main__':
     print("------- Start --------")
-    
+    # Se define el objeto
+    scullion = Scullion()
     scullion.control_loop()
     
     

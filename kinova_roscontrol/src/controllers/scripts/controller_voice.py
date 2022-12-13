@@ -169,7 +169,6 @@ class Scullion():
      
     # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
     def __cb(self, data):
-        print(data)
         self.__cmd.append(data.data)
         
         

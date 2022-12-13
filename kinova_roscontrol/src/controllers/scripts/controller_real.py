@@ -154,8 +154,6 @@ class Scullion():
         goal.pose.pose.orientation = geometry_msgs.msg.Quaternion(
             x=self.orient[0], y=self.orient[1], z=self.orient[2], w=self.orient[3])
 
-        # print('goal.pose in client 1: {}'.format(goal.pose.pose)) # debug
-
         client.send_goal(goal)
 
         if client.wait_for_result(rospy.Duration(10.0)):
