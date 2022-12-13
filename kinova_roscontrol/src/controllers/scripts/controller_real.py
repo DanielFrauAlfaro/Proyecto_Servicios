@@ -55,7 +55,7 @@ class Scullion():
         self.salt = Point()
         
         
-        self.salt.x = 0.5
+        self.salt.x = 0.35
         self.salt.y = 0.0
         self.__ingredients.append(("sal", True))
         
@@ -64,9 +64,8 @@ class Scullion():
         self.__cmd = []
         
         # Código del nombre del Kinova Mico
-        self.prefix = "m1n6s300"
+        self.prefix = "m1n6s300_"
 
-        self.angle_home = [0, 3.5135, 4.7716, 0.8852, -2.3084, 1.1282]
         self.orient = [0.794731, -0.6059, 0.03549, 0.00087]
         
         # Se mueve el robot a la posición inicial
@@ -98,7 +97,7 @@ class Scullion():
                     if command[0] == "sal" and self.__ingredients[0][1]:
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
-                        self.grab(self.salt.x, self.salt.y, 0.06, -self.salt.x, self.salt.y, True)
+                        self.grab(self.salt.x, self.salt.y, 0.05, 0, -0.35, True)
                         tupla = ("sal",False)
                         self.__ingredients[0] = tupla
                         
@@ -109,7 +108,7 @@ class Scullion():
                     if command[2] == "0":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
-                        self.grab(-self.salt.x, self.salt.y, 0.06, self.salt.x, self.salt.y, False)
+                        self.grab(0, -0.35, 0.05, self.salt.x, self.salt.y, False)
                         tupla = ("sal",True)
                         self.ingredients[0] = tupla
      
@@ -122,7 +121,7 @@ class Scullion():
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place, interm):
-        self.move(x_move, y_move, z_move + 0.2)
+        self.move(x_move, y_move, z_move + 0.25)
         
         time.sleep(1)
         self.move(x_move, y_move, z_move)
@@ -135,6 +134,9 @@ class Scullion():
 
         time.sleep(1)
         self.gripper(0.0)
+        
+        time.sleep(1)
+        self.move(x_place, y_place, z_move + 0.25)
 
         time.sleep(1)
         self.Move_to_initial_position()
@@ -167,12 +169,10 @@ class Scullion():
     # Función que coloca el objeto en el lugar correspondiente
     def place_on_target(self, x_, y_, x, y, interm):
         self.move(x_,y_,0.3)
-
-        self.move(y_, -x_, 0.3)
         
         self.move(x,y,0.3)
          
-        self.move(x,y,0.06)
+        self.move(x,y,0.05)
 
 
 # Funciones para abrir y cerrar la pinza (J1: 0.3, J2: 1.3)
@@ -200,26 +200,7 @@ class Scullion():
 
     # Función para ir a la posición inicial
     def Move_to_initial_position(self):
-        action_address = '/' + self.prefix + 'driver/joints_action/joint_angles'
-        client = actionlib.SimpleActionClient(action_address, kinova_msgs.msg.ArmJointAnglesAction)
-        client.wait_for_server()
-
-        goal = kinova_msgs.msg.ArmJointAnglesGoal()
-
-        goal.angles.joint1 = self.angle_home[0]
-        goal.angles.joint2 = self.angle_home[1]
-        goal.angles.joint3 = self.angle_home[2]
-        goal.angles.joint4 = self.angle_home[3]
-        goal.angles.joint5 = self.angle_home[4]
-        goal.angles.joint6 = self.angle_home[5]
-        goal.angles.joint7 = self.angle_home[6]
-
-        client.send_goal(goal)
-        if client.wait_for_result(rospy.Duration(20.0)):
-            return client.get_result()
-        else:
-            print('        the joint angle action timed-out')
-            client.cancel_all_goals()
+        self.move([0.2, 0, 0.3], self.orient)
 
 
 # Main
