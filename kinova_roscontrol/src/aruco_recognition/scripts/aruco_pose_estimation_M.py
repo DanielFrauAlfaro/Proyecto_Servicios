@@ -230,7 +230,7 @@ class AR():
             Ytarget = -Ztemp2
             Ztarget = -Ytemp2
 
-            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+            #print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
 
             # Se obtienen los ángulos de Euler
             (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
@@ -263,7 +263,7 @@ class AR():
             Ytarget = -Ztemp2
             Ztarget = -Ytemp2
 
-            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+            # print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
 
             (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
             if pitch_angle < 0:
@@ -293,7 +293,7 @@ class AR():
             Ytarget = -Ztemp2
             Ztarget = -Ytemp2
 
-            print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
+            # print(f"(X, Y, Z) : {Xtarget}, {Ytarget}, {Ztarget}")
 
             # Se obtienen los ángulos de Euler
             (roll_angle, pitch_angle, yaw_angle) =  rvec[0][0][0]*180/pi, rvec[0][0][1]*180/pi, rvec[0][0][2]*180/pi
