@@ -28,6 +28,8 @@ class Scullion():
         #Publica la disponibilidad de los ingredientes
         self.pub = rospy.Publisher("/ingredients",String,queue_size=10)
         
+        time.sleep(15)
+        
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")

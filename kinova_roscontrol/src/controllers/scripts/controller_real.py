@@ -50,6 +50,8 @@ class Scullion():
 
         self.orient = [0.794731, -0.6059, 0.03549, 0.00087]
         
+        time.sleep(15)
+        
         # Se mueve el robot a la posición inicial
         print(" ------------ Moving to initial position ---------")
         self.Move_to_initial_position()
@@ -72,7 +74,6 @@ class Scullion():
                 
                 # Realiza el pick and place si tiene que dar un ingrediente, luego pone la tupla a False (no hay ingrediente en la zona de almacén)
                 if len(command) == 1:
-
                     #Mensaje para comunicar a la interfaz el ingrediente que se coge
                     mensaje = String()
 
@@ -83,10 +84,8 @@ class Scullion():
                         tupla = ("sal",False)
                         self.__ingredients[0] = tupla
                         
-                elif len(command) > 1:
-
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
-                    if command[2] == "0":
+                    if command[0] == "0":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
                         self.grab(0, -0.35, 0.05, self.salt.x, self.salt.y, False)
@@ -108,7 +107,7 @@ class Scullion():
         self.move(x_move, y_move, z_move)
 
         time.sleep(1)
-        self.gripper(0.5)
+        self.gripper(4080)
 
         time.sleep(1)
         self.place_on_target(x_move, y_move, x_place, y_place, interm)
@@ -179,7 +178,7 @@ class Scullion():
 
     # Función para ir a la posición inicial
     def Move_to_initial_position(self):
-        self.move([0.2, 0, 0.3], self.orient)
+        self.move(0.2, 0, 0.3)
 
 
 # Main

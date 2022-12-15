@@ -28,6 +28,8 @@ class Scullion():
         # Suscriptor al nodo de las teclas
         rospy.Subscriber("/teclas", String, self.teclas)
         
+        time.sleep(10)
+        
         # Grupos de movimiento
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
