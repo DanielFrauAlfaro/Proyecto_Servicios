@@ -21,6 +21,8 @@
   	rm build 
 	rm devel
         catkin_make & source devel/setup.bash
+	for conda users get into ur env and:
+	catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.7m
 
   - IMPORTANTE: el paquete incorpora varios modelos de robots de la marca Kinova (Mico, Jaco, ...) por lo que cada programa está preparado
 para recibir cualquiera. Así, hay varias condiciones "if" según el nombre del robot. En nuestro caso estaremos usando el j2n6s300, que quiere
