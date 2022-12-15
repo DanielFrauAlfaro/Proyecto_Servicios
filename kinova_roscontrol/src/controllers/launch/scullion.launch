@@ -1,26 +1,16 @@
 <launch>
+  
+  <arg name="type" default="simulation" />
 
-<!-- specify the planning pipeline -->
+  <group if="$(eval arg('type')=='simulation')">
+    <include file="$(find controllers)/launch/scullion_voice.launch" />
+  </group>
+  
+  <group if="$(eval arg('type')=='real')">
+    <include file="$(find controllers)/launch/scullion_real.launch"/>
+  </group>
 
-  <arg name="pipeline" default="ompl" />
-
-  <!-- Gazebo specific options -->
-  <arg name="gazebo_gui" default="true"/>
-  <arg name="paused" default="false"/>
-
-  <!-- launch the gazebo simulator and spawn the robot -->
-  <include file="$(find kinova_moveit)/launch/gazebo.launch" >
-    <arg name="paused" value="$(arg paused)"/>
-    <arg name="gazebo_gui" value="$(arg gazebo_gui)"/>
-  </include>
-
-  <include file="$(find kinova_moveit)/launch/demo.launch" pass_all_args="true">
-    <!-- robot description is loaded by gazebo.launch, to enable Gazebo features -->
-    <arg name="load_robot_description" value="false" />
-    <arg name="moveit_controller_manager" value="ros_control" />
-  </include>
-
-  <node name="interface" pkg="voice_interface" type="voice_interface.py"/>
-  <node name="camera" pkg="aruco_recognition" type="aruco_pose_estimation_M.py" output="screen"/>
-
+  <group if="$(eval arg('type')=='tiles')">
+    <include file="$(find controllers)/launch/scullion_tiles.launch" />
+  </group>
 </launch>
