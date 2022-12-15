@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 """A helper program to test gripper goals for the JACO and MICO arms."""
 
 import roslib; roslib.load_manifest('kinova_demo')
@@ -31,6 +31,8 @@ def gripper_client(finger_positions):
     goal = kinova_msgs.msg.SetFingersPositionGoal()
     goal.fingers.finger1 = float(finger_positions[0])
     goal.fingers.finger2 = float(finger_positions[1])
+    
+    print(float(finger_positions[1]))
     # The MICO arm has only two fingers, but the same action definition is used
     if len(finger_positions) < 3:
         goal.fingers.finger3 = 0.0
