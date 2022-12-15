@@ -221,3 +221,20 @@ Posición de agarre (inferior)  (JOINTS):    (Position: [x = 0.5, y = 0.0, z = 0
     <joint name="j2n6s300_joint_6" value="0.4743015064614271"/> 
 
                                 (CARTESIAN ORIENTATION): [X = 0.794731, Y = -0.6059, Z = 0.03549, W = 0.00087]
+
+
+
+############################# LAUNCH FINAL ###########################
+
+  - Para lanzar todos los proyectos se ha creado un launch general para todos
+      roslaunch controllers scullion.launch
+  
+  - De base, lanza llama al launch de la voz (scullion_voice.launch), para cambiarlo se tiene que añadir un argumento tal que:
+      Voz / Por defecto: roslaunch controllers scullion.launch type:=simulation
+      Real: roslaunch controllers scullion.launch type:=real
+      Teclas: roslaunch controllers scullion.launch type:=tiles
+
+  - El real lanza tambien el bringup del kinova
+  - Desde el general se llama a cada launch, donde se llama a todos los nodos necesarios incluso el del controller
+  - Para añadir el controller de cada caso se ha metido un temporizador antes de planificar, así da tiempo a que se inicie la simulación y no salte
+  el error por estar la articulación alejada del origen
