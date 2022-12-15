@@ -20,7 +20,7 @@
     <arg name="moveit_controller_manager" value="ros_control" />
   </include>
 
-  <node name="tiles" pkg="controllers" type="teclas.py" output="screen"/>
+  <node name="interface" pkg="voice_interface" type="voice_interface.py"/>
   <node name="camera" pkg="aruco_recognition" type="aruco_pose_estimation_M.py" output="screen"/>
-  <node name="controller" pkg="controllers" type="controller_.py" output="screen" />
+  <node name="controller" pkg="controllers" type="controller_voice.py" output="screen" />
 </launch>
