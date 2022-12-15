@@ -353,12 +353,17 @@ def callback_color_img(data):
                         print("wait ", sec[i])
                         prev_sec[i] = sec[i]
                 
-                if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 10.0:
+                if (myCap.blocks_time[i + myCap.N] - myCap.blocks_time[i]) > 5.0:
                     print("################### READY #######################")
                     msg = String()
                     msg.data = str(i)
-                    myCap.publisher.publish(myCap.Pose_msgs[i])
+                    myCap.publisher.publish("0")
+                    
+                    a = rospy.Publisher("/a", String, queue_size=10)
+                    a.publish("0")
+                    
                     print(myCap.Pose_msgs[i])
+                    
                     myCap.blocks[i]= False
         
         for i in range(myCap.N):
