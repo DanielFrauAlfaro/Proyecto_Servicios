@@ -92,17 +92,17 @@ class Scullion():
                     X = float(command[0])
                     Y =  float(command[1])
                     # Se coge el objeto y se guarda en la zona de almacenaje, luego se pone a True la tupla (está en la zona de almacenaje)
-                    if command[2] == "0":
+                    if command[2] == "0"  and not self.ingredients[0][1]:
                         self.grab(X,Y, 0.06, self.red.x, self.red.y, False)
                         tupla = ("red",True)
                         self.ingredients[0] = tupla
                     
-                    if command[2] == "1" :
+                    if command[2] == "1"  and not self.ingredients[1][1]:
                         self.grab(X,Y, 0.06, self.green.x, self.green.y, False)
                         tupla = ("green",True)
                         self.ingredients[1] = tupla
                         
-                    if command[2] == "2":
+                    if command[2] == "2"  and not self.ingredients[2][1]:
                         self.grab(X,Y, 0.06, self.blue.x, self.blue.y, False)
                         tupla = ("blue",True)
                         self.ingredients[2] = tupla
@@ -130,22 +130,22 @@ class Scullion():
     def grab(self, x_move, y_move, z_move, x_place, y_place, interm):
         self.Open()
         
-        time.sleep(1)
+        time.sleep(0.5)
         self.move(x_move, y_move, z_move + 0.2)
         
-        time.sleep(1)
+        time.sleep(0.5)
         self.move(x_move, y_move, z_move)
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.Grab()
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.place_on_target(x_place, y_place, interm)
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.Open()
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.Move_to_initial_position()
 
 
@@ -186,7 +186,7 @@ class Scullion():
         waypoints.append(copy.deepcopy(waypoint1))
 
         waypoint3 = Pose()
-        
+        waypoint4 = Pose()
         if interm == True:
             waypoint3.position.x = 0
             waypoint3.position.y = 0.3
@@ -195,8 +195,14 @@ class Scullion():
             waypoints.append(copy.deepcopy(waypoint3))
         
         else:
-            waypoint3.position.x = 0.35
-            waypoint3.position.y = 0.1
+            waypoint4.position.x = 0.3
+            waypoint4.position.y = -0.3
+            waypoint4.position.z = 0.3
+            waypoint4.orientation = arm_current_pose.pose.orientation  
+            waypoints.append(copy.deepcopy(waypoint4))
+            
+            waypoint3.position.x = 0.2
+            waypoint3.position.y = 0.35
             waypoint3.position.z = 0.3
             waypoint3.orientation = arm_current_pose.pose.orientation  
             waypoints.append(copy.deepcopy(waypoint3))
@@ -223,12 +229,12 @@ class Scullion():
 
 # Funciones para abrir y cerrar la pinza (J1: 0.3, J2: 1.3)
     def Grab(self):
-        self.gripper.set_goal_tolerance(0.01)
+        self.gripper.set_goal_tolerance(0.1)
         self.gripper.set_named_target("close")
         self.gripper.go()
 
     def Open(self):
-        self.gripper.set_goal_tolerance(0.01)
+        self.gripper.set_goal_tolerance(0.1)
         self.gripper.set_named_target("open")
         self.gripper.go()
 

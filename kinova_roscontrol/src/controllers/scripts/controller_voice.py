@@ -111,21 +111,21 @@ class Scullion():
                     X = float(command[0])
                     Y = float(command[1])
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
-                    if command[2] == "0":
+                    if command[2] == "0" and not self.__ingredients[0][1]:
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.salt.x, self.salt.y, False)
                         tupla = ("sal",True)
                         self.__ingredients[0] = tupla
                     
-                    elif command[2] == "1":
+                    elif command[2] == "1" and not self.__ingredients[1][1]:
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y, False)
                         tupla = ("pimienta",True)
                         self.__ingredients[1] = tupla
                         
-                    elif command[2] == "2":
+                    elif command[2] == "2" and not self.__ingredients[2][1]:
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y, False)
@@ -196,6 +196,7 @@ class Scullion():
         waypoints.append(copy.deepcopy(waypoint1))
 
         waypoint3 = Pose()
+        waypoint4 = Pose()
         
         if interm == True:
             waypoint3.position.x = 0
@@ -205,6 +206,12 @@ class Scullion():
             waypoints.append(copy.deepcopy(waypoint3))
         
         else:
+            waypoint4.position.x = 0.3
+            waypoint4.position.y = -0.3
+            waypoint4.position.z = 0.3
+            waypoint4.orientation = arm_current_pose.pose.orientation  
+            waypoints.append(copy.deepcopy(waypoint4))
+            
             waypoint3.position.x = 0.35
             waypoint3.position.y = 0.1
             waypoint3.position.z = 0.3
