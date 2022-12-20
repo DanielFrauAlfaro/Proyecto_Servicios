@@ -34,12 +34,12 @@ class Scullion():
         # Lista de ingredientes y sus posiciones
         self.__ingredients = []
         
-        self.salt = Point()
+        self.pimientat = Point()
         
         
-        self.salt.x = 0.35
-        self.salt.y = 0.0
-        self.__ingredients.append(("sal", True))
+        self.pimientat.x = 0.35
+        self.pimientat.y = 0.0
+        self.__ingredients.append(("pimienta", True))
         
         
         # Lista de comandos
@@ -77,19 +77,19 @@ class Scullion():
                     #Mensaje para comunicar a la interfaz el ingrediente que se coge
                     mensaje = String()
 
-                    if command[0] == "sal" and self.__ingredients[0][1]:
-                        mensaje.data = "sal"
+                    if command[0] == "pimienta" and self.__ingredients[0][1]:
+                        mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(self.salt.x, self.salt.y, 0.05, 0, -0.35, True)
-                        tupla = ("sal",False)
+                        self.grab(self.pimientat.x, self.pimientat.y, 0.05, 0, -0.35, True)
+                        tupla = ("pimienta",False)
                         self.__ingredients[0] = tupla
                         
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
                     if command[0] == "0":
-                        mensaje.data = "sal"
+                        mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(0, -0.35, 0.05, self.salt.x, self.salt.y, False)
-                        tupla = ("sal",True)
+                        self.grab(0, -0.35, 0.05, self.pimientat.x, self.pimientat.y, False)
+                        tupla = ("pimienta",True)
                         self.__ingredients[0] = tupla
      
      
