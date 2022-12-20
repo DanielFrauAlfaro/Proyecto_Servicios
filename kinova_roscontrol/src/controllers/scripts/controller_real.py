@@ -178,6 +178,7 @@ class Scullion():
 
     # Función para ir a la posición inicial
     def Move_to_initial_position(self):
+        self.move(0.35, 0, 0.3)
         self.move(0.2, 0, 0.3)
 
 
