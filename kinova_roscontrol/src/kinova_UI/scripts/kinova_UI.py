@@ -75,7 +75,7 @@ class UI:
         if not self.__robot_selected:
             self.__robot_selected = True
             #Abre terminal y ejecuta el comando
-            subprocess.run(["gnome-terminal","--", "sh", "-c","roslaunch controllers scullion.launch"])
+            subprocess.run(["gnome-terminal","--", "sh", "-c","roslaunch controllers scullion.launch type:=tiles"])
 
             #Para que no de error de conexión
             rospy.sleep(3)
