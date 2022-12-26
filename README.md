@@ -37,8 +37,13 @@ sudo apt-get install python-pyaudio python3-pyaudio  # Install depedencies
 sudo apt-get install libasound-dev
   ```
   
-  Check the Appendix 1 for any doubts or if there are some errors related to the voice interface
-  
+  Check the [Appendix 1](#appendix-1) for any doubts or if there are some errors related to the voice interface
+
+### Blocks
+  This project uses some blocks inside the Gazebo simulation, provided in the `aruco_block_long*` folders, but they must be placed in a specific location in your PC. This place is an unseen folder in the `home` directory called `.gazebo/models`. If this none of these exists, create them yourself.
+
+
+## Compilation
   To get this repository and compile it in your PC:
 
 ```
@@ -69,7 +74,7 @@ catkin_make
    - In addition, this file can be executed by double-clicking on it. To do so, select the file and go to the three bar icon in the `Files` window. Then click in `Preferences`. After this, go to `Behavoir` and select `Run Them`
 
 
-## Apendix 1
+## Appendix 1
   If there are some errors with the Speech Recognition interface, follow the next steps:
   
   ```
