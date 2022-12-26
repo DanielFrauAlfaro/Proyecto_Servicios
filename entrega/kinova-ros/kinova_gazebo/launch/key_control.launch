@@ -1,0 +1,11 @@
+<launch>
+
+  <!-- launch the gazebo simulator and spawn the robot -->
+  <include file="$(find kinova_moveit)/launch/demo_gazebo.launch" />
+
+  <node name="teclas" pkg="control" type="teclas.py" output="screen"/>
+  <node name="controller" pkg="control" type="controller_.py" output="screen"/>
+
+  <node name="camera_node" pkg="aruco_recognition" type="aruco_pose_estimation_M.py" output="screen"/>
+
+</launch>
