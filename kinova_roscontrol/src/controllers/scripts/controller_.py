@@ -25,9 +25,6 @@ class Scullion():
         # Suscriptor al nodo de la cámara
         rospy.Subscriber("/ready", String, self.rec)
         
-        # Suscriptor al nodo de las teclas
-        rospy.Subscriber("/teclas", String, self.teclas)
-        
         time.sleep(10)
         
         # Grupos de movimiento
@@ -37,7 +34,8 @@ class Scullion():
         # Se mueve el robot a la posición inicial
         print(" ------------ Moving to initial position ---------")
         self.Move_to_initial_position()
-        
+        self.Open()
+
         # Lista de ingredientes y sus posiciones
         self.ingredients = []
         
@@ -70,20 +68,32 @@ class Scullion():
                 command = self.cmd.pop(0)       # Se extrae el comando y se selecciona la acción
                 command = command.lower().split()
                 
-                if len(command) == 1:
+                if len(command) == 4:
+                    X = float(command[0])
+                    Y =  float(command[1])
+
                     # Se coge el objeto y se pasa a la zona de manipulación, luego se pone a False la tupla (no está en la zona de alamcenaje)
-                    if command[0]  == "rojo" and self.ingredients[0][1]:
-                        self.grab(self.red.x, self.red.y, 0.06, 0.5, 0, True)
+                    if command[3]  == "rojo" and self.ingredients[0][1]:
+                        self.grab(X, Y, 0.06, 0.5, 0, True)
+                        self.red.x = X
+                        self.red.y = Y
+                        
                         tupla = ("red",False)
                         self.ingredients[0] = tupla
                     
-                    if command[0]  == "verde" and self.ingredients[1][1]:
-                        self.grab(self.green.x, self.green.y, 0.06, 0.35, 0.35, True)
+                    if command[3]  == "verde" and self.ingredients[1][1]:
+                        self.grab(X, Y, 0.06, 0.35, 0.35, True)
+                        self.green.x = X
+                        self.green.y = Y
+
                         tupla = ("green",False)
                         self.ingredients[1] = tupla
                     
-                    if command[0]  == "azul" and self.ingredients[2][1]:
-                        self.grab(self.blue.x, self.blue.y, 0.06, 0.35, -0.15, True)
+                    if command[3]  == "azul" and self.ingredients[2][1]:
+                        self.grab(X, Y, 0.06, 0.35, -0.15, True)
+                        self.blue.x = X
+                        self.blue.y = Y
+
                         tupla = ("blue",False)
                         self.ingredients[2] = tupla
                 
@@ -229,18 +239,18 @@ class Scullion():
 
 # Funciones para abrir y cerrar la pinza (J1: 0.3, J2: 1.3)
     def Grab(self):
-        self.gripper.set_goal_tolerance(0.1)
+        self.gripper.set_goal_tolerance(0.001)
         self.gripper.set_named_target("close")
         self.gripper.go()
 
     def Open(self):
-        self.gripper.set_goal_tolerance(0.1)
+        self.gripper.set_goal_tolerance(0.001)
         self.gripper.set_named_target("open")
         self.gripper.go()
 
     # Función para ir a la posición inicial
     def Move_to_initial_position(self):
-        self.arm.set_goal_tolerance(0.01)
+        self.arm.set_goal_tolerance(0.001)
         self.arm.set_named_target("ready")
         self.arm.go()
 
