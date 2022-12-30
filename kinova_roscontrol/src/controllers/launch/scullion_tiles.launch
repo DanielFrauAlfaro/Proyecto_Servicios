@@ -6,7 +6,7 @@
 
   <!-- Gazebo specific options -->
   <arg name="gazebo_gui" default="true"/>
-  <arg name="paused" default="false"/>
+  <arg name="paused" default="true"/>
 
   <!-- launch the gazebo simulator and spawn the robot -->
   <include file="$(find kinova_moveit)/launch/gazebo.launch" >
@@ -23,4 +23,5 @@
   <node name="tiles" pkg="controllers" type="teclas.py" output="screen"/>
   <node name="camera" pkg="aruco_recognition" type="aruco_pose_estimation_M.py" output="screen"/>
   <node name="controller" pkg="controllers" type="controller_.py" output="screen" />
+  <node name="camera_store" pkg="aruco_recognition" type="aruco_pose_estimation_M2.py" output="screen"/>
 </launch>
