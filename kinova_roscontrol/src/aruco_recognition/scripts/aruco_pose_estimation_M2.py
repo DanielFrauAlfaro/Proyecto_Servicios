@@ -60,7 +60,7 @@ class AR():
 
             
         # Publisher para comunicar al nodo del robot
-        self.publisher = rospy.Publisher("/ready", String, queue_size=10)
+        self.publisher = rospy.Publisher("/store", String, queue_size=10)
 
         rospy.Subscriber("/teclas", String, self.store_cb)
 

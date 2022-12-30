@@ -19,12 +19,9 @@ class Scullion():
         # Inicializar el nodo
         rospy.init_node("scullion")
         
-        # Suscriptor al nodo del control por voz
-        rospy.Subscriber("/voice_ui", String, self.list)
-        
         # Suscriptor al nodo de la cámara
         rospy.Subscriber("/ready", String, self.rec)
-        
+        rospy.Subscriber("/store", String, self.rec)
         time.sleep(10)
         
         # Grupos de movimiento
@@ -121,19 +118,7 @@ class Scullion():
     # Callbacks de la cámara y de las teclas (simula interfaz por voz)
     def rec(self, data):
         self.cmd.append(data.data)
-    def teclas(self, data):
-        self.cmd.append(data.data)
-          
-    # Callback del interfaz por voz (AHORA ESTÁ DEL TECLADO Y EN BUCLE INFINITO)
-    def list(self, data):
-        if data.data == "rojo":
-            self.grab(self.red.x, self.red.y, 0.06, 0, -0.5)
-        
-        if data.data == "verde":
-            self.grab(self.green.x, self.green.y, 0.06, 0, -0.5)
-            
-        if data.data == "azul":
-            self.grab(self.blue.x, self.blue.y, 0.06, 0, -0.5)
+
         
         
     # Función donde se llama a todos los pasos para coger el objeto 
