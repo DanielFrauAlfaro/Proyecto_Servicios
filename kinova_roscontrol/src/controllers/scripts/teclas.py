@@ -5,7 +5,7 @@ import rospy
 from std_msgs.msg import String
 
 rospy.init_node("teclas")
-pub = rospy.Publisher("/teclas", String, queue_size=10)
+pub = rospy.Publisher("/voice_ui", String, queue_size=10)
 
 def callback(tecla):
     s = String()
