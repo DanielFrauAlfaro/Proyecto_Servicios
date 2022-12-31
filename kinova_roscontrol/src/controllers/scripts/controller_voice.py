@@ -20,10 +20,11 @@ class Scullion():
         rospy.init_node("scullion")
         
         # Suscriptor al nodo del control por voz
-        rospy.Subscriber("/voice_ui", String, self.__cb)
+        # rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
         rospy.Subscriber("/ready", String, self.__cb)
+        rospy.Subscriber("/store", String, self.__cb)
 
         #Publica la disponibilidad de los ingredientes
         self.pub = rospy.Publisher("/ingredients",String,queue_size=10)
@@ -81,29 +82,43 @@ class Scullion():
                 mensaje = String()
                 
                 # Realiza el pick and place si tiene que dar un ingrediente, luego pone la tupla a False (no hay ingrediente en la zona de almacén)
-                if len(command) == 1:
+                if len(command) == 4:
+                    X = float(command[0])
+                    Y = float(command[1])
 
-                    if command[0] == "sal" and self.__ingredients[0][1]:
+                    if command[3] == "sal" and self.__ingredients[0][1]:
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
-                        self.grab(self.salt.x, self.salt.y, 0.06, 0.5, 0, True)
+                        self.grab(X, Y, 0.06, 0.5, 0, True)
+
+                        self.salt.x = X
+                        self.salt.y = Y
+
                         tupla = ("sal",False)
                         self.__ingredients[0] = tupla
                         
                         
-                    elif command[0] == "azúcar" and self.__ingredients[1][1]:
+                    elif command[3] == "azúcar" and self.__ingredients[1][1]:
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
-                        self.grab(self.sugar.x, self.sugar.y, 0.06,0.35, 0.35, True)
+                        self.grab(X, Y, 0.06,0.35, 0.35, True)
+
+                        self.sugar.x = X
+                        self.sugar.y = Y
+
                         tupla = ("azúcar",False)
                         self.__ingredients[1] = tupla
                         
                                             
-                    elif command[0] == "pimienta" and self.__ingredients[2][1]:
+                    elif command[3] == "pimienta" and self.__ingredients[2][1]:
                         tupla = ("pimienta",False)
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(self.pepper.x, self.pepper.y, 0.06, 0.35, -0.15, True)
+                        self.grab(X, Y, 0.06, 0.35, -0.15, True)
+
+                        self.pepper.x = X
+                        self.pepper.y = Y
+
                         self.__ingredients[2] = tupla
                         
                 elif len(command) > 1:
@@ -136,6 +151,7 @@ class Scullion():
      
     # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
     def __cb(self, data):
+        print("AA")
         self.__cmd.append(data.data)
         
         
@@ -212,8 +228,8 @@ class Scullion():
             waypoint4.orientation = arm_current_pose.pose.orientation  
             waypoints.append(copy.deepcopy(waypoint4))
             
-            waypoint3.position.x = 0.35
-            waypoint3.position.y = 0.1
+            waypoint3.position.x = 0.2
+            waypoint3.position.y = 0.35
             waypoint3.position.z = 0.3
             waypoint3.orientation = arm_current_pose.pose.orientation  
             waypoints.append(copy.deepcopy(waypoint3))

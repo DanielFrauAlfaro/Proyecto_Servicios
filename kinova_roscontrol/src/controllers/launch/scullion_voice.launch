@@ -23,4 +23,5 @@
   <node name="interface" pkg="voice_interface" type="voice_interface.py"/>
   <node name="camera" pkg="aruco_recognition" type="aruco_pose_estimation_M.py" output="screen"/>
   <node name="controller" pkg="controllers" type="controller_voice.py" output="screen" />
+  <node name="camera_store" pkg="aruco_recognition" type="aruco_pose_estimation_M2.py" output="screen"/>
 </launch>
