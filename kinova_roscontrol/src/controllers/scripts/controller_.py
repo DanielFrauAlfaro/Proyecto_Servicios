@@ -36,21 +36,21 @@ class Scullion():
         # Lista de ingredientes y sus posiciones
         self.ingredients = []
         
-        self.red = Point()
-        self.green = Point()
-        self.blue = Point()
+        self.salt = Point()
+        self.pepper = Point()
+        self.sugar = Point()
         
-        self.red.x = -0.43
-        self.red.y = 0.14
-        self.ingredients.append(("red", True))
+        self.salt.x = -0.43
+        self.salt.y = 0.14
+        self.ingredients.append(("sal", True))
         
-        self.blue.x = -0.35
-        self.blue.y = 0.35
-        self.ingredients.append(("blue", True))
+        self.sugar.x = -0.35
+        self.sugar.y = 0.35
+        self.ingredients.append(("azúcar", True))
         
-        self.green.x = -0.17 
-        self.green.y = 0.44
-        self.ingredients.append(("green", True))
+        self.pepper.x = -0.17 
+        self.pepper.y = 0.44
+        self.ingredients.append(("pimienta", True))
         
         self.cmd = []
     
@@ -67,32 +67,36 @@ class Scullion():
                 
                 if len(command) == 4:
                     X = float(command[0])
-                    Y =  float(command[1])
+                    Y = float(command[1])
 
-                    # Se coge el objeto y se pasa a la zona de manipulación, luego se pone a False la tupla (no está en la zona de alamcenaje)
-                    if command[3]  == "rojo" and self.ingredients[0][1]:
+                    if command[3] == "sal" and self.__ingredients[0][1]:
                         self.grab(X, Y, 0.06, 0.5, 0, True)
-                        self.red.x = X
-                        self.red.y = Y
+
+                        self.salt.x = X
+                        self.salt.y = Y
+
+                        tupla = ("sal",False)
+                        self.__ingredients[0] = tupla
                         
-                        tupla = ("red",False)
-                        self.ingredients[0] = tupla
-                    
-                    if command[3]  == "verde" and self.ingredients[1][1]:
-                        self.grab(X, Y, 0.06, 0.35, 0.35, True)
-                        self.green.x = X
-                        self.green.y = Y
+                        
+                    elif command[3] == "azúcar" and self.__ingredients[1][1]:
+                        self.grab(X, Y, 0.06,0.35, 0.35, True)
 
-                        tupla = ("green",False)
-                        self.ingredients[1] = tupla
-                    
-                    if command[3]  == "azul" and self.ingredients[2][1]:
+                        self.sugar.x = X
+                        self.sugar.y = Y
+
+                        tupla = ("azúcar",False)
+                        self.__ingredients[1] = tupla
+                        
+                                            
+                    elif command[3] == "pimienta" and self.__ingredients[2][1]:
+                        tupla = ("pimienta",False)
                         self.grab(X, Y, 0.06, 0.35, -0.15, True)
-                        self.blue.x = X
-                        self.blue.y = Y
 
-                        tupla = ("blue",False)
-                        self.ingredients[2] = tupla
+                        self.pepper.x = X
+                        self.pepper.y = Y
+
+                        self.__ingredients[2] = tupla
                 
                 elif len(command) == 3:
                     

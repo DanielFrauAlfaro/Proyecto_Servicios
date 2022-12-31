@@ -14,15 +14,15 @@ def callback(tecla):
     
     if(str(tecla) == "'r'"):
         print("R")
-        s.data = "rojo"
+        s.data = "sal"
         
     elif(str(tecla) == "'g'"):
         print("G")
-        s.data = "verde"
+        s.data = "pimienta"
            
     elif(str(tecla) == "'b'"):
         print("B")
-        s.data = "azul"
+        s.data = "azúcar"
 
     pub.publish(s)
 
