@@ -19,8 +19,6 @@ class Scullion():
         # Inicializar el nodo
         rospy.init_node("scullion")
         
-        # Suscriptor al nodo del control por voz
-        # rospy.Subscriber("/voice_ui", String, self.__cb)
         
         # Suscriptor al nodo de la cámara
         rospy.Subscriber("/ready", String, self.__cb)
