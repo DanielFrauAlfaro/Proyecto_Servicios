@@ -77,7 +77,7 @@ class Scullion():
                     #Mensaje para comunicar a la interfaz el ingrediente que se coge
                     mensaje = String()
 
-                    if command[0] == "pimienta" and self.__ingredients[0][1]:
+                    if command[0] == "pimienta":
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
                         self.grab(self.pimientat.x, self.pimientat.y, 0.05, 0, -0.35, True)
