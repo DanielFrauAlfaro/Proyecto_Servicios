@@ -69,54 +69,38 @@ class Scullion():
                     X = float(command[0])
                     Y = float(command[1])
 
-                    if command[3] == "sal" and self.__ingredients[0][1]:
+                    if command[3] == "sal":
                         self.grab(X, Y, 0.06, 0.5, 0, True)
-
                         self.salt.x = X
                         self.salt.y = Y
 
-                        tupla = ("sal",False)
-                        self.__ingredients[0] = tupla
                         
-                        
-                    elif command[3] == "azúcar" and self.__ingredients[1][1]:
+                    elif command[3] == "azúcar":
                         self.grab(X, Y, 0.06,0.35, 0.35, True)
-
                         self.sugar.x = X
                         self.sugar.y = Y
-
-                        tupla = ("azúcar",False)
-                        self.__ingredients[1] = tupla
                         
                                             
-                    elif command[3] == "pimienta" and self.__ingredients[2][1]:
-                        tupla = ("pimienta",False)
+                    elif command[3] == "pimienta":
                         self.grab(X, Y, 0.06, 0.35, -0.15, True)
-
                         self.pepper.x = X
                         self.pepper.y = Y
 
-                        self.__ingredients[2] = tupla
                 
                 elif len(command) == 3:
                     
                     X = float(command[0])
                     Y =  float(command[1])
                     # Se coge el objeto y se guarda en la zona de almacenaje, luego se pone a True la tupla (está en la zona de almacenaje)
-                    if command[2] == "0"  and not self.ingredients[0][1]:
-                        self.grab(X,Y, 0.06, self.red.x, self.red.y, False)
-                        tupla = ("red",True)
-                        self.ingredients[0] = tupla
+                    if command[2] == "0":
+                        self.grab(X,Y, 0.06, self.salt.x, self.salt.y, False)
                     
-                    if command[2] == "1"  and not self.ingredients[1][1]:
-                        self.grab(X,Y, 0.06, self.green.x, self.green.y, False)
-                        tupla = ("green",True)
-                        self.ingredients[1] = tupla
+                    elif command[2] == "1" :
+                        self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y, False)
                         
-                    if command[2] == "2"  and not self.ingredients[2][1]:
-                        self.grab(X,Y, 0.06, self.blue.x, self.blue.y, False)
-                        tupla = ("blue",True)
-                        self.ingredients[2] = tupla
+                    elif command[2] == "2":
+                        self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y, False)
+                        
     
     
     # Callbacks de la cámara y de las teclas (simula interfaz por voz)

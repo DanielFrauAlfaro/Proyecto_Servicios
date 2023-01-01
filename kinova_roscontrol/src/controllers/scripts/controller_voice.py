@@ -33,8 +33,7 @@ class Scullion():
         self.arm = moveit_commander.MoveGroupCommander("arm_kinova")
         self.gripper = moveit_commander.MoveGroupCommander("gripper_kinova")
         
-        # Lista de ingredientes y sus posiciones
-        self.__ingredients = []
+
         
         self.salt = Point()
         self.pepper = Point()
@@ -42,15 +41,12 @@ class Scullion():
         
         self.salt.x = -0.43
         self.salt.y = 0.14
-        self.__ingredients.append(("sal", True))
         
         self.sugar.x = -0.35
         self.sugar.y = 0.35
-        self.__ingredients.append(("azúcar", True))
         
         self.pepper.x = -0.17 
         self.pepper.y = 0.44
-        self.__ingredients.append(("pimienta", True))
         
         # Lista de comandos
         self.__cmd = []
@@ -84,7 +80,7 @@ class Scullion():
                     X = float(command[0])
                     Y = float(command[1])
 
-                    if command[3] == "sal" and self.__ingredients[0][1]:
+                    if command[3] == "sal":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
                         self.grab(X, Y, 0.06, 0.5, 0, True)
@@ -92,11 +88,9 @@ class Scullion():
                         self.salt.x = X
                         self.salt.y = Y
 
-                        tupla = ("sal",False)
-                        self.__ingredients[0] = tupla
                         
                         
-                    elif command[3] == "azúcar" and self.__ingredients[1][1]:
+                    elif command[3] == "azúcar":
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
                         self.grab(X, Y, 0.06,0.35, 0.35, True)
@@ -104,12 +98,9 @@ class Scullion():
                         self.sugar.x = X
                         self.sugar.y = Y
 
-                        tupla = ("azúcar",False)
-                        self.__ingredients[1] = tupla
                         
                                             
-                    elif command[3] == "pimienta" and self.__ingredients[2][1]:
-                        tupla = ("pimienta",False)
+                    elif command[3] == "pimienta" :
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
                         self.grab(X, Y, 0.06, 0.35, -0.15, True)
@@ -117,39 +108,34 @@ class Scullion():
                         self.pepper.x = X
                         self.pepper.y = Y
 
-                        self.__ingredients[2] = tupla
                         
                 elif len(command) > 1:
 
                     X = float(command[0])
                     Y = float(command[1])
                     # Realiza el pick and place si tiene que devolver un ingrediente, luego pone la tupla a True (hay ingrediente en la zona de almacén)
-                    if command[2] == "0" and not self.__ingredients[0][1]:
+                    if command[2] == "0":
                         mensaje.data = "sal"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.salt.x, self.salt.y, False)
-                        tupla = ("sal",True)
-                        self.__ingredients[0] = tupla
+                        
                     
-                    elif command[2] == "1" and not self.__ingredients[1][1]:
+                    elif command[2] == "1":
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.pepper.x, self.pepper.y, False)
-                        tupla = ("pimienta",True)
-                        self.__ingredients[1] = tupla
                         
-                    elif command[2] == "2" and not self.__ingredients[2][1]:
+                        
+                    elif command[2] == "2":
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
                         self.grab(X,Y, 0.06, self.sugar.x, self.sugar.y, False)
-                        tupla = ("azúcar",True)
-                        self.__ingredients[2] = tupla
+                        
      
      
      
     # Callback de la interfaz por voz y cámara: recoge los comandos y los almacena
     def __cb(self, data):
-        print("AA")
         self.__cmd.append(data.data)
         
         
