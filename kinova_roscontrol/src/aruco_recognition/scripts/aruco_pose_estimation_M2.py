@@ -318,11 +318,11 @@ class AR():
             s.data = self.Pose_msgs[0] + " " + data.data
             
 
-        elif data.data == "azúcar" and self.blocks[1]:
+        elif data.data == "pimienta" and self.blocks[1]:
             s.data = self.Pose_msgs[1] + " " + data.data
             
 
-        elif data.data == "pimienta" and self.blocks[2]:
+        elif data.data == "azúcar" and self.blocks[2]:
             s.data = self.Pose_msgs[2] + " " + data.data
 
         self.publisher.publish(s)

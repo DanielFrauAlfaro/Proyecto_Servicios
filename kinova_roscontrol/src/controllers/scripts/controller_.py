@@ -75,16 +75,16 @@ class Scullion():
                         self.salt.y = Y
 
                         
-                    elif command[3] == "azúcar":
-                        self.grab(X, Y, 0.06,0.35, 0.35, True)
-                        self.sugar.x = X
-                        self.sugar.y = Y
-                        
-                                            
                     elif command[3] == "pimienta":
-                        self.grab(X, Y, 0.06, 0.35, -0.15, True)
+                        self.grab(X, Y, 0.06,0.35, 0.35, True)
                         self.pepper.x = X
                         self.pepper.y = Y
+                        
+                                            
+                    elif command[3] == "azúcar":
+                        self.grab(X, Y, 0.06, 0.35, -0.15, True)
+                        self.sugar.x = X
+                        self.sugar.y = Y
 
                 
                 elif len(command) == 3:
