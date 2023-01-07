@@ -50,7 +50,7 @@ class Scullion():
         
         # Lista de comandos
         self.__cmd = []
-        
+        self.waypoints = []
         
         # Se mueve el robot a la posición inicial
         print(" ------------ Moving to initial position ---------")
@@ -141,17 +141,21 @@ class Scullion():
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place, interm):
+        
+        self.waypoints = []
+        self.Open()
         if not interm:
             self.move(0.2, 0.2, z_move + 0.2)
-            time.sleep(1)
             
             self.move(0.2, -0.2, z_move + 0.2)
-            time.sleep(1)
+            
         
         self.move(x_move, y_move, z_move + 0.2)
         
-        time.sleep(1)
         self.move(x_move, y_move, z_move)
+
+        (plan, fraction) = self.arm.compute_cartesian_path(self.waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
+        self.arm.execute(plan, wait=True)
 
         time.sleep(1)
         self.Grab()
@@ -168,7 +172,6 @@ class Scullion():
 
     # Función para mover el robot a una posición deseada
     def move(self, x,y,z):
-        waypoints = []
         arm_current_pose = self.arm.get_current_pose()
         self.arm.clear_pose_targets()
         self.arm.set_goal_tolerance(0.01)
@@ -179,10 +182,9 @@ class Scullion():
         waypoint1.position.z = z
 
         waypoint1.orientation = arm_current_pose.pose.orientation
-        waypoints.append(copy.deepcopy(waypoint1))
+        self.waypoints.append(copy.deepcopy(waypoint1))
         
-        (plan, fraction) = self.arm.compute_cartesian_path(waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
-        self.arm.execute(plan, wait=True)  
+          
      
 
     # Función que coloca el objeto en el lugar correspondiente
