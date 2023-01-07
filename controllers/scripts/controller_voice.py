@@ -141,6 +141,13 @@ class Scullion():
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place, interm):
+        if not interm:
+            self.move(0.2, 0.2, z_move + 0.2)
+            time.sleep(1)
+            
+            self.move(0.2, -0.2, z_move + 0.2)
+            time.sleep(1)
+        
         self.move(x_move, y_move, z_move + 0.2)
         
         time.sleep(1)
