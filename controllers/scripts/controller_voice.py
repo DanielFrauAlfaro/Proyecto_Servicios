@@ -50,6 +50,8 @@ class Scullion():
         
         # Lista de comandos
         self.__cmd = []
+
+        # Lista de puntos de paso
         self.waypoints = []
         
         # Se mueve el robot a la posición inicial
@@ -141,9 +143,15 @@ class Scullion():
         
     # Función donde se llama a todos los pasos para coger el objeto 
     def grab(self, x_move, y_move, z_move, x_place, y_place, interm):
-        
+        # Resetea la lista de puntos de paso
         self.waypoints = []
+
+        # Abre la pinza
         self.Open()
+
+        # ----------------- Añade puntos ---------------
+
+        # En el caso de que se vaya a la zona de recogida hace un movimiento adicional
         if not interm:
             self.move(0.2, 0.2, z_move + 0.2)
             
@@ -154,18 +162,23 @@ class Scullion():
         
         self.move(x_move, y_move, z_move)
 
+        # Ejecuta los movimientos
         (plan, fraction) = self.arm.compute_cartesian_path(self.waypoints, 0.01, 0.0)  # waypoints to follow  # eef_step
         self.arm.execute(plan, wait=True)
 
+        # Espera y cierra la pinza
         time.sleep(1)
         self.Grab()
 
+        # Lo lleva al objetivo
         time.sleep(1)
         self.place_on_target(x_place, y_place, interm)
 
+        # Deja el objeto
         time.sleep(1)
         self.Open()
 
+        # Posición inicial
         time.sleep(1)
         self.Move_to_initial_position()
 
