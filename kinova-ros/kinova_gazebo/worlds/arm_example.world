@@ -270,7 +270,7 @@
       <name>aruco_i_block_3</name>
       <uri>model://aruco_block_long_3</uri>
       <static>0</static>
-      <pose>-0.35 0.35 0 0 0 0</pose> <!-- 0 1.57 -1.57 -->
+      <pose>-0.25 0.25 0 0 0 0</pose> <!-- 0 1.57 -1.57 -->
     </include>
   </world>
 </sdf>
