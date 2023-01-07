@@ -93,7 +93,7 @@ class Scullion():
                     elif command[3] == "pimienta":
                         mensaje.data = "pimienta"
                         self.pub.publish(mensaje)
-                        self.grab(X, Y, 0.06,0.35, 0.35, True)
+                        self.grab(X, Y, 0.06,0.3, 0.3, True)
 
                         self.pepper.x = X
                         self.pepper.y = Y
@@ -103,7 +103,7 @@ class Scullion():
                     elif command[3] == "azúcar" :
                         mensaje.data = "azúcar"
                         self.pub.publish(mensaje)
-                        self.grab(X, Y, 0.06, 0.35, -0.15, True)
+                        self.grab(X, Y, 0.06, 0.3, -0.15, True)
 
                         self.sugar.x = X
                         self.sugar.y = Y
