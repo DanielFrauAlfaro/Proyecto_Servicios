@@ -354,7 +354,6 @@ def callback_color_img(data):
     myCap.find_ARMarker(cv_color_image)
     myCap.get_average_point_marker(0)
     myCap.get_degrees(0)  
-    myCap.show()
 
     
     
