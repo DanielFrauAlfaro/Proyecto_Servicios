@@ -21,6 +21,7 @@
 
     <!-- Camera -->
     <xacro:include filename="$(find kinova_description)/urdf/camera/camera.urdf.xacro"/>
+    <xacro:include filename="$(find kinova_description)/urdf/camera2/camera.urdf.xacro"/>
 
     <!-- Import all Gazebo-customization elements -->
     <xacro:include filename="$(find kinova_description)/urdf/kinova.gazebo" />
@@ -125,6 +126,10 @@
 	     <origin xyz="0.0 -0.5 0.5" rpy="0 ${J_PI/2} ${-J_PI/2}"/>
         </xacro:camera_v0>
 
+        <xacro:camera_v1 parent="${prefix}_link_base">
+	     <origin xyz="-0.35 0.35 0.5" rpy="0 ${J_PI/2} ${-J_PI/2}"/>
+        </xacro:camera_v1>
+
         <xacro:kinova_armlink link_name="${prefix}_link_1" link_mesh="${link_1_mesh}" use_ring_mesh="true" mesh_no="${link_1_mesh_no}"/>
         <xacro:kinova_armjoint joint_name="${prefix}_joint_1" type="${joint_1_type}" parent="${prefix}_link_base" child="${prefix}_link_1" joint_axis_xyz="${joint_1_axis_xyz}" joint_origin_xyz="${joint_1_origin_xyz}" joint_origin_rpy="${joint_1_origin_rpy}" joint_velocity_limit="${joint_1_velocity_limit}" joint_torque_limit="${joint_1_torque_limit}"/>
 
@@ -151,5 +156,5 @@
     </xacro:macro>
 
     <xacro:camera_gazebo_v0 />
-
+    <xacro:camera_gazebo_v1 />
 </root>
